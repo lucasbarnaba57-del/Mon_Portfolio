@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes réalisations | Portfolio Lucas Barnaba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="qui-suis-je.html">Qui suis-je ?</a></li>
+            <li><a href="parcours.html">Mon parcours</a></li>
+            <li><a href="projet.html">Projet de formation</a></li>
+            <li><a href="realisations.html" class="actif">Mes réalisations</a></li>
+            <li><a href="veille.html">Veille</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div class="contenu">
+            <h1>Mes réalisations</h1>
+            <p>Projets réalisés en stage, en cours et en atelier de professionnalisation.</p>
+        </div>
+    </header>
+
+    <main>
+        <!-- ================= PROJET 1 : STAGE ================= -->
+        <div class="projet">
+            <span class="etiquette">Stage — 1<sup>re</sup> année</span>
+            <h2>Site vitrine — Auto École Excellence</h2>
+            <table>
+                <tr><td>Contexte</td><td>Stage de 1<sup>re</sup> année à l'Auto École Excellence (Ris-Orangis). L'auto-école souhaitait un site vitrine pour présenter son activité et moderniser son image.</td></tr>
+                <tr><td>Besoins</td><td>Présenter l'auto-école, ses formations et ses tarifs, et permettre aux visiteurs de trouver facilement les informations pratiques.</td></tr>
+                <tr><td>Période</td><td>18 mai – 27 juin 2026</td></tr>
+                <tr><td>Équipe</td><td>En binôme</td></tr>
+                <tr><td>Langages / outils</td><td>HTML, CSS, JavaScript (site global : PHP, MySQL, PDO) — testé en local sous WampServer</td></tr>
+                <tr><td>Méthodes</td><td>Répartition des tâches en binôme, respect d'une charte graphique commune (noir / orange / blanc), tests en local</td></tr>
+            </table>
+            <h3>Mon travail</h3>
+            <p>J'ai conçu et développé la page <strong>« Formules »</strong> : présentation des formations et des tarifs (avec ou sans code), avec un système d'onglets en JavaScript et un affichage responsive, en respectant la charte graphique du projet.</p>
+            <!-- Remplace par tes captures d'écran (dossier assets/) -->
+            <img src="assets/formules-capture.png" alt="Capture de la page Formules du site Auto École Excellence">
+            <h3>Bilan</h3>
+            <p>Ce stage m'a permis de travailler sur un vrai besoin client, de collaborer en binôme sur un projet complet et de progresser en JavaScript et en responsive design. Le site a été présenté comme prototype à l'auto-école.</p>
+        </div>
+
+        <!-- ================= PROJET 2 : SITE MARCHAND ================= -->
+        <div class="projet">
+            <span class="etiquette">AP — 1<sup>re</sup> année</span>
+            <h2>Site marchand — Élégance Pluvieuse</h2>
+            <table>
+                <tr><td>Contexte</td><td>En atelier de professionnalisation, réalisation d'un site web marchand à partir d'un cahier des charges : une boutique fictive de parapluies artisanaux haut de gamme.</td></tr>
+                <tr><td>Besoins</td><td>Présenter les produits, gérer des comptes clients (inscription / connexion) et proposer un panier d'achat relié à une base de données.</td></tr>
+                <tr><td>Période</td><td>Année scolaire 2025 – 2026</td></tr>
+                <tr><td>Équipe</td><td><!-- seul ou en groupe ? à préciser --></td></tr>
+                <tr><td>Langages / outils</td><td>PHP, MySQL, HTML, CSS — WampServer, phpMyAdmin</td></tr>
+                <tr><td>Méthodes</td><td>Analyse du cahier des charges, conception de la base de données, développement page par page, tests en local</td></tr>
+            </table>
+            <h3>Mon travail</h3>
+            <ul class="liste">
+                <li>Pages de présentation : accueil, catalogue des modèles, tarifs et services</li>
+                <li>Système d'inscription et de connexion avec sessions PHP et mots de passe chiffrés</li>
+                <li>Panier d'achat stocké en base de données (ajout de produits, calcul du total, vidage du panier)</li>
+                <li>Fiche produit dynamique générée depuis la base de données</li>
+            </ul>
+            <!-- Remplace par tes captures d'écran (dossier assets/) -->
+            <img src="assets/epluv-capture.png" alt="Capture du site marchand Élégance Pluvieuse">
+            <h3>Bilan</h3>
+            <p>Premier projet dynamique complet : j'ai appris à relier un site à une base de données avec PHP et SQL, à gérer des sessions utilisateur et à construire un panier. Ce projet me sert de base pour le site marchand plus abouti (PDO, back-office) de 2<sup>e</sup> année.</p>
+        </div>
+
+        <!-- ================= PROJET 3 : SITE DE VEILLE ================= -->
+        <div class="projet">
+            <span class="etiquette">TP — 1<sup>re</sup> année</span>
+            <h2>Site de veille technologique</h2>
+            <table>
+                <tr><td>Contexte</td><td>Travail pratique : créer un site présentant une veille technologique avec des articles sourcés.</td></tr>
+                <tr><td>Besoins</td><td>Structurer et présenter des articles de veille (titre, date, source, lien, résumé personnel).</td></tr>
+                <tr><td>Période</td><td>1<sup>re</sup> année de BTS</td></tr>
+                <tr><td>Équipe</td><td>Seul</td></tr>
+                <tr><td>Langages / outils</td><td>HTML, CSS</td></tr>
+            </table>
+            <h3>Mon travail</h3>
+            <p>Réalisation d'une page structurée en sections (introduction, articles, sources) avec une mise en page claire en CSS. Ce travail est le point de départ de ma <a href="veille.html">veille technologique</a> de 2<sup>e</sup> année.</p>
+            <h3>Bilan</h3>
+            <p>Ce TP m'a appris à structurer une page de contenu et à citer correctement mes sources.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 Lucas Barnaba — Portfolio BTS SIO SLAM</p>
+    </footer>
+</body>
+</html>
