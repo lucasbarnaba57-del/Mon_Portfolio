@@ -559,7 +559,7 @@
       "problem": "Proposer à un lecteur un accès direct au parcours, au périmètre des réalisations, aux compétences mobilisées et à l’état des preuves, sur ordinateur comme sur mobile.",
       "tasks": [
         "Réécriture des six rubriques initiales et création de fiches détaillées par réalisation.",
-        "Ajout d’une matrice de compétences, d’un registre documentaire, d’un contact et d’informations de publication.",
+        "Présentation des compétences à partir des projets et regroupement des documents dans une rubrique dédiée.",
         "Veille critique avec sources primaires, dates et pistes d’application.",
         "Navigation cohérente, lien d’évitement, styles de focus, filtres progressifs et impression.",
         "Génération statique avec Node.js et contrôle automatique des chemins et ancres.",
@@ -588,12 +588,12 @@
         ]
       ],
       "security": "Le site ne possède ni authentification, ni base de données, ni formulaire collectant des données. Les filtres fonctionnent localement avec des attributs de données ; aucun HTML provenant d’une saisie utilisateur n’est injecté. Le contact se fait par un lien de messagerie et l’hébergeur peut traiter des journaux de connexion.",
-      "outcome": "Le code et les documents de cette refonte sont présents dans ce dépôt. Les résultats des contrôles sont consignés séparément dans le rapport de recette. Aucun déploiement public nouveau n’est présumé.",
+      "outcome": "Le site est publié sur GitHub Pages. Le dépôt contient les pages, leurs sources et le rapport de vérification.",
       "retrospective": "Cette refonte a été produite avec une assistance IA. Elle devient un support pédagogique uniquement après relecture, vérification des faits et capacité à expliquer les choix, les scripts et les limites. Elle ne remplace ni les réalisations applicatives ni les expériences de stage.",
       "mapping": [
         [
           "B1.3",
-          "Le site rend accessible une identité et des réalisations professionnelles ; la publication et sa visibilité restent à vérifier après déploiement."
+          "Le site permet de consulter mon CV et mes projets en ligne."
         ],
         [
           "B1.4",
@@ -601,7 +601,7 @@
         ],
         [
           "B1.5",
-          "Les contrôles du site et le guide sont disponibles ; la mise en ligne et la validation utilisateur restent à effectuer."
+          "Les pages sont accessibles sur GitHub Pages. Le dépôt contient le guide de publication et les contrôles des liens."
         ],
         [
           "B1.6",

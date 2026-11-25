@@ -73,11 +73,10 @@
 <a href="../realisations.html">Réalisations</a> / Épi Solidaire</p>
 <header class="hero">
 <div>
-<span class="eyebrow">Projet pédagogique · réalisation 03</span>
+<span class="eyebrow">Projet pédagogique</span>
 <h1>Épi Solidaire</h1>
 <p class="lead">Suivre les articles, les commandes et les livraisons</p>
 <div class="pills">
-<span class="status">Sources MVC et SQL examinés · anomalies reproduites</span>
 <span class="pill">PHP</span>
 <span class="pill">PDO</span>
 <span class="pill">MySQL</span>
@@ -143,7 +142,6 @@
 <li>Ces éléments décrivent le périmètre observé du dossier. Ils ne sont pas attribués intégralement au candidat en l’absence de répartition des tâches.</li>
 </ul>
 </div>
-<p class="hint">La présence d’une fonctionnalité dans les fichiers prouve le contenu du dossier. La contribution personnelle doit être identifiée par l’historique, la répartition ou des documents.</p>
 </section>
 <section class="section anchor-section" id="technique">
 <div class="section-head">
@@ -227,41 +225,31 @@
 <th scope="row">E-01</th>
 <td>Connexion du compte épicier fictif</td>
 <td>Menu épicier affiché</td>
-<td>
-<span class="status available">Comportement attendu observé</span>
-</td>
+<td>Conforme au résultat attendu</td>
 </tr>
 <tr>
 <th scope="row">E-02</th>
 <td>Prix catalogue de la commande téléphonique</td>
 <td>Prix affiché à 0.00 € alors que le catalogue contient 12.50 €</td>
-<td>
-<span class="status">Anomalie à corriger</span>
-</td>
+<td>Anomalie observée</td>
 </tr>
 <tr>
 <th scope="row">E-03</th>
 <td>Enregistrer une commande téléphonique</td>
 <td>Échec SQL : commande.id sans valeur par défaut ni AUTO_INCREMENT</td>
-<td>
-<span class="status">Anomalie à corriger</span>
-</td>
+<td>Anomalie observée</td>
 </tr>
 <tr>
 <th scope="row">E-04</th>
 <td>Invalider la session lors de la déconnexion</td>
 <td>Les données de stock restent accessibles après action de déconnexion</td>
-<td>
-<span class="status">Anomalie à corriger</span>
-</td>
+<td>Anomalie observée</td>
 </tr>
 <tr>
 <th scope="row">E-05</th>
 <td>Réserver les routes épicier au rôle épicier</td>
 <td>Le rôle commerçant accède à la route de stock épicier</td>
-<td>
-<span class="status">Anomalie à corriger</span>
-</td>
+<td>Anomalie observée</td>
 </tr>
 </tbody>
 </table>
@@ -272,66 +260,46 @@
 </section>
 <section class="section anchor-section" id="tests">
 <div class="section-head">
-<h2>Plan de vérification à reproduire et compléter</h2>
+<h2>Scénarios de test proposés</h2>
 </div>
-<aside class="note ">
-<strong>Un plan complète les essais observés.</strong>
-<p>Les résultats de référence sont consignés ci-dessus avec leurs limites. Les scénarios suivants doivent être reproduits ou complétés, puis rejoués après correction. Noter pour chacun l’environnement, la date et le résultat réel.</p>
-</aside>
 <div class="top-space">
 <div class="table-wrap">
 <table class="wide-table">
 <caption>Scénarios de contrôle — données fictives et environnement local autorisé</caption>
 <thead>
 <tr>
-<th scope="col">ID</th>
 <th scope="col">Action</th>
 <th scope="col">Résultat attendu</th>
-<th scope="col">État</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th scope="row">ES-T01</th>
-<td>Se connecter avec un compte fictif de chaque rôle.</td>
+<th scope="row">Se connecter avec un compte fictif de chaque rôle.</th>
 <td>Chaque compte accède uniquement aux fonctions autorisées.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">ES-T02</th>
-<td>Afficher les articles disponibles pour une commande téléphonique.</td>
+<th scope="row">Afficher les articles disponibles pour une commande téléphonique.</th>
 <td>Les prix correspondent au catalogue, sans valeur à zéro par défaut.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">ES-T03</th>
-<td>Enregistrer une commande et retrouver son article.</td>
+<th scope="row">Enregistrer une commande et retrouver son article.</th>
 <td>Commande et ligne_commande sont créées ensemble, avec un prix calculé côté serveur.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">ES-T04</th>
-<td>Livrer la commande puis relancer l’action.</td>
+<th scope="row">Livrer la commande puis relancer l’action.</th>
 <td>La livraison ne produit ni doublon ni incohérence d’état.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">ES-T05</th>
-<td>Supprimer une commande possédant des lignes.</td>
+<th scope="row">Supprimer une commande possédant des lignes.</th>
 <td>Les relations sont traitées conformément à la règle métier et à l’intégrité référentielle.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">ES-T06</th>
-<td>Se déconnecter puis revenir à une route privée.</td>
+<th scope="row">Se déconnecter puis revenir à une route privée.</th>
 <td>La session ne donne plus accès au service.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">ES-T07</th>
-<td>Simuler une erreur entre les opérations d’une livraison.</td>
+<th scope="row">Simuler une erreur entre les opérations d’une livraison.</th>
 <td>Les opérations liées sont annulées ensemble si une transaction est nécessaire.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 </tbody>
 </table>
@@ -359,23 +327,23 @@
 </div>
 <div class="table-wrap">
 <table class="">
-<caption>Rattachements argumentés, sans validation automatique</caption>
+<caption>Exemples tirés de ce projet</caption>
 <thead>
 <tr>
-<th scope="col">Repère de lecture</th>
+<th scope="col">Compétence</th>
 <th scope="col">Pourquoi ce lien ?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-4">B1.4 · Travailler en mode projet</a>
+<a href="../competences.html#B1-4">Travailler en mode projet</a>
 </th>
 <td>Le contexte de projet et les modules sont identifiables ; répartition, planning et suivi restent à joindre.</td>
 </tr>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-5">B1.5 · Mettre à disposition des utilisateurs un service informatique</a>
+<a href="../competences.html#B1-5">Mettre à disposition des utilisateurs un service informatique</a>
 </th>
 <td>Une installation de vérification et des essais locaux sont documentés ; la chaîne métier et la mise à disposition restent incomplètes.</td>
 </tr>
@@ -390,12 +358,11 @@
 <li>Gérer les données : schéma relationnel, clés composées, jointures et intégrité transactionnelle.</li>
 <li>Cybersécurité applicative : requêtes paramétrées partielles, gestion des rôles à corriger et limites de l’authentification.</li>
 </ul>
-<p class="top-space subtle">Ces rapprochements avec le développement et la cybersécurité complètent la lecture du bloc support. Ils ne remplacent pas les fiches ni les preuves attendues pour les épreuves professionnelles.</p>
 </div>
 </section>
 <section class="section anchor-section" id="preuves">
 <div class="section-head">
-<h2>Productions et éléments à joindre</h2>
+<h2>Fichiers et captures</h2>
 </div>
 <aside class="note ">
 <strong>Sources examinées, attribution personnelle à confirmer.</strong>
@@ -517,23 +484,6 @@
 <a href="https://drive.google.com/file/d/1S3QrEy8aGHEpFsXY-kPt2lrRvphC4FD4/view?usp=drivesdk">Retrouver le fichier fourni</a>
 </div>
 </details>
-<div class="card top-space">
-<h3>Demandes précises pour compléter cette fiche</h3>
-<ul class="compact-list top-space">
-<li>
-<a href="../documents.html#ES-01">
-<span class="evidence-id">ES-01</span>Épi Solidaire : contexte et contribution</a>
-</li>
-<li>
-<a href="../documents.html#ES-02">
-<span class="evidence-id">ES-02</span>Épi Solidaire : commandes, droits et sessions</a>
-</li>
-<li>
-<a href="../documents.html#ES-03">
-<span class="evidence-id">ES-03</span>Épi Solidaire : recette et mise à disposition</a>
-</li>
-</ul>
-</div>
 </section>
 <div class="actions section">
 <a class="button secondary" href="../realisations.html">Revenir aux réalisations</a>

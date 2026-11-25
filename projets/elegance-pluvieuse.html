@@ -73,11 +73,10 @@
 <a href="../realisations.html">Réalisations</a> / Élégance Pluvieuse</p>
 <header class="hero">
 <div>
-<span class="eyebrow">Atelier · réalisation 02</span>
+<span class="eyebrow">Atelier</span>
 <h1>Élégance Pluvieuse</h1>
 <p class="lead">Comprendre un parcours d’achat et ses données</p>
 <div class="pills">
-<span class="status">Sources et SQL examinés · parcours local testé</span>
 <span class="pill">PHP</span>
 <span class="pill">PDO</span>
 <span class="pill">MySQL</span>
@@ -145,7 +144,6 @@
 <li>La liste ci-dessus décrit le code fourni. La répartition entre travail personnel, binôme et support de cours doit encore être confirmée.</li>
 </ul>
 </div>
-<p class="hint">La présence d’une fonctionnalité dans les fichiers prouve le contenu du dossier. La contribution personnelle doit être identifiée par l’historique, la répartition ou des documents.</p>
 </section>
 <section class="section anchor-section" id="technique">
 <div class="section-head">
@@ -230,57 +228,43 @@
 <th scope="row">M-01</th>
 <td>Inscription avec données fictives</td>
 <td>HTTP 200</td>
-<td>
-<span class="status available">Comportement attendu observé</span>
-</td>
+<td>Conforme au résultat attendu</td>
 </tr>
 <tr>
 <th scope="row">M-02</th>
 <td>Connexion du compte créé</td>
 <td>Session puis page compte</td>
-<td>
-<span class="status available">Comportement attendu observé</span>
-</td>
+<td>Conforme au résultat attendu</td>
 </tr>
 <tr>
 <th scope="row">M-03</th>
 <td>Accès administrateur avec compte client</td>
 <td>Accès refusé</td>
-<td>
-<span class="status available">Comportement attendu observé</span>
-</td>
+<td>Conforme au résultat attendu</td>
 </tr>
 <tr>
 <th scope="row">M-04</th>
 <td>Ajout répété au panier</td>
 <td>Quantité 3 et total 75 € pour un prix catalogue de 25 €</td>
-<td>
-<span class="status available">Comportement attendu observé</span>
-</td>
+<td>Conforme au résultat attendu</td>
 </tr>
 <tr>
 <th scope="row">M-05</th>
 <td>Ne pas dépasser le stock de 2</td>
 <td>Le panier accepte 3 unités pour un stock de 2</td>
-<td>
-<span class="status">Anomalie à corriger</span>
-</td>
+<td>Anomalie observée</td>
 </tr>
 <tr>
 <th scope="row">M-06</th>
 <td>Action destructive protégée contre un GET sans jeton</td>
 <td>Retrait effectué via GET sans jeton</td>
-<td>
-<span class="status">Anomalie à corriger</span>
-</td>
+<td>Anomalie observée</td>
 </tr>
 <tr>
 <th scope="row">M-07</th>
 <td>Accès panier après déconnexion</td>
 <td>Accès refusé après fermeture de session</td>
-<td>
-<span class="status available">Comportement attendu observé</span>
-</td>
+<td>Conforme au résultat attendu</td>
 </tr>
 </tbody>
 </table>
@@ -291,78 +275,54 @@
 </section>
 <section class="section anchor-section" id="tests">
 <div class="section-head">
-<h2>Plan de vérification à reproduire et compléter</h2>
+<h2>Scénarios de test proposés</h2>
 </div>
-<aside class="note ">
-<strong>Un plan complète les essais observés.</strong>
-<p>Les résultats de référence sont consignés ci-dessus avec leurs limites. Les scénarios suivants doivent être reproduits ou complétés, puis rejoués après correction. Noter pour chacun l’environnement, la date et le résultat réel.</p>
-</aside>
 <div class="top-space">
 <div class="table-wrap">
 <table class="wide-table">
 <caption>Scénarios de contrôle — données fictives et environnement local autorisé</caption>
 <thead>
 <tr>
-<th scope="col">ID</th>
 <th scope="col">Action</th>
 <th scope="col">Résultat attendu</th>
-<th scope="col">État</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th scope="row">EP-T01</th>
-<td>Créer un compte avec des données valides, puis tenter de réutiliser le même identifiant.</td>
+<th scope="row">Créer un compte avec des données valides, puis tenter de réutiliser le même identifiant.</th>
 <td>Le compte valide est créé ; le doublon est traité sans erreur technique affichée.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">EP-T02</th>
-<td>Se connecter avec un mot de passe incorrect, puis correct.</td>
+<th scope="row">Se connecter avec un mot de passe incorrect, puis correct.</th>
 <td>L’accès est refusé puis autorisé ; aucun secret n’est exposé.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">EP-T03</th>
-<td>Examiner le stockage du mot de passe et le code de vérification.</td>
+<th scope="row">Examiner le stockage du mot de passe et le code de vérification.</th>
 <td>Aucun mot de passe en clair ni chiffrement réversible revendiqué ; le hachage est vérifié correctement.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">EP-T04</th>
-<td>Ajouter deux produits, modifier une quantité et vider le panier.</td>
+<th scope="row">Ajouter deux produits, modifier une quantité et vider le panier.</th>
 <td>Le contenu et le total respectent les règles métier annoncées.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">EP-T05</th>
-<td>Modifier le prix ou la quantité envoyés dans une requête.</td>
+<th scope="row">Modifier le prix ou la quantité envoyés dans une requête.</th>
 <td>Le serveur refuse les valeurs invalides et utilise son prix de référence.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">EP-T06</th>
-<td>Tenter d’accéder au panier d’un autre utilisateur avec un compte de test autorisé.</td>
+<th scope="row">Tenter d’accéder au panier d’un autre utilisateur avec un compte de test autorisé.</th>
 <td>Aucune lecture ni modification du panier d’un autre compte.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">EP-T07</th>
-<td>Soumettre des caractères SQL et du HTML dans les champs de test.</td>
+<th scope="row">Soumettre des caractères SQL et du HTML dans les champs de test.</th>
 <td>La requête reste paramétrée et les sorties sont affichées comme du texte.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">EP-T08</th>
-<td>Soumettre une modification de panier sans jeton CSRF valide.</td>
+<th scope="row">Soumettre une modification de panier sans jeton CSRF valide.</th>
 <td>L’action est refusée si la protection requise est mise en œuvre.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">EP-T09</th>
-<td>Se déconnecter, puis réutiliser une URL privée.</td>
+<th scope="row">Se déconnecter, puis réutiliser une URL privée.</th>
 <td>La session n’accorde plus d’accès aux ressources privées.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 </tbody>
 </table>
@@ -390,29 +350,29 @@
 </div>
 <div class="table-wrap">
 <table class="">
-<caption>Rattachements argumentés, sans validation automatique</caption>
+<caption>Exemples tirés de ce projet</caption>
 <thead>
 <tr>
-<th scope="col">Repère de lecture</th>
+<th scope="col">Compétence</th>
 <th scope="col">Pourquoi ce lien ?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-3">B1.3 · Développer la présence en ligne de l’organisation</a>
+<a href="../competences.html#B1-3">Développer la présence en ligne de l’organisation</a>
 </th>
 <td>Le catalogue et les fiches produits portent la présence en ligne de l’organisation fictive.</td>
 </tr>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-4">B1.4 · Travailler en mode projet</a>
+<a href="../competences.html#B1-4">Travailler en mode projet</a>
 </th>
 <td>Un cahier des charges et une démarche de développement sont déclarés ; planning et répartition à fournir.</td>
 </tr>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-5">B1.5 · Mettre à disposition des utilisateurs un service informatique</a>
+<a href="../competences.html#B1-5">Mettre à disposition des utilisateurs un service informatique</a>
 </th>
 <td>La mise à disposition reste à démontrer avec installation, recette et documentation.</td>
 </tr>
@@ -426,12 +386,11 @@
 <li>Gérer les données : modèle relationnel, clé composée du panier, contraintes et jointures examinables.</li>
 <li>Assurer la cybersécurité d’une solution applicative et de son développement : mécanismes présents et défauts documentés ; aucune sécurisation complète revendiquée.</li>
 </ul>
-<p class="top-space subtle">Ces rapprochements avec le développement et la cybersécurité complètent la lecture du bloc support. Ils ne remplacent pas les fiches ni les preuves attendues pour les épreuves professionnelles.</p>
 </div>
 </section>
 <section class="section anchor-section" id="preuves">
 <div class="section-head">
-<h2>Productions et éléments à joindre</h2>
+<h2>Fichiers et captures</h2>
 </div>
 <aside class="note ">
 <strong>Sources examinées, attribution personnelle à confirmer.</strong>
@@ -539,27 +498,6 @@ $lignes = $requete-&gt;fetchAll();
 <a href="https://drive.google.com/file/d/1wrTEG4yTHoZKn0xrFz6yqw_4_KXiqHFH/view?usp=drivesdk">Retrouver le fichier fourni</a>
 </div>
 </details>
-<div class="card top-space">
-<h3>Demandes précises pour compléter cette fiche</h3>
-<ul class="compact-list top-space">
-<li>
-<a href="../documents.html#EP-01">
-<span class="evidence-id">EP-01</span>Site marchand : version et accès aux sources</a>
-</li>
-<li>
-<a href="../documents.html#EP-02">
-<span class="evidence-id">EP-02</span>Site marchand : auteur et conception</a>
-</li>
-<li>
-<a href="../documents.html#EP-03">
-<span class="evidence-id">EP-03</span>Site marchand : sécurité et recette</a>
-</li>
-<li>
-<a href="../documents.html#EP-04">
-<span class="evidence-id">EP-04</span>Site marchand : incident ou évolution réelle</a>
-</li>
-</ul>
-</div>
 </section>
 <div class="actions section">
 <a class="button secondary" href="../realisations.html">Revenir aux réalisations</a>

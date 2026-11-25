@@ -73,11 +73,10 @@
 <a href="../realisations.html">Réalisations</a> / Ce portfolio</p>
 <header class="hero">
 <div>
-<span class="eyebrow">Personnel · réalisation 05</span>
+<span class="eyebrow">Personnel</span>
 <h1>Ce portfolio</h1>
 <p class="lead">Un support de professionnalisation vérifiable</p>
 <div class="pills">
-<span class="status available">Sources disponibles · appropriation à expliquer</span>
 <span class="pill">HTML</span>
 <span class="pill">CSS</span>
 <span class="pill">JavaScript</span>
@@ -137,7 +136,7 @@
 <div class="card">
 <ul class="compact-list">
 <li>Réécriture des six rubriques initiales et création de fiches détaillées par réalisation.</li>
-<li>Ajout d’une matrice de compétences, d’un registre documentaire, d’un contact et d’informations de publication.</li>
+<li>Présentation des compétences à partir des projets et regroupement des documents dans une rubrique dédiée.</li>
 <li>Veille critique avec sources primaires, dates et pistes d’application.</li>
 <li>Navigation cohérente, lien d’évitement, styles de focus, filtres progressifs et impression.</li>
 <li>Génération statique avec Node.js et contrôle automatique des chemins et ancres.</li>
@@ -194,72 +193,45 @@
 </section>
 <section class="section anchor-section" id="tests">
 <div class="section-head">
-<h2>Scénarios et rapport de recette</h2>
+<h2>Scénarios de test proposés</h2>
 </div>
-<aside class="note ">
-<strong>Résultats séparés du plan.</strong>
-<p>Les résultats observés pour cette version sont dans <a href="../docs/RECETTE_PORTFOLIO.md">le rapport de recette</a>. Les scénarios ci-dessous décrivent les objectifs des contrôles.</p>
-</aside>
+<p>
+<a href="../docs/RECETTE_PORTFOLIO.md">Consulter les résultats du portfolio</a>
+</p>
 <div class="top-space">
 <div class="table-wrap">
 <table class="wide-table">
 <caption>Scénarios de contrôle — données fictives et environnement local autorisé</caption>
 <thead>
 <tr>
-<th scope="col">ID</th>
 <th scope="col">Action</th>
 <th scope="col">Résultat attendu</th>
-<th scope="col">État</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th scope="row">PF-T01</th>
-<td>Exécuter npm run check.</td>
+<th scope="row">Exécuter npm run check.</th>
 <td>Les ressources et ancres locales existent ; aucun lien file: ni image manquante.</td>
-<td>
-<a href="../docs/RECETTE_PORTFOLIO.md">Voir les résultats de la recette</a>
-</td>
 </tr>
 <tr>
-<th scope="row">PF-T02</th>
-<td>Naviguer sur ordinateur et mobile.</td>
+<th scope="row">Naviguer sur ordinateur et mobile.</th>
 <td>Le contenu reste lisible et la navigation permet d’accéder à toutes les rubriques.</td>
-<td>
-<a href="../docs/RECETTE_PORTFOLIO.md">Voir les résultats de la recette</a>
-</td>
 </tr>
 <tr>
-<th scope="row">PF-T03</th>
-<td>Utiliser les filtres et les liens au clavier.</td>
+<th scope="row">Utiliser les filtres et les liens au clavier.</th>
 <td>Les commandes sont atteignables ; le focus et les résultats sont perceptibles.</td>
-<td>
-<a href="../docs/RECETTE_PORTFOLIO.md">Voir les résultats de la recette</a>
-</td>
 </tr>
 <tr>
-<th scope="row">PF-T04</th>
-<td>Désactiver JavaScript.</td>
+<th scope="row">Désactiver JavaScript.</th>
 <td>Toutes les réalisations et tous les articles restent consultables.</td>
-<td>
-<a href="../docs/RECETTE_PORTFOLIO.md">Voir les résultats de la recette</a>
-</td>
 </tr>
 <tr>
-<th scope="row">PF-T05</th>
-<td>Télécharger le CV et le tableau de travail.</td>
+<th scope="row">Télécharger le CV et le tableau de travail.</th>
 <td>Les fichiers existent, s’ouvrent et annoncent clairement leur périmètre.</td>
-<td>
-<a href="../docs/RECETTE_PORTFOLIO.md">Voir les résultats de la recette</a>
-</td>
 </tr>
 <tr>
-<th scope="row">PF-T06</th>
-<td>Imprimer une fiche projet.</td>
+<th scope="row">Imprimer une fiche projet.</th>
 <td>Le contenu reste exploitable sans le menu et sans élément tronqué.</td>
-<td>
-<a href="../docs/RECETTE_PORTFOLIO.md">Voir les résultats de la recette</a>
-</td>
 </tr>
 </tbody>
 </table>
@@ -273,7 +245,7 @@
 <div class="grid two">
 <article class="card">
 <h3>État du livrable</h3>
-<p>Le code et les documents de cette refonte sont présents dans ce dépôt. Les résultats des contrôles sont consignés séparément dans le rapport de recette. Aucun déploiement public nouveau n’est présumé.</p>
+<p>Le site est publié sur GitHub Pages. Le dépôt contient les pages, leurs sources et le rapport de vérification.</p>
 </article>
 <article class="card">
 <h3>Bilan et progression</h3>
@@ -287,35 +259,35 @@
 </div>
 <div class="table-wrap">
 <table class="">
-<caption>Rattachements argumentés, sans validation automatique</caption>
+<caption>Exemples tirés de ce projet</caption>
 <thead>
 <tr>
-<th scope="col">Repère de lecture</th>
+<th scope="col">Compétence</th>
 <th scope="col">Pourquoi ce lien ?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-3">B1.3 · Développer la présence en ligne de l’organisation</a>
+<a href="../competences.html#B1-3">Développer la présence en ligne de l’organisation</a>
 </th>
-<td>Le site rend accessible une identité et des réalisations professionnelles ; la publication et sa visibilité restent à vérifier après déploiement.</td>
+<td>Le site permet de consulter mon CV et mes projets en ligne.</td>
 </tr>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-4">B1.4 · Travailler en mode projet</a>
+<a href="../competences.html#B1-4">Travailler en mode projet</a>
 </th>
 <td>Le périmètre, les corrections et la recette sont documentés ; l’appropriation personnelle doit être démontrée.</td>
 </tr>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-5">B1.5 · Mettre à disposition des utilisateurs un service informatique</a>
+<a href="../competences.html#B1-5">Mettre à disposition des utilisateurs un service informatique</a>
 </th>
-<td>Les contrôles du site et le guide sont disponibles ; la mise en ligne et la validation utilisateur restent à effectuer.</td>
+<td>Les pages sont accessibles sur GitHub Pages. Le dépôt contient le guide de publication et les contrôles des liens.</td>
 </tr>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-6">B1.6 · Organiser son développement professionnel</a>
+<a href="../competences.html#B1-6">Organiser son développement professionnel</a>
 </th>
 <td>Le CV, le projet professionnel et une base de veille sont consultables ; leur exploitation personnelle reste à expliquer.</td>
 </tr>
@@ -327,12 +299,11 @@
 <ul class="compact-list top-space">
 <li>La maintenance de ce site illustre une amélioration d’interface et de documentation. Ce site statique ne démontre pas à lui seul le bloc de développement d’applications SLAM.</li>
 </ul>
-<p class="top-space subtle">Ces rapprochements avec le développement et la cybersécurité complètent la lecture du bloc support. Ils ne remplacent pas les fiches ni les preuves attendues pour les épreuves professionnelles.</p>
 </div>
 </section>
 <section class="section anchor-section" id="preuves">
 <div class="section-head">
-<h2>Productions et éléments à joindre</h2>
+<h2>Fichiers et captures</h2>
 </div>
 <div class="document-list">
 <div class="document-row">
@@ -356,19 +327,6 @@
 </div>
 <a class="button secondary small" href="../docs/ARCHITECTURE.md">Lire le document</a>
 </div>
-</div>
-<div class="card top-space">
-<h3>Demandes précises pour compléter cette fiche</h3>
-<ul class="compact-list top-space">
-<li>
-<a href="../documents.html#PF-01">
-<span class="evidence-id">PF-01</span>Publication et identité professionnelle</a>
-</li>
-<li>
-<a href="../documents.html#PF-02">
-<span class="evidence-id">PF-02</span>Appropriation pour l’oral</a>
-</li>
-</ul>
 </div>
 </section>
 <div class="actions section">

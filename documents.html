@@ -72,8 +72,8 @@
 <header class="hero">
 <div>
 <span class="eyebrow">Dossier documentaire</span>
-<h1>Des liens réels.<br>Des preuves identifiables.</h1>
-<p class="lead">Cette page rassemble les documents disponibles et les éléments nécessaires pour compléter le dossier. Une pièce attendue n’est jamais présentée comme une production déjà livrée.</p>
+<h1>Mes documents</h1>
+<p class="lead">Mon CV, mes attestations et les documents associés aux projets.</p>
 </div>
 </header>
 <section class="section anchor-section" id="disponibles">
@@ -146,240 +146,110 @@
 </div>
 </div>
 </section>
-<section class="section anchor-section" id="etat">
-<div class="section-head">
-<h2>Ce que le dépôt ne permet pas encore de vérifier</h2>
-</div>
-<aside class="note warning">
-<strong>Les sources sont examinées ; certaines preuves restent personnelles.</strong>
-<p>Les fichiers de l’auto-école, du site marchand et d’Épi Solidaire sont désormais analysés, avec captures et essais locaux. Cinq attestations CNIL et le portrait du CV sont intégrés. Restent notamment la contribution exacte, les corrections applicatives, le tableau officiel et la continuité personnelle de la veille. Les attestations sont à remettre selon les modalités de l’établissement ; elles n’ont pas à être publiées avec des signatures ou données privées.</p>
-</aside>
-</section>
 <section class="section anchor-section" id="registre">
 <div class="section-head">
-<h2>Registre des éléments à fournir</h2>
+<h2>Pièces à réunir</h2>
 </div>
-<p class="hint">
-<strong>P0</strong> : indispensable pour défendre le dossier. <strong>P1</strong> : approfondissement et finalisation. Les pièces à fournir sont décrites précisément ci-dessous, sans fausse case « terminé ».</p>
 <article class="card anchor-section top-space" id="GEN-01">
-<span class="card-label">P0 · GEN-01</span>
 <h3>Consignes de réévaluation et dates précises</h3>
 <p class="top-space">
 <strong>À fournir :</strong> L’établissement, la classe SIO2 et la session 2027 sont confirmés par la confirmation d’inscription du 9 novembre 2026. Préciser la date de réévaluation et fournir la grille ou les attentes détaillées de la professeure si elles existent. Les dates de projets et contributions doivent être vérifiées séparément.</p>
-<p>
-<strong>Où l’intégrer :</strong> data/portfolio.json et parcours.html après génération</p>
-<p>
-<strong>Pourquoi :</strong> La session et l’établissement sont désormais établis ; le barème précis et la date de réévaluation ne figurent pas dans les documents consultés.</p>
 </article>
 <article class="card anchor-section top-space" id="GEN-02">
-<span class="card-label">P0 · GEN-02</span>
 <h3>Tableau officiel et attestations</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Renseigner le modèle officiel de tableau de synthèse de ta session avec les périodes exactes, productions et compétences réellement justifiées. Fournir les attestations de stage à l’établissement selon ses modalités, sans publier signatures et coordonnées privées.</p>
-<p>
-<strong>Où l’intégrer :</strong> Tableau public anonymisé dans docs/ ; attestations remises à l’établissement</p>
-<p>
-<strong>Pourquoi :</strong> Le tableau de travail livré n’est pas le modèle réglementaire et ne prouve pas la conformité du dossier.</p>
 </article>
 <article class="card anchor-section top-space" id="AE-01">
-<span class="card-label">P0 · AE-01</span>
 <h3>Auto-école : attribution et version de référence</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Les sources et les captures de Formules sont désormais examinées. Confirmer que cette section et ses fichiers correspondent à ta version de stage ; identifier précisément ce que tu as écrit et ce qui vient du binôme.</p>
-<p>
-<strong>Où l’intégrer :</strong> Liens à ajouter dans data/portfolio.json ; pièces anonymisées dans docs/preuves/auto-ecole/</p>
-<p>
-<strong>Pourquoi :</strong> L’accès au code démontre le contenu du dossier, pas l’auteur de chaque partie.</p>
 </article>
 <article class="card anchor-section top-space" id="AE-02">
-<span class="card-label">P0 · AE-02</span>
 <h3>Auto-école : contribution et validation</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Fournir une répartition des tâches en binôme, un planning daté, tes commits ou fichiers identifiés, le besoin ou cahier des charges, et un retour réel du tuteur sur le prototype.</p>
-<p>
-<strong>Où l’intégrer :</strong> docs/preuves/auto-ecole/ ; fiche projet</p>
-<p>
-<strong>Pourquoi :</strong> Le travail personnel et la réponse au besoin client restent seulement déclarés.</p>
 </article>
 <article class="card anchor-section top-space" id="AE-03">
-<span class="card-label">P1 · AE-03</span>
 <h3>Auto-école : recette et bilan</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Reproduire les essais de la fiche, puis documenter les corrections réellement effectuées, l’accessibilité des onglets et une difficulté vécue pendant le stage. Ajouter la recette ou le retour du tuteur si tu l’as.</p>
-<p>
-<strong>Où l’intégrer :</strong> docs/preuves/auto-ecole/recette.md</p>
-<p>
-<strong>Pourquoi :</strong> Les essais de la refonte sont datés et assistés ; ils ne remplacent pas ton bilan ni la validation du stage.</p>
 </article>
 <article class="card anchor-section top-space" id="EP-01">
-<span class="card-label">P0 · EP-01</span>
 <h3>Site marchand : version et accès aux sources</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Le dossier PHP et le schéma SQL fournis ont été examinés et installés pour les essais. Confirmer la version de référence, les dates et les droits d’accès de la professeure. Fournir un dépôt versionné ou une archive nettoyée avec configuration d’exemple sans secret.</p>
-<p>
-<strong>Où l’intégrer :</strong> Dépôt de l’application lié depuis la fiche ; ne pas ajouter de mots de passe au portfolio</p>
-<p>
-<strong>Pourquoi :</strong> Le lecteur doit pouvoir accéder à la même version et reproduire les essais.</p>
 </article>
 <article class="card anchor-section top-space" id="EP-02">
-<span class="card-label">P0 · EP-02</span>
 <h3>Site marchand : auteur et conception</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Préciser dates, équipe et pages/fonctions écrites personnellement ; joindre cahier des charges, MCD/MLD personnel si réalisé, historique ou répartition. Le schéma SQL et les extraits sont déjà analysés dans cette version.</p>
-<p>
-<strong>Où l’intégrer :</strong> docs/preuves/elegance-pluvieuse/ ; data/portfolio.json</p>
-<p>
-<strong>Pourquoi :</strong> Le fonctionnement du code ne permet pas d’identifier automatiquement la contribution de chaque personne.</p>
 </article>
 <article class="card anchor-section top-space" id="EP-03">
-<span class="card-label">P0 · EP-03</span>
 <h3>Site marchand : sécurité et recette</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Reprendre les défauts observés (stock, actions GET/CSRF, sessions, sorties d’image, suppression sans transaction), corriger ceux que tu prends réellement en charge et exécuter les scénarios de non-régression. Les résultats de la revue initiale sont conservés.</p>
-<p>
-<strong>Où l’intégrer :</strong> docs/preuves/elegance-pluvieuse/recette.md</p>
-<p>
-<strong>Pourquoi :</strong> Les protections partielles présentes dans le code ne rendent pas la boutique prête pour une exploitation commerciale.</p>
 </article>
 <article class="card anchor-section top-space" id="EP-04">
-<span class="card-label">P1 · EP-04</span>
 <h3>Site marchand : incident ou évolution réelle</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Décrire une anomalie ou une demande d’évolution réellement traitée : avant, reproduction, diagnostic, correction, commit et non-régression ; ajouter un court guide utilisateur.</p>
-<p>
-<strong>Où l’intégrer :</strong> docs/preuves/elegance-pluvieuse/incident.md et guide-utilisateur.md</p>
-<p>
-<strong>Pourquoi :</strong> Permettrait d’étayer B1.2 et B1.5 si l’intervention a effectivement eu lieu.</p>
 </article>
 <article class="card anchor-section top-space" id="VT-01">
-<span class="card-label">P1 · VT-01</span>
 <h3>TP de veille : version originale</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Fournir les fichiers du TP, ses dates et au moins une fiche originale avec sa source, pour distinguer le travail antérieur de la veille préparée lors de la refonte.</p>
-<p>
-<strong>Où l’intégrer :</strong> Lien du TP et docs/preuves/site-veille/</p>
-<p>
-<strong>Pourquoi :</strong> La réalisation historique est seulement décrite.</p>
 </article>
 <article class="card anchor-section top-space" id="VT-02">
-<span class="card-label">P0 · VT-02</span>
 <h3>Veille : appropriation et continuité</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Relire les fiches actuelles, écrire ton analyse personnelle et tenir un journal réel sur plusieurs semaines : source, date de lecture, information retenue, limite, conséquence et essai éventuel. Ne pas antidater les lectures.</p>
-<p>
-<strong>Où l’intégrer :</strong> docs/journal-veille.csv et veille.html via scripts/build.mjs</p>
-<p>
-<strong>Pourquoi :</strong> Une collecte initiale assistée ne démontre pas une veille personnelle suivie.</p>
 </article>
 <article class="card anchor-section top-space" id="B1-01">
-<span class="card-label">P0 · B1-01</span>
 <h3>Patrimoine informatique</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Fournir une situation réellement pratiquée : inventaire des outils et versions, droits d’accès, procédure de sauvegarde et résultat d’une restauration. Un exercice réalisé maintenant doit porter sa vraie date.</p>
-<p>
-<strong>Où l’intégrer :</strong> docs/preuves/patrimoine/ puis lien dans la matrice</p>
-<p>
-<strong>Pourquoi :</strong> B1.1 n’est pas couverte par une preuve exploitable.</p>
 </article>
 <article class="card anchor-section top-space" id="B1-02">
-<span class="card-label">P0 · B1-02</span>
 <h3>Support et demandes</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Fournir au moins un incident ou une évolution réelle documentée (application, assistance ou service), avec suivi et validation. Aucune situation fictive ne doit être présentée comme une expérience vécue.</p>
-<p>
-<strong>Où l’intégrer :</strong> docs/preuves/support/ puis lien dans la matrice</p>
-<p>
-<strong>Pourquoi :</strong> B1.2 n’est pas couverte par une preuve exploitable.</p>
 </article>
 <article class="card anchor-section top-space" id="PF-01">
-<span class="card-label">P1 · PF-01</span>
 <h3>Publication et identité professionnelle</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Vérifier l’adresse de contact reprise du CV, confirmer les dates et relire le nouveau CV. Le portrait et les attestations CNIL sont retrouvés. Choisir l’URL d’hébergement, confirmer les mentions du fournisseur et tester la version publiée.</p>
-<p>
-<strong>Où l’intégrer :</strong> data/portfolio.json, contact et informations de publication</p>
-<p>
-<strong>Pourquoi :</strong> Le lien GitHub du code ne prouve pas l’accessibilité du site publié.</p>
 </article>
 <article class="card anchor-section top-space" id="PF-02">
-<span class="card-label">P0 · PF-02</span>
 <h3>Appropriation pour l’oral</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Savoir expliquer le HTML/CSS, le filtre JavaScript, la génération et les vérifications ; corriger les faits après relecture. Préparer une démonstration des applications avec données fictives et une copie hors ligne.</p>
-<p>
-<strong>Où l’intégrer :</strong> Préparation personnelle à partir des fiches et de docs/A_FOURNIR.md</p>
-<p>
-<strong>Pourquoi :</strong> Un contenu assisté doit être maîtrisé et étayé par ton travail.</p>
 </article>
 <article class="card anchor-section top-space" id="SLAM-01">
-<span class="card-label">P0 · SLAM-01</span>
 <h3>Deuxième année : périmètre d’Épi Solidaire et épreuves</h3>
 <p class="top-space">
 <strong>À fournir :</strong> La fiche Épi Solidaire est ajoutée à partir des fichiers transmis. Confirmer période, équipe, missions personnelles et support de cours. Pour les réalisations retenues à l’épreuve de développement, joindre les fiches de la session et vérifier le périmètre avec l’enseignante.</p>
-<p>
-<strong>Où l’intégrer :</strong> Nouvelles entrées dans data/portfolio.json et pièces de projets</p>
-<p>
-<strong>Pourquoi :</strong> Une analyse de sources ne remplace pas la preuve du travail individuel ni les pièces attendues par l’établissement.</p>
 </article>
 <article class="card anchor-section top-space" id="ES-01">
-<span class="card-label">P0 · ES-01</span>
 <h3>Épi Solidaire : contexte et contribution</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Fournir le cahier des charges, les dates réelles, l’équipe et la liste de tes fonctions/fichiers. Distinguer le support fourni, le travail du binôme et tes modifications, avec des commits ou documents.</p>
-<p>
-<strong>Où l’intégrer :</strong> Fiche Épi Solidaire et docs/preuves/epi-solidaire/</p>
-<p>
-<strong>Pourquoi :</strong> Le code reçu contient des modules de dates et d’origines différentes ; leur présence ne prouve pas leur auteur.</p>
 </article>
 <article class="card anchor-section top-space" id="ES-02">
-<span class="card-label">P0 · ES-02</span>
 <h3>Épi Solidaire : commandes, droits et sessions</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Corriger sur ta version de référence les défauts constatés : prix catalogue absent, identifiant de commande, lignes de commande, contrôles de rôle, déconnexion et requêtes SQL concaténées. Documenter les corrections réellement réalisées et les tests sur données fictives.</p>
-<p>
-<strong>Où l’intégrer :</strong> Dépôt applicatif puis compte rendu lié depuis la fiche</p>
-<p>
-<strong>Pourquoi :</strong> Ces défauts ont été observés ou reproduits dans la revue et empêchent de présenter une chaîne métier fiable.</p>
 </article>
 <article class="card anchor-section top-space" id="ES-03">
-<span class="card-label">P1 · ES-03</span>
 <h3>Épi Solidaire : recette et mise à disposition</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Après correction, exécuter la chaîne stock → commande → livraison, les erreurs et les cas de concurrence ; vérifier les transactions et fournir un guide utilisateur. Donner l’environnement et la procédure d’installation à la professeure.</p>
-<p>
-<strong>Où l’intégrer :</strong> docs/preuves/epi-solidaire/recette.md et guide-utilisateur.md</p>
-<p>
-<strong>Pourquoi :</strong> La vérification de syntaxe et les essais partiels ne valent pas une recette d’acceptation.</p>
 </article>
 <article class="card anchor-section top-space" id="CERT-01">
-<span class="card-label">P1 · CERT-01</span>
 <h3>Attestations complémentaires à retrouver</h3>
 <p class="top-space">
 <strong>À fournir :</strong> Les modules CNIL 1, 3, 4, 5 et 6 sont retrouvés. Fournir le module 2 s’il a été validé, l’attestation de réussite SecNumAcadémie et le certificat ou badge Cisco « Introduction à la cybersécurité ». Les mails retrouvés prouvent seulement l’inscription aux deux dernières formations. Donner le nom de l’autre certification si tu t’en souviens.</p>
-<p>
-<strong>Où l’intégrer :</strong> docs/certifications/ et page certifications.html</p>
-<p>
-<strong>Pourquoi :</strong> Une inscription, un compte Pix ou une newsletter ne prouve pas une certification obtenue.</p>
 </article>
-</section>
-<section class="section anchor-section" id="mode-preuve">
-<div class="section-head">
-<h2>Ce qui rend une pièce exploitable</h2>
-</div>
-<div class="grid three">
-<article class="card">
-<h3>Une origine</h3>
-<p>Projet, date, auteur et périmètre. Distinguer un travail personnel, un support fourni et une production collective.</p>
-</article>
-<article class="card">
-<h3>Un lien avec l’action</h3>
-<p>Un fichier, un commit, un résultat de test ou un retour utilisateur qui étaye précisément la réalisation décrite.</p>
-</article>
-<article class="card">
-<h3>Une lecture sans données privées</h3>
-<p>Des données fictives ou anonymisées, aucun mot de passe et des autorisations vérifiées pour les ressources de tiers.</p>
-</article>
-</div>
 </section>
 </main>
 <footer class="footer">

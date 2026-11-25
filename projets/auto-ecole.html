@@ -73,11 +73,10 @@
 <a href="../realisations.html">Réalisations</a> / Auto École Excellence</p>
 <header class="hero">
 <div>
-<span class="eyebrow">Stage · réalisation 01</span>
+<span class="eyebrow">Stage</span>
 <h1>Auto École Excellence</h1>
 <p class="lead">Une page de formules pour un besoin client réel</p>
 <div class="pills">
-<span class="status">Sources examinées · essais locaux effectués</span>
 <span class="pill">HTML</span>
 <span class="pill">CSS</span>
 <span class="pill">JavaScript</span>
@@ -131,7 +130,7 @@
 </ul>
 <section class="section anchor-section" id="contribution">
 <div class="section-head">
-<h2>Ma contribution déclarée</h2>
+<h2>Mon travail</h2>
 </div>
 <div class="card">
 <ul class="compact-list">
@@ -141,7 +140,6 @@
 <li>Adaptation responsive et respect de la charte noir, orange et blanc, selon la description initiale.</li>
 </ul>
 </div>
-<p class="hint">La présence d’une fonctionnalité dans les fichiers prouve le contenu du dossier. La contribution personnelle doit être identifiée par l’historique, la répartition ou des documents.</p>
 </section>
 <section class="section anchor-section" id="technique">
 <div class="section-head">
@@ -220,41 +218,31 @@
 <th scope="row">A-01</th>
 <td>Cinq onglets Formules</td>
 <td>Chacun des cinq boutons affiche un seul panneau</td>
-<td>
-<span class="status available">Comportement attendu observé</span>
-</td>
+<td>Conforme au résultat attendu</td>
 </tr>
 <tr>
 <th scope="row">A-02</th>
 <td>Formules à 390 px</td>
 <td>Pas de débordement horizontal sur la page à 390 px</td>
-<td>
-<span class="status available">Comportement attendu observé</span>
-</td>
+<td>Conforme au résultat attendu</td>
 </tr>
 <tr>
 <th scope="row">A-03</th>
 <td>État des onglets exposé aux aides techniques</td>
 <td>Le code change des classes CSS ; aucun aria-selected ni rôle d’onglet</td>
-<td>
-<span class="status">Anomalie à corriger</span>
-</td>
+<td>Anomalie observée</td>
 </tr>
 <tr>
 <th scope="row">A-04</th>
 <td>Réservation d’un créneau libre</td>
 <td>Rendez-vous enregistré et confirmation affichée</td>
-<td>
-<span class="status available">Comportement attendu observé</span>
-</td>
+<td>Conforme au résultat attendu</td>
 </tr>
 <tr>
 <th scope="row">A-05</th>
 <td>Refuser une suppression de RDV sans session administrateur</td>
 <td>Suppression effectuée sans connexion administrateur</td>
-<td>
-<span class="status">Anomalie à corriger</span>
-</td>
+<td>Anomalie observée</td>
 </tr>
 </tbody>
 </table>
@@ -265,54 +253,38 @@
 </section>
 <section class="section anchor-section" id="tests">
 <div class="section-head">
-<h2>Plan de vérification à reproduire et compléter</h2>
+<h2>Scénarios de test proposés</h2>
 </div>
-<aside class="note ">
-<strong>Un plan complète les essais observés.</strong>
-<p>Les résultats de référence sont consignés ci-dessus avec leurs limites. Les scénarios suivants doivent être reproduits ou complétés, puis rejoués après correction. Noter pour chacun l’environnement, la date et le résultat réel.</p>
-</aside>
 <div class="top-space">
 <div class="table-wrap">
 <table class="wide-table">
 <caption>Scénarios de contrôle — données fictives et environnement local autorisé</caption>
 <thead>
 <tr>
-<th scope="col">ID</th>
 <th scope="col">Action</th>
 <th scope="col">Résultat attendu</th>
-<th scope="col">État</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th scope="row">AE-T01</th>
-<td>Ouvrir chaque onglet de formule.</td>
+<th scope="row">Ouvrir chaque onglet de formule.</th>
 <td>Le panneau correspondant apparaît et la sélection est compréhensible.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">AE-T02</th>
-<td>Parcourir les formules au clavier.</td>
+<th scope="row">Parcourir les formules au clavier.</th>
 <td>Chaque commande est accessible ; le focus reste visible et suit un ordre logique.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">AE-T03</th>
-<td>Afficher la page à 375 px et à 1280 px.</td>
+<th scope="row">Afficher la page à 375 px et à 1280 px.</th>
 <td>Les tarifs, intitulés et commandes restent lisibles, sans perte de contenu.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">AE-T04</th>
-<td>Comparer chaque tarif au document fourni par l’auto-école.</td>
+<th scope="row">Comparer chaque tarif au document fourni par l’auto-école.</th>
 <td>Aucun écart entre l’offre approuvée et la page.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 <tr>
-<th scope="row">AE-T05</th>
-<td>Ouvrir le prototype sur un autre poste selon le guide d’installation.</td>
+<th scope="row">Ouvrir le prototype sur un autre poste selon le guide d’installation.</th>
 <td>Les ressources et interactions fonctionnent sans chemin local.</td>
-<td>À reproduire / compléter après les essais de référence</td>
 </tr>
 </tbody>
 </table>
@@ -340,29 +312,29 @@
 </div>
 <div class="table-wrap">
 <table class="">
-<caption>Rattachements argumentés, sans validation automatique</caption>
+<caption>Exemples tirés de ce projet</caption>
 <thead>
 <tr>
-<th scope="col">Repère de lecture</th>
+<th scope="col">Compétence</th>
 <th scope="col">Pourquoi ce lien ?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-3">B1.3 · Développer la présence en ligne de l’organisation</a>
+<a href="../competences.html#B1-3">Développer la présence en ligne de l’organisation</a>
 </th>
 <td>La page participe à la présentation de l’offre de l’auto-école.</td>
 </tr>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-4">B1.4 · Travailler en mode projet</a>
+<a href="../competences.html#B1-4">Travailler en mode projet</a>
 </th>
 <td>Le travail est annoncé en binôme, avec une charte commune.</td>
 </tr>
 <tr>
 <th scope="row">
-<a href="../competences.html#B1-5">B1.5 · Mettre à disposition des utilisateurs un service informatique</a>
+<a href="../competences.html#B1-5">Mettre à disposition des utilisateurs un service informatique</a>
 </th>
 <td>Des tests locaux et une présentation du prototype sont déclarés ; recette et accompagnement à démontrer.</td>
 </tr>
@@ -374,12 +346,11 @@
 <ul class="compact-list top-space">
 <li>Concevoir et développer une solution applicative : interface utilisateur à examiner à partir des sources.</li>
 </ul>
-<p class="top-space subtle">Ces rapprochements avec le développement et la cybersécurité complètent la lecture du bloc support. Ils ne remplacent pas les fiches ni les preuves attendues pour les épreuves professionnelles.</p>
 </div>
 </section>
 <section class="section anchor-section" id="preuves">
 <div class="section-head">
-<h2>Productions et éléments à joindre</h2>
+<h2>Fichiers et captures</h2>
 </div>
 <aside class="note ">
 <strong>Sources examinées, attribution personnelle à confirmer.</strong>
@@ -448,23 +419,6 @@
 <a href="https://drive.google.com/file/d/19E0ipY4TMUK_EIC2hRTTe_SrN_VgHGXo/view?usp=drivesdk">Retrouver le fichier fourni</a>
 </div>
 </details>
-<div class="card top-space">
-<h3>Demandes précises pour compléter cette fiche</h3>
-<ul class="compact-list top-space">
-<li>
-<a href="../documents.html#AE-01">
-<span class="evidence-id">AE-01</span>Auto-école : attribution et version de référence</a>
-</li>
-<li>
-<a href="../documents.html#AE-02">
-<span class="evidence-id">AE-02</span>Auto-école : contribution et validation</a>
-</li>
-<li>
-<a href="../documents.html#AE-03">
-<span class="evidence-id">AE-03</span>Auto-école : recette et bilan</a>
-</li>
-</ul>
-</div>
 </section>
 <div class="actions section">
 <a class="button secondary" href="../realisations.html">Revenir aux réalisations</a>
