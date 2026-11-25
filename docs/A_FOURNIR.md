@@ -18,7 +18,7 @@ Version du 25 novembre 2026. Cette liste ne constitue pas une validation de conf
 
 **Raison :** Le tableau de travail livré n’est pas le modèle réglementaire et ne prouve pas la conformité du dossier.
 
-## P0 — AE-01 — Auto-école : attribution et version de référence
+## P0 — AE-01 — Ma partie sur le site de l’auto-école
 
 **À fournir :** Les sources et les captures de Formules sont désormais examinées. Confirmer que cette section et ses fichiers correspondent à ta version de stage ; identifier précisément ce que tu as écrit et ce qui vient du binôme.
 
@@ -82,7 +82,7 @@ Version du 25 novembre 2026. Cette liste ne constitue pas une validation de conf
 
 **Raison :** La réalisation historique est seulement décrite.
 
-## P0 — VT-02 — Veille : appropriation et continuité
+## P0 — VT-02 — Mon journal de veille
 
 **À fournir :** Relire les fiches actuelles, écrire ton analyse personnelle et tenir un journal réel sur plusieurs semaines : source, date de lecture, information retenue, limite, conséquence et essai éventuel. Ne pas antidater les lectures.
 
@@ -108,7 +108,7 @@ Version du 25 novembre 2026. Cette liste ne constitue pas une validation de conf
 
 ## P1 — PF-01 — Publication et identité professionnelle
 
-**À fournir :** Vérifier l’adresse de contact reprise du CV, confirmer les dates et relire le nouveau CV. Le portrait et les attestations CNIL sont retrouvés. Choisir l’URL d’hébergement, confirmer les mentions du fournisseur et tester la version publiée.
+**À fournir :** Mon portfolio est publié sur GitHub Pages. Je dois encore relire les dates sur mon CV et vérifier mes coordonnées.
 
 **Intégration :** data/portfolio.json, contact et informations de publication
 
@@ -154,10 +154,10 @@ Version du 25 novembre 2026. Cette liste ne constitue pas une validation de conf
 
 **Raison :** La vérification de syntaxe et les essais partiels ne valent pas une recette d’acceptation.
 
-## P1 — CERT-01 — Attestations complémentaires à retrouver
+## P1 — CERT-01 — Atelier RGPD, module 2
 
-**À fournir :** Les modules CNIL 1, 3, 4, 5 et 6 sont retrouvés. Fournir le module 2 s’il a été validé, l’attestation de réussite SecNumAcadémie et le certificat ou badge Cisco « Introduction à la cybersécurité ». Les mails retrouvés prouvent seulement l’inscription aux deux dernières formations.
+**À fournir :** J’ai les attestations des modules 1, 3, 4, 5 et 6. Je dois vérifier ma situation pour le module 2.
 
 **Intégration :** docs/certifications/ et page certifications.html
 
-**Raison :** Une inscription, un compte Pix ou une newsletter ne prouve pas une certification obtenue.
+**Raison :** Je réunis ici les attestations de mes modules RGPD.

@@ -65,7 +65,7 @@
     "limit": "Il s’agit de perceptions et de réponses à des scénarios contrefactuels, pas d’une mesure expérimentale du gain sur chaque tâche. La population interrogée ne représente pas automatiquement les étudiants de BTS.",
     "analysis": "Conséquence proposée : une fonctionnalité générée rapidement n’apporte de valeur que si elle répond au besoin, fonctionne et peut être maintenue.",
     "application": "Pour le portfolio, privilégier une démonstration fonctionnelle, une contribution identifiable et un test reproductible plutôt que le nombre de pages ou de lignes de code.",
-    "action": "À discuter dans le bilan personnel après relecture ; aucune statistique de productivité du candidat n’est déduite de cette enquête."
+    "action": "Cette enquête ne mesure pas le temps que je gagne sur mes propres projets."
   },
   {
     "id": "owasp-2026",
