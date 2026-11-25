@@ -148,7 +148,7 @@
         [
           "Contexte applicatif collectif",
           "Les autres fichiers gèrent créneaux, réservation, confirmation, administration et génération PDF.",
-          "Ces fonctionnalités ne sont pas attribuées au candidat sans preuve de contribution. Le schéma fourni comporte rendez_vous."
+          "Ma partie concernait la page Formules. La base du projet contient aussi une table rendez_vous."
         ],
         [
           "Qualité de la réservation",
@@ -362,14 +362,14 @@
       ],
       "scope": "Périmètre personnel à identifier dans les modules fournis",
       "summary": "Application pédagogique d’épicerie solidaire : espaces par rôle, stocks, produits périmés, commandes téléphoniques et livraisons.",
-      "context": "Le dossier remis par le candidat contient une application PHP organisée en point d’entrée, contrôleurs, modèle et vues, ainsi qu’un export SQL nommé getcet (1).sql. Les fonctions consultables concernent des commerçants, des épiciers, des acheteurs, des produits et des articles. Le contexte précis, le cahier des charges et le travail individuel restent à fournir.",
+      "context": "Dans mon dossier Épi Solidaire, je retrouve une application PHP organisée en point d’entrée, contrôleurs, modèle et vues, ainsi qu’un export SQL nommé getcet (1).sql. Les fonctions consultables concernent des commerçants, des épiciers, des acheteurs, des produits et des articles. Le contexte précis, le cahier des charges et le travail individuel restent à fournir.",
       "problem": "Conserver une information cohérente sur les exemplaires de produits, leur état, la personne qui commande et le passage à la livraison, avec des droits adaptés aux différents rôles.",
       "tasks": [
         "index.php route les demandes vers les contrôleurs après une vérification de connexion.",
         "Le modèle Modele centralise l’accès PDO ; les vues affichent les données préparées par les contrôleurs.",
         "Les écrans fournis couvrent dons et ventes des commerçants, consultation et modification des stocks, péremption, achats, commandes et livraisons.",
         "Les méthodes getLesCommandes, ajouterCommande et livrerCommande sont présentes et analysées.",
-        "Ces éléments décrivent le périmètre observé du dossier. Ils ne sont pas attribués intégralement au candidat en l’absence de répartition des tâches."
+        "Ces fonctions figurent dans le projet. Je dois encore préciser lesquelles j’ai développées."
       ],
       "analysis": [
         [
@@ -405,7 +405,7 @@
       ],
       "security": "Des méthodes récentes utilisent des requêtes préparées, mais les fonctions d’authentification et certaines fonctions de gestion concatènent encore des paramètres dans le SQL. Le contrôle des rôles doit être assuré sur chaque action serveur ; masquer un lien de menu n’est pas un contrôle d’accès. Les actions sensibles, la validation des prix, la protection CSRF et le hachage des mots de passe nécessitent une reprise avant publication. L’export original et ses données ne sont pas republiés.",
       "outcome": "Les sources PHP du dossier passent le contrôle de syntaxe. Sur une base isolée contenant uniquement des données fictives, la connexion épicier fonctionne. Les essais reproduisent un prix à zéro, l’échec d’insertion de commande, l’accès d’un commerçant au stock épicier et une session conservée après demande de déconnexion. Ces défauts restent ouverts dans l’application d’origine.",
-      "retrospective": "Ce projet fournit une base plus riche pour expliquer MVC, jointures, clés composées, contrôles d’accès et transactions. Pour en faire une réalisation défendable, identifier le travail personnel, corriger les anomalies réellement prises en charge et conserver les changements ainsi que les tests de non-régression. Aucun correctif ni incident historique du candidat n’est inventé.",
+      "retrospective": "Ce projet fournit une base plus riche pour expliquer MVC, jointures, clés composées, contrôles d’accès et transactions. Pour en faire une réalisation défendable, identifier le travail personnel, corriger les anomalies réellement prises en charge et conserver les changements ainsi que les tests de non-régression.",
       "mapping": [
         [
           "B1.4",
@@ -418,7 +418,7 @@
       ],
       "slam": [
         "Concevoir et développer une solution applicative : MVC, vues de stock et parcours de commande observables.",
-        "Assurer la maintenance corrective ou évolutive : les défauts identifiés sont des pistes de maintenance, à distinguer des corrections que le candidat aura effectivement réalisées.",
+        "Assurer la maintenance corrective ou évolutive : les défauts identifiés sont des pistes de maintenance, je dois encore les tester après correction.",
         "Gérer les données : schéma relationnel, clés composées, jointures et intégrité transactionnelle.",
         "Cybersécurité applicative : requêtes paramétrées partielles, gestion des rôles à corriger et limites de l’authentification."
       ],
@@ -806,7 +806,7 @@
       "id": "CERT-01",
       "priority": "P1",
       "label": "Attestations complémentaires à retrouver",
-      "need": "Les modules CNIL 1, 3, 4, 5 et 6 sont retrouvés. Fournir le module 2 s’il a été validé, l’attestation de réussite SecNumAcadémie et le certificat ou badge Cisco « Introduction à la cybersécurité ». Les mails retrouvés prouvent seulement l’inscription aux deux dernières formations. Donner le nom de l’autre certification si tu t’en souviens.",
+      "need": "Les modules CNIL 1, 3, 4, 5 et 6 sont retrouvés. Fournir le module 2 s’il a été validé, l’attestation de réussite SecNumAcadémie et le certificat ou badge Cisco « Introduction à la cybersécurité ». Les mails retrouvés prouvent seulement l’inscription aux deux dernières formations.",
       "destination": "docs/certifications/ et page certifications.html",
       "reason": "Une inscription, un compte Pix ou une newsletter ne prouve pas une certification obtenue."
     }

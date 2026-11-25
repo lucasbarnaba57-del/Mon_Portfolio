@@ -156,7 +156,7 @@ Version du 25 novembre 2026. Cette liste ne constitue pas une validation de conf
 
 ## P1 — CERT-01 — Attestations complémentaires à retrouver
 
-**À fournir :** Les modules CNIL 1, 3, 4, 5 et 6 sont retrouvés. Fournir le module 2 s’il a été validé, l’attestation de réussite SecNumAcadémie et le certificat ou badge Cisco « Introduction à la cybersécurité ». Les mails retrouvés prouvent seulement l’inscription aux deux dernières formations. Donner le nom de l’autre certification si tu t’en souviens.
+**À fournir :** Les modules CNIL 1, 3, 4, 5 et 6 sont retrouvés. Fournir le module 2 s’il a été validé, l’attestation de réussite SecNumAcadémie et le certificat ou badge Cisco « Introduction à la cybersécurité ». Les mails retrouvés prouvent seulement l’inscription aux deux dernières formations.
 
 **Intégration :** docs/certifications/ et page certifications.html
 

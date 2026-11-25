@@ -72,46 +72,29 @@ assert len(PdfReader(cvpath).pages)==1,"Le CV doit tenir sur une page."
 writer=PdfWriter()
 for c in DATA["certifications"]:writer.append(str(ROOT/c["path"]))
 with (ROOT/"docs/certifications/Atelier_RGPD_Attestations_Lucas_Barnaba.pdf").open("wb") as f:writer.write(f)
-wb=Workbook()
-ws=wb.active;ws.title="Tableau de travail"
-ws.append(["TABLEAU DE TRAVAIL — ne remplace pas le modèle officiel de la session"])
-ws.merge_cells(start_row=1,start_column=1,end_row=1,end_column=12)
-headers=["Réalisation","Période","Contexte","Périmètre"]+[c["id"]+" "+c["title"] for c in DATA["competences"]]+["Pièces","État documentaire"]
-ws.append(headers)
-for p in DATA["projects"]:
- links={m[0] for m in p["mapping"]}
- ws.append([p["title"],p["period"],p["type"],p["scope"]]+[
-  ("Support assisté disponible — à justifier" if p["id"]=="portfolio" else "Lien déclaré — à étayer") if c["id"] in links else "Non documenté"
-  for c in DATA["competences"]]+["projets/"+p["id"]+".html#preuves",p["status"]])
-for name,rows in [
- ("Compétences",[["Repère interne","Intitulé du bloc support","État","Preuves attendues"]]+[[c["id"],c["title"],c["state"],c["need"]] for c in DATA["competences"]]),
- ("Pièces attendues",[["ID","Priorité","Intitulé","À fournir","Intégration","Raison"]]+[[m["id"],m["priority"],m["label"],m["need"],m["destination"],m["reason"]] for m in DATA["missing"]]),
- ("Sources de veille",[["Publication","Organisme","Date de publication","Lien","État"]]+[[s["originalTitle"],s["publisher"],s["date"],s["url"],"Collecte assistée du 25/11/2026 ; lecture personnelle à dater"] for s in SOURCES])
-]:
- sheet=wb.create_sheet(name)
- for row in rows:sheet.append(row)
-for sheet in wb:
- headerrow=2 if sheet==ws else 1
- for row in sheet:
-  for cell in row:
-   cell.font=Font(name="Calibri",size=10,color="172C3A")
-   cell.alignment=Alignment(vertical="top",wrap_text=True)
-   if cell.row==headerrow:
-    cell.fill=PatternFill("solid",fgColor="102A3C")
-    cell.font=Font(name="Calibri",bold=True,color="FFFFFF",size=10)
-   elif cell.row>headerrow and cell.row%2==0:cell.fill=PatternFill("solid",fgColor="EDF2F7")
- for col in range(1,sheet.max_column+1):
-  sheet.column_dimensions[get_column_letter(col)].width=28 if sheet==ws else (18 if col<3 else 55)
- for row in range(headerrow+1,sheet.max_row+1):sheet.row_dimensions[row].height=110 if sheet==ws else 95
- sheet.row_dimensions[headerrow].height=75 if sheet==ws else 30
- sheet.freeze_panes="B"+str(headerrow+1)
- sheet.auto_filter.ref=f"A{headerrow}:{get_column_letter(sheet.max_column)}{sheet.max_row}"
- sheet.sheet_view.showGridLines=False
- sheet.page_setup.orientation="landscape";sheet.page_setup.paperSize=sheet.PAPERSIZE_A3
- sheet.page_setup.fitToWidth=1;sheet.page_setup.fitToHeight=0;sheet.sheet_properties.pageSetUpPr.fitToPage=True
- sheet.print_title_rows=f"1:{headerrow}"
- sheet.oddFooter.center.text="Tableau préparatoire — session et preuves à confirmer"
-ws["A1"].font=Font(name="Calibri",size=14,bold=True,color="1D4ED8")
-ws.row_dimensions[1].height=30
-wb.save(ROOT/"docs/tableau-synthese-travail.xlsx")
+wb = Workbook()
+ws = wb.active
+ws.title = "Mes compétences"
+# Le CSV et la page HTML sont générés ensemble par scripts/build.mjs.
+import csv
+with (ROOT / "docs/tableau-synthese-travail.csv").open(encoding="utf-8-sig", newline="") as source:
+    for row in csv.reader(source, delimiter=";"):
+        ws.append(row)
+for cell in ws[1]:
+    cell.font = Font(name="Calibri", bold=True, color="FFFFFF", size=12)
+    cell.fill = PatternFill("solid", fgColor="74352B")
+for row in list(ws.rows)[1:]:
+    for cell in row:
+        cell.font = Font(name="Calibri", size=11, color="282720")
+        cell.alignment = Alignment(vertical="center", wrap_text=True)
+    ws.row_dimensions[row[0].row].height = 50
+ws.column_dimensions["A"].width = 48
+ws.column_dimensions["B"].width = 80
+ws.row_dimensions[1].height = 24
+ws.freeze_panes = "A2"
+ws.sheet_view.showGridLines = False
+ws.page_setup.orientation = "landscape"
+ws.page_setup.fitToWidth = 1
+ws.sheet_properties.pageSetUpPr.fitToPage = True
+wb.save(ROOT / "docs/tableau-synthese-travail.xlsx")
 print(json.dumps({"cv_pages":len(PdfReader(cvpath).pages),"attestations_pages":len(PdfReader(ROOT/"docs/certifications/Atelier_RGPD_Attestations_Lucas_Barnaba.pdf").pages),"tableau_sheets":wb.sheetnames},ensure_ascii=True))

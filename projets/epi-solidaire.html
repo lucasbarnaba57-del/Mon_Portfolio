@@ -87,7 +87,7 @@
 <div class="project-intro">
 <div class="project-content">
 <h2>Le besoin à résoudre</h2>
-<p class="top-space">Le dossier remis par le candidat contient une application PHP organisée en point d’entrée, contrôleurs, modèle et vues, ainsi qu’un export SQL nommé getcet (1).sql. Les fonctions consultables concernent des commerçants, des épiciers, des acheteurs, des produits et des articles. Le contexte précis, le cahier des charges et le travail individuel restent à fournir.</p>
+<p class="top-space">Dans mon dossier Épi Solidaire, je retrouve une application PHP organisée en point d’entrée, contrôleurs, modèle et vues, ainsi qu’un export SQL nommé getcet (1).sql. Les fonctions consultables concernent des commerçants, des épiciers, des acheteurs, des produits et des articles. Le contexte précis, le cahier des charges et le travail individuel restent à fournir.</p>
 <h3>Problématique</h3>
 <p>Conserver une information cohérente sur les exemplaires de produits, leur état, la personne qui commande et le passage à la livraison, avec des droits adaptés aux différents rôles.</p>
 </div>
@@ -139,7 +139,7 @@
 <li>Le modèle Modele centralise l’accès PDO ; les vues affichent les données préparées par les contrôleurs.</li>
 <li>Les écrans fournis couvrent dons et ventes des commerçants, consultation et modification des stocks, péremption, achats, commandes et livraisons.</li>
 <li>Les méthodes getLesCommandes, ajouterCommande et livrerCommande sont présentes et analysées.</li>
-<li>Ces éléments décrivent le périmètre observé du dossier. Ils ne sont pas attribués intégralement au candidat en l’absence de répartition des tâches.</li>
+<li>Ces fonctions figurent dans le projet. Je dois encore préciser lesquelles j’ai développées.</li>
 </ul>
 </div>
 </section>
@@ -317,7 +317,7 @@
 </article>
 <article class="card">
 <h3>Bilan et progression</h3>
-<p>Ce projet fournit une base plus riche pour expliquer MVC, jointures, clés composées, contrôles d’accès et transactions. Pour en faire une réalisation défendable, identifier le travail personnel, corriger les anomalies réellement prises en charge et conserver les changements ainsi que les tests de non-régression. Aucun correctif ni incident historique du candidat n’est inventé.</p>
+<p>Ce projet fournit une base plus riche pour expliquer MVC, jointures, clés composées, contrôles d’accès et transactions. Pour en faire une réalisation défendable, identifier le travail personnel, corriger les anomalies réellement prises en charge et conserver les changements ainsi que les tests de non-régression.</p>
 </article>
 </div>
 </section>
@@ -354,7 +354,7 @@
 <h3>Éclairage SLAM</h3>
 <ul class="compact-list top-space">
 <li>Concevoir et développer une solution applicative : MVC, vues de stock et parcours de commande observables.</li>
-<li>Assurer la maintenance corrective ou évolutive : les défauts identifiés sont des pistes de maintenance, à distinguer des corrections que le candidat aura effectivement réalisées.</li>
+<li>Assurer la maintenance corrective ou évolutive : les défauts identifiés sont des pistes de maintenance, je dois encore les tester après correction.</li>
 <li>Gérer les données : schéma relationnel, clés composées, jointures et intégrité transactionnelle.</li>
 <li>Cybersécurité applicative : requêtes paramétrées partielles, gestion des rôles à corriger et limites de l’authentification.</li>
 </ul>
@@ -365,8 +365,8 @@
 <h2>Fichiers et captures</h2>
 </div>
 <aside class="note ">
-<strong>Sources examinées, attribution personnelle à confirmer.</strong>
-<p>Sources MVC et schéma de 19 tables examinés. Essais de rôles, session et commande téléphonique sur une base isolée. Les défauts restent ouverts dans l’application d’origine. Les essais de cette refonte ne sont pas présentés comme des tests réalisés pendant le stage ou par le candidat.</p>
+<strong>Les fichiers du projet</strong>
+<p>Sources MVC et schéma de 19 tables examinés. Essais de rôles, session et commande téléphonique sur une base isolée. Les défauts restent ouverts dans l’application d’origine.</p>
 </aside>
 <div class="actions top-space">
 <a class="button secondary" href="https://drive.google.com/drive/folders/1p4-ipDxY70iXbMrlA0WVLWaF6enPjuZV">Dossier de sources fourni</a>
@@ -432,7 +432,7 @@
 <details class="top-space">
 <summary>include/modele.php · lignes 294 à 305</summary>
 <div class="details-body">
-<p>Extrait du fichier transmis, examiné le 25 novembre 2026. Il ne démontre pas à lui seul la contribution du candidat.</p>
+<p>Extrait du projet.</p>
 <pre>
 <code>public function getLesCommandes() {
     $req = &quot;SELECT c.id, c.dateCommande, c.prixTotal, h.Nom, h.prenom, l.dateLivraison
@@ -453,7 +453,7 @@
 <details class="top-space">
 <summary>controleurs/c_epicier.php · lignes 133 à 141</summary>
 <div class="details-body">
-<p>Extrait du fichier transmis, examiné le 25 novembre 2026. Il ne démontre pas à lui seul la contribution du candidat.</p>
+<p>Extrait du projet.</p>
 <pre>
 <code>    case &#39;validerCommandeTel&#39;:
         $idAcheteur = $_REQUEST[&#39;idAcheteur&#39;];
@@ -471,7 +471,7 @@
 <details class="top-space">
 <summary>include/modele.php · lignes 308 à 314</summary>
 <div class="details-body">
-<p>Extrait du fichier transmis, examiné le 25 novembre 2026. Il ne démontre pas à lui seul la contribution du candidat.</p>
+<p>Extrait du projet.</p>
 <pre>
 <code>public function ajouterCommande($idAcheteur, $prixTotal) {
     $req = &quot;INSERT INTO commande (idAcheteur, dateCommande, prixTotal) VALUES (:idAcheteur, NOW(), :prixTotal)&quot;;
