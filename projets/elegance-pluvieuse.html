@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Boutique fictive de parapluies artisanaux haut de gamme : catalogue, comptes clients et panier relié à une base de données.">
+<meta name="color-scheme" content="light">
+<title>Élégance Pluvieuse | Lucas Barnaba · BTS SIO SLAM</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+<script src="../assets/app.js" defer>
+</script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="shell">
+<aside class="sidebar">
+<a class="brand" href="../index.html" aria-label="Lucas Barnaba, accueil">
+<span class="brand-mark" aria-hidden="true">LB.</span>
+<span class="brand-name">Lucas Barnaba<small>PORTFOLIO · BTS SIO SLAM</small>
+</span>
+</a>
+<nav aria-label="Navigation principale">
+<p class="nav-caption">Parcours de professionnalisation</p>
+<ul class="nav-list">
+<li>
+<a href="../index.html">
+<span class="nav-number" aria-hidden="true">01</span>Accueil</a>
+</li>
+<li>
+<a href="../qui-suis-je.html">
+<span class="nav-number" aria-hidden="true">02</span>Profil & CV</a>
+</li>
+<li>
+<a href="../parcours.html">
+<span class="nav-number" aria-hidden="true">03</span>Parcours</a>
+</li>
+<li>
+<a href="../projet.html">
+<span class="nav-number" aria-hidden="true">04</span>Projet professionnel</a>
+</li>
+<li>
+<a href="../certifications.html">
+<span class="nav-number" aria-hidden="true">05</span>Certifications</a>
+</li>
+<li>
+<a href="../realisations.html" aria-current="page">
+<span class="nav-number" aria-hidden="true">06</span>Réalisations</a>
+</li>
+<li>
+<a href="../competences.html">
+<span class="nav-number" aria-hidden="true">07</span>Compétences</a>
+</li>
+<li>
+<a href="../veille.html">
+<span class="nav-number" aria-hidden="true">08</span>Veille technologique</a>
+</li>
+<li>
+<a href="../veille-juridique.html">
+<span class="nav-number" aria-hidden="true">09</span>Veille juridique</a>
+</li>
+<li>
+<a href="../documents.html">
+<span class="nav-number" aria-hidden="true">10</span>Documents</a>
+</li>
+<li>
+<a href="../contact.html">
+<span class="nav-number" aria-hidden="true">11</span>Contact</a>
+</li>
+</ul>
+</nav>
+<div class="sidebar-bottom">
+<span class="online-dot" aria-hidden="true">
+</span>Étudiant · deuxième année<p>Développement web & applications<br>Évry-Courcouronnes · Île-de-France</p>
+<p>
+<a href="https://github.com/lucasbarnaba57-del/Mon_Portfolio">Consulter le dépôt GitHub</a>
+</p>
+</div>
+</aside>
+<div class="workspace">
+<div class="topbar">
+<strong>Solutions logicielles & applications métiers</strong>
+<span>Mis à jour le <time datetime="2026-11-25">25 novembre 2026</time>
+</span>
+</div>
+<main id="contenu" class="page" tabindex="-1">
+<p class="breadcrumb">
+<a href="../realisations.html">Réalisations</a> / Élégance Pluvieuse</p>
+<header class="hero">
+<div>
+<span class="eyebrow">Atelier · réalisation 02</span>
+<h1>Élégance Pluvieuse</h1>
+<p class="lead">Comprendre un parcours d’achat et ses données</p>
+<div class="pills">
+<span class="status">Sources et SQL examinés · parcours local testé</span>
+<span class="pill">PHP</span>
+<span class="pill">PDO</span>
+<span class="pill">MySQL</span>
+<span class="pill">HTML</span>
+<span class="pill">CSS</span>
+</div>
+</div>
+</header>
+<div class="project-intro">
+<div class="project-content">
+<h2>Le besoin à résoudre</h2>
+<p class="top-space">Le dossier fourni contient quatorze fichiers PHP, une feuille de style et un script SQL pour la boutique pédagogique Élégance Pluvieuse. Le code comprend catalogue, fiche produit, inscription, connexion, panier et back-office d’ajout/suppression de produits. La période déclarée reste 2025–2026 ; les fichiers remis ont une date de modification en août 2026, qui ne suffit pas à dater la réalisation.</p>
+<h3>Problématique</h3>
+<p>Relier la consultation d’un catalogue, l’identification d’un client et la manipulation d’un panier, tout en préservant l’intégrité des données et l’isolement entre utilisateurs.</p>
+</div>
+<aside class="card">
+<dl class="facts">
+<div>
+<dt>Période</dt>
+<dd>Année scolaire 2025–2026 · dates exactes à fournir</dd>
+</div>
+<div>
+<dt>Équipe</dt>
+<dd>Composition de l’équipe à préciser</dd>
+</div>
+<div>
+<dt>Périmètre personnel</dt>
+<dd>Fonctions observées · contribution individuelle à confirmer</dd>
+</div>
+<div>
+<dt>Environnement</dt>
+<dd>Local · WampServer annoncé</dd>
+</div>
+</dl>
+</aside>
+</div>
+<ul class="project-toc" aria-label="Sommaire de la fiche">
+<li>
+<a href="#contribution">Contribution</a>
+</li>
+<li>
+<a href="#technique">Analyse technique</a>
+</li>
+<li>
+<a href="#tests">Tests</a>
+</li>
+<li>
+<a href="#competences">Compétences</a>
+</li>
+<li>
+<a href="#preuves">Preuves</a>
+</li>
+</ul>
+<section class="section anchor-section" id="contribution">
+<div class="section-head">
+<h2>Fonctions observées et contribution à préciser</h2>
+</div>
+<div class="card">
+<ul class="compact-list">
+<li>Le catalogue et la fiche produit lisent les données de Produit avec PDO.</li>
+<li>inscription.php utilise password_hash ; connexion.php vérifie avec password_verify et enregistre l’identité et le rôle en session.</li>
+<li>ajouter.php crée une ligne de panier ou augmente sa quantité ; panierEPluv.php calcule le total à partir des prix lus en base.</li>
+<li>retirer.php et vider_panier.php ciblent le panier de l’utilisateur connecté.</li>
+<li>admin.php réserve l’écran d’administration à une session marquée administrateur et ajoute ou supprime des produits.</li>
+<li>La liste ci-dessus décrit le code fourni. La répartition entre travail personnel, binôme et support de cours doit encore être confirmée.</li>
+</ul>
+</div>
+<p class="hint">La présence d’une fonctionnalité dans les fichiers prouve le contenu du dossier. La contribution personnelle doit être identifiée par l’historique, la répartition ou des documents.</p>
+</section>
+<section class="section anchor-section" id="technique">
+<div class="section-head">
+<h2>Comprendre les choix techniques</h2>
+</div>
+<div class="table-wrap">
+<table class="wide-table">
+<caption>Analyse des sources fournies, examinées le 25 novembre 2026</caption>
+<thead>
+<tr>
+<th scope="col">Sujet</th>
+<th scope="col">Lecture technique</th>
+<th scope="col">État de vérification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Organisation</th>
+<td>Les traitements et vues sont répartis dans des fichiers PHP ; config.php centralise la connexion PDO.</td>
+<td>Le projet n’est pas présenté comme MVC : cette architecture n’est pas celle observée dans les fichiers.</td>
+</tr>
+<tr>
+<th scope="row">Données</th>
+<td>personne possède une clé idPersonne et un courriel UNIQUE. Produit porte prix et stock. panier a une clé composée (idPersonne, idProd) et deux clés étrangères.</td>
+<td>Le schéma a été extrait sans les données d’origine et utilisé dans une base de test isolée.</td>
+</tr>
+<tr>
+<th scope="row">Authentification</th>
+<td>Hachage avec password_hash et vérification avec password_verify ; id, prénom et estAdmin sont copiés en session.</td>
+<td>Inscription et connexion sur données fictives ont été exécutées. La régénération d’identifiant de session et la limitation des tentatives restent à mettre en place.</td>
+</tr>
+<tr>
+<th scope="row">Panier et total</th>
+<td>Les requêtes utilisent l’identité de session ; le prix du panier est lu dans Produit au moyen d’une jointure.</td>
+<td>Le parcours testé calcule 75 € pour trois unités à 25 €. Le stock de 2 n’empêche pas l’ajout d’une troisième unité.</td>
+</tr>
+<tr>
+<th scope="row">Administration et intégrité</th>
+<td>Le rôle est vérifié dans admin.php et les valeurs SQL sont paramétrées.</td>
+<td>La suppression utilise GET et deux DELETE sans transaction. Les validations métier, les erreurs et la protection CSRF restent insuffisantes.</td>
+</tr>
+<tr>
+<th scope="row">Affichage</th>
+<td>Plusieurs textes sont échappés avec htmlspecialchars.</td>
+<td>imageProduit est injectée sans échappement dans l’attribut src. Les champs d’administration doivent être validés et les sorties protégées selon leur contexte.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section anchor-section" id="securite">
+<div class="section-head">
+<h2>Qualité, sécurité et données</h2>
+</div>
+<div class="card">
+<p>Les protections observées sont le hachage des mots de passe, des requêtes préparées et des contrôles de session pour le panier et l’administration. Elles ne rendent pas l’application entièrement sécurisée. Les essais et la revue constatent des actions de modification par GET sans jeton CSRF, l’absence de contrôle du stock à l’ajout, l’absence de régénération de session lors de la connexion et des sorties d’attribut d’image non échappées. Le détail est consigné dans l’analyse des sources.</p>
+<p class="top-space subtle">Références de contrôle : <a href="https://www.php.net/manual/fr/function.password-hash.php">manuel PHP : hachage</a> · <a href="https://www.php.net/manual/fr/pdo.prepared-statements.php">manuel PHP : requêtes préparées</a>. Ces liens ne prouvent pas l’emploi de ces mécanismes dans le projet.</p>
+</div>
+</section>
+<section class="section anchor-section" id="essais-observes">
+<div class="section-head">
+<h2>Essais locaux du 25 novembre 2026</h2>
+</div>
+<aside class="note ">
+<strong>Conditions de vérification.</strong>
+<p>Essais effectués avec assistance IA sous PHP 8.2.12 et MariaDB 10.4.32, dans une base isolée contenant uniquement des données fictives. Seules les connexions à la base ont été adaptées. La logique métier des fichiers reçus n’a pas été corrigée. Une vérification partielle ne constitue pas une recette d’acceptation.</p>
+</aside>
+<div class="top-space">
+<div class="table-wrap">
+<table class="wide-table">
+<caption>Résultats observés sur la version transmise, sans masquer les échecs</caption>
+<thead>
+<tr>
+<th scope="col">ID</th>
+<th scope="col">Contrôle</th>
+<th scope="col">Observation</th>
+<th scope="col">Résultat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">M-01</th>
+<td>Inscription avec données fictives</td>
+<td>HTTP 200</td>
+<td>
+<span class="status available">Comportement attendu observé</span>
+</td>
+</tr>
+<tr>
+<th scope="row">M-02</th>
+<td>Connexion du compte créé</td>
+<td>Session puis page compte</td>
+<td>
+<span class="status available">Comportement attendu observé</span>
+</td>
+</tr>
+<tr>
+<th scope="row">M-03</th>
+<td>Accès administrateur avec compte client</td>
+<td>Accès refusé</td>
+<td>
+<span class="status available">Comportement attendu observé</span>
+</td>
+</tr>
+<tr>
+<th scope="row">M-04</th>
+<td>Ajout répété au panier</td>
+<td>Quantité 3 et total 75 € pour un prix catalogue de 25 €</td>
+<td>
+<span class="status available">Comportement attendu observé</span>
+</td>
+</tr>
+<tr>
+<th scope="row">M-05</th>
+<td>Ne pas dépasser le stock de 2</td>
+<td>Le panier accepte 3 unités pour un stock de 2</td>
+<td>
+<span class="status">Anomalie à corriger</span>
+</td>
+</tr>
+<tr>
+<th scope="row">M-06</th>
+<td>Action destructive protégée contre un GET sans jeton</td>
+<td>Retrait effectué via GET sans jeton</td>
+<td>
+<span class="status">Anomalie à corriger</span>
+</td>
+</tr>
+<tr>
+<th scope="row">M-07</th>
+<td>Accès panier après déconnexion</td>
+<td>Accès refusé après fermeture de session</td>
+<td>
+<span class="status available">Comportement attendu observé</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="hint">
+<a href="../docs/ANALYSE_SOURCES_PROJETS.md">Conditions, limites et priorités détaillées</a>.</p>
+</section>
+<section class="section anchor-section" id="tests">
+<div class="section-head">
+<h2>Plan de vérification à reproduire et compléter</h2>
+</div>
+<aside class="note ">
+<strong>Un plan complète les essais observés.</strong>
+<p>Les résultats de référence sont consignés ci-dessus avec leurs limites. Les scénarios suivants doivent être reproduits ou complétés, puis rejoués après correction. Noter pour chacun l’environnement, la date et le résultat réel.</p>
+</aside>
+<div class="top-space">
+<div class="table-wrap">
+<table class="wide-table">
+<caption>Scénarios de contrôle — données fictives et environnement local autorisé</caption>
+<thead>
+<tr>
+<th scope="col">ID</th>
+<th scope="col">Action</th>
+<th scope="col">Résultat attendu</th>
+<th scope="col">État</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">EP-T01</th>
+<td>Créer un compte avec des données valides, puis tenter de réutiliser le même identifiant.</td>
+<td>Le compte valide est créé ; le doublon est traité sans erreur technique affichée.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">EP-T02</th>
+<td>Se connecter avec un mot de passe incorrect, puis correct.</td>
+<td>L’accès est refusé puis autorisé ; aucun secret n’est exposé.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">EP-T03</th>
+<td>Examiner le stockage du mot de passe et le code de vérification.</td>
+<td>Aucun mot de passe en clair ni chiffrement réversible revendiqué ; le hachage est vérifié correctement.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">EP-T04</th>
+<td>Ajouter deux produits, modifier une quantité et vider le panier.</td>
+<td>Le contenu et le total respectent les règles métier annoncées.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">EP-T05</th>
+<td>Modifier le prix ou la quantité envoyés dans une requête.</td>
+<td>Le serveur refuse les valeurs invalides et utilise son prix de référence.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">EP-T06</th>
+<td>Tenter d’accéder au panier d’un autre utilisateur avec un compte de test autorisé.</td>
+<td>Aucune lecture ni modification du panier d’un autre compte.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">EP-T07</th>
+<td>Soumettre des caractères SQL et du HTML dans les champs de test.</td>
+<td>La requête reste paramétrée et les sorties sont affichées comme du texte.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">EP-T08</th>
+<td>Soumettre une modification de panier sans jeton CSRF valide.</td>
+<td>L’action est refusée si la protection requise est mise en œuvre.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">EP-T09</th>
+<td>Se déconnecter, puis réutiliser une URL privée.</td>
+<td>La session n’accorde plus d’accès aux ressources privées.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="section anchor-section" id="resultat">
+<div class="section-head">
+<h2>Résultat et recul</h2>
+</div>
+<div class="grid two">
+<article class="card">
+<h3>État du livrable</h3>
+<p>Les quatorze fichiers PHP passent la vérification de syntaxe PHP 8.2.12. Un compte fictif a pu être créé puis connecté, un panier calculé et l’accès à l’administration refusé à ce client. Le dépassement du stock et un retrait via GET sans jeton sont aussi reproduits : le prototype n’est pas considéré prêt pour une exploitation commerciale.</p>
+</article>
+<article class="card">
+<h3>Bilan et progression</h3>
+<p>L’intérêt pédagogique de ce projet est de suivre le trajet navigateur → PHP → PDO → base → rendu HTML. La revue permet de distinguer les protections réellement présentes de celles qui restent à ajouter. Le bilan personnel, la contribution exacte et les décisions historiques ne peuvent pas être déduits des fichiers seuls.</p>
+</article>
+</div>
+</section>
+<section class="section anchor-section" id="competences">
+<div class="section-head">
+<h2>Liens avec les compétences du BTS</h2>
+</div>
+<div class="table-wrap">
+<table class="">
+<caption>Rattachements argumentés, sans validation automatique</caption>
+<thead>
+<tr>
+<th scope="col">Repère de lecture</th>
+<th scope="col">Pourquoi ce lien ?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<a href="../competences.html#B1-3">B1.3 · Développer la présence en ligne de l’organisation</a>
+</th>
+<td>Le catalogue et les fiches produits portent la présence en ligne de l’organisation fictive.</td>
+</tr>
+<tr>
+<th scope="row">
+<a href="../competences.html#B1-4">B1.4 · Travailler en mode projet</a>
+</th>
+<td>Un cahier des charges et une démarche de développement sont déclarés ; planning et répartition à fournir.</td>
+</tr>
+<tr>
+<th scope="row">
+<a href="../competences.html#B1-5">B1.5 · Mettre à disposition des utilisateurs un service informatique</a>
+</th>
+<td>La mise à disposition reste à démontrer avec installation, recette et documentation.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="card top-space">
+<h3>Éclairage SLAM</h3>
+<ul class="compact-list top-space">
+<li>Concevoir et développer une solution applicative : catalogue, authentification, panier et administration observables dans les sources.</li>
+<li>Gérer les données : modèle relationnel, clé composée du panier, contraintes et jointures examinables.</li>
+<li>Assurer la cybersécurité d’une solution applicative et de son développement : mécanismes présents et défauts documentés ; aucune sécurisation complète revendiquée.</li>
+</ul>
+<p class="top-space subtle">Ces rapprochements avec le développement et la cybersécurité complètent la lecture du bloc support. Ils ne remplacent pas les fiches ni les preuves attendues pour les épreuves professionnelles.</p>
+</div>
+</section>
+<section class="section anchor-section" id="preuves">
+<div class="section-head">
+<h2>Productions et éléments à joindre</h2>
+</div>
+<aside class="note ">
+<strong>Sources examinées, attribution personnelle à confirmer.</strong>
+<p>Quatorze fichiers PHP, CSS et SQL examinés ; inscription, connexion, panier et refus d’accès administrateur testés sur données fictives. Les essais de cette refonte ne sont pas présentés comme des tests réalisés pendant le stage ou par le candidat.</p>
+</aside>
+<div class="actions top-space">
+<a class="button secondary" href="https://drive.google.com/drive/folders/1NK-4nAsi1_1sL2JVdipvE094m9Zag0nu">Dossier de sources fourni</a>
+<a class="button secondary" href="../docs/preuves/elegance-pluvieuse-schema.sql">Structure SQL sans données</a>
+</div>
+<p class="hint">Vérifier les droits d’accès du jury avant l’évaluation. Les extraits et captures ci-dessous sont consultables dans le portfolio sans accès au dossier.</p>
+<div class="evidence-gallery">
+<figure>
+<a href="../assets/projets/marchand-panier-local.png">
+<img src="../assets/projets/marchand-panier-local.png" alt="Écran du panier Élégance Pluvieuse exécuté en local avec un compte et un produit fictifs" loading="lazy">
+</a>
+<figcaption>Capture de l’application fournie, le 25 novembre 2026. Données exclusivement fictives ; configuration de connexion adaptée à une base de test isolée.</figcaption>
+</figure>
+</div>
+<h3 class="top-space">Modèle de données observé</h3>
+<div class="top-space">
+<div class="table-wrap">
+<table class="">
+<caption>Structure observée dans le SQL fourni ; les noms et clés ne sont pas inventés</caption>
+<thead>
+<tr>
+<th scope="col">Table</th>
+<th scope="col">Clé primaire</th>
+<th scope="col">Rôle / observation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">personne</th>
+<td>idPersonne</td>
+<td>Courriel UNIQUE ; motDePasse ; indicateur estAdmin.</td>
+</tr>
+<tr>
+<th scope="row">Produit</th>
+<td>idProd</td>
+<td>Désignation, description, prixUnit, qteStock et imageProduit.</td>
+</tr>
+<tr>
+<th scope="row">panier</th>
+<td>(idPersonne, idProd)</td>
+<td>Clé composée ; clés étrangères vers personne et Produit ; quantité.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3 class="top-space">Extraits à savoir expliquer</h3>
+<details class="top-space">
+<summary>inscription.php · lignes 10 à 21</summary>
+<div class="details-body">
+<p>Extrait du fichier transmis, examiné le 25 novembre 2026. Il ne démontre pas à lui seul la contribution du candidat.</p>
+<pre>
+<code>$mdp = password_hash($_POST[&#39;mdp&#39;], PASSWORD_DEFAULT);
+
+// On vérifie que l&#39;email n&#39;est pas déjà utilisé (requête préparée)
+$verif = $bdd-&gt;prepare(&quot;SELECT idPersonne FROM personne WHERE mailPersonne = ?&quot;);
+$verif-&gt;execute([$email]);
+
+if ($verif-&gt;fetch()) {
+    die(&quot;Erreur : Cet email est déjà utilisé. &lt;a href=&#39;contactEpluv.php&#39;&gt;Retour&lt;/a&gt;&quot;);
+}
+
+// On insère le nouveau client dans la table personne
+$requete = $bdd-&gt;prepare(&quot;INSERT INTO personne (nomPersonne, prenomPersonne, mailPersonne, motDePasse)</code>
+</pre>
+<a href="https://drive.google.com/file/d/1KCQqHsyJNEkBmSa3zZ0_pUBsXv7WsRnq/view?usp=drivesdk">Retrouver le fichier fourni</a>
+</div>
+</details>
+<details class="top-space">
+<summary>panierEPluv.php · lignes 13 à 19</summary>
+<div class="details-body">
+<p>Extrait du fichier transmis, examiné le 25 novembre 2026. Il ne démontre pas à lui seul la contribution du candidat.</p>
+<pre>
+<code>$requete = $bdd-&gt;prepare(&quot;SELECT Produit.idProd, nomProd, prixUnit, quantite
+                          FROM panier
+                          JOIN Produit ON panier.idProd = Produit.idProd
+                          WHERE idPersonne = ?&quot;);
+$requete-&gt;execute([$idUser]);
+$lignes = $requete-&gt;fetchAll();
+</code>
+</pre>
+<a href="https://drive.google.com/file/d/1TyKotejInOnWA-lmNkoJWxc8NE0k5hxQ/view?usp=drivesdk">Retrouver le fichier fourni</a>
+</div>
+</details>
+<details class="top-space">
+<summary>ajouter.php · lignes 15 à 24</summary>
+<div class="details-body">
+<p>Extrait du fichier transmis, examiné le 25 novembre 2026. Il ne démontre pas à lui seul la contribution du candidat.</p>
+<pre>
+<code>    if ($ligne) {
+        // Déjà présent : on augmente juste la quantité
+        $requete = $bdd-&gt;prepare(&quot;UPDATE panier SET quantite = quantite + 1 WHERE idPersonne = ? AND idProd = ?&quot;);
+        $requete-&gt;execute([$idUser, $idProd]);
+    } else {
+        // Sinon on crée la ligne
+        $requete = $bdd-&gt;prepare(&quot;INSERT INTO panier (idPersonne, idProd, quantite) VALUES (?, ?, 1)&quot;);
+        $requete-&gt;execute([$idUser, $idProd]);
+    }
+</code>
+</pre>
+<a href="https://drive.google.com/file/d/1wrTEG4yTHoZKn0xrFz6yqw_4_KXiqHFH/view?usp=drivesdk">Retrouver le fichier fourni</a>
+</div>
+</details>
+<div class="card top-space">
+<h3>Demandes précises pour compléter cette fiche</h3>
+<ul class="compact-list top-space">
+<li>
+<a href="../documents.html#EP-01">
+<span class="evidence-id">EP-01</span>Site marchand : version et accès aux sources</a>
+</li>
+<li>
+<a href="../documents.html#EP-02">
+<span class="evidence-id">EP-02</span>Site marchand : auteur et conception</a>
+</li>
+<li>
+<a href="../documents.html#EP-03">
+<span class="evidence-id">EP-03</span>Site marchand : sécurité et recette</a>
+</li>
+<li>
+<a href="../documents.html#EP-04">
+<span class="evidence-id">EP-04</span>Site marchand : incident ou évolution réelle</a>
+</li>
+</ul>
+</div>
+</section>
+<div class="actions section">
+<a class="button secondary" href="../realisations.html">Revenir aux réalisations</a>
+<button class="print-action" type="button" data-print hidden>Imprimer cette fiche</button>
+</div>
+</main>
+<footer class="footer">
+<span>© 2026 Lucas Barnaba · Portfolio de formation</span>
+<div class="footer-links">
+<a href="../contact.html">Contact</a>
+<a href="../mentions-legales.html">Informations de publication</a>
+<a href="../documents.html">Documents & preuves</a>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>

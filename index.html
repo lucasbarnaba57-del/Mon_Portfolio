@@ -1,66 +1,223 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil | Portfolio Lucas Barnaba</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Portfolio de Lucas Barnaba, étudiant en deuxième année de BTS SIO SLAM : parcours, projets, compétences et veille.">
+<meta name="color-scheme" content="light">
+<title>Accueil | Lucas Barnaba · BTS SIO SLAM</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="assets/app.js" defer>
+</script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html" class="actif">Accueil</a></li>
-            <li><a href="qui-suis-je.html">Qui suis-je ?</a></li>
-            <li><a href="parcours.html">Mon parcours</a></li>
-            <li><a href="projet.html">Projet de formation</a></li>
-            <li><a href="realisations.html">Mes réalisations</a></li>
-            <li><a href="veille.html">Veille</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <div class="contenu">
-            <h1>Lucas Barnaba<br><span>Étudiant en BTS SIO — option SLAM</span></h1>
-            <p>Développement d'applications et de sites web. Bienvenue sur mon portfolio : mon parcours, mes projets et ma veille technologique.</p>
-        </div>
-    </header>
-
-    <main>
-        <section>
-            <h2>Bienvenue</h2>
-            <p>Ce portfolio présente mon profil d'étudiant en 2<sup>e</sup> année de BTS SIO (Services Informatiques aux Organisations), option SLAM (Solutions Logicielles et Applications Métiers).</p>
-            <p>Vous y trouverez mon parcours scolaire, mes compétences techniques, les projets que j'ai réalisés en cours et en stage, ainsi que ma veille technologique et juridique.</p>
-        </section>
-
-        <section>
-            <h2>En bref</h2>
-            <div class="grille">
-                <div class="carte">
-                    <h3>Formation</h3>
-                    <p>BTS SIO SLAM — 2<sup>e</sup> année<br>Bac STMG spécialité SIG (2025)</p>
-                </div>
-                <div class="carte">
-                    <h3>Technologies</h3>
-                    <div class="badges">
-                        <span class="badge">HTML</span>
-                        <span class="badge">CSS</span>
-                        <span class="badge">JavaScript</span>
-                        <span class="badge bleu">PHP</span>
-                        <span class="badge bleu">SQL</span>
-                        <span class="badge bleu">Java</span>
-                    </div>
-                </div>
-                <div class="carte">
-                    <h3>Objectif</h3>
-                    <p>Poursuite d'études en alternance, orientée vers les métiers de l'intelligence artificielle.</p>
-                </div>
-            </div>
-            <a href="realisations.html" class="bouton">Voir mes réalisations</a>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 Lucas Barnaba — Portfolio BTS SIO SLAM</p>
-    </footer>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="shell">
+<aside class="sidebar">
+<a class="brand" href="index.html" aria-label="Lucas Barnaba, accueil">
+<span class="brand-mark" aria-hidden="true">LB.</span>
+<span class="brand-name">Lucas Barnaba<small>PORTFOLIO · BTS SIO SLAM</small>
+</span>
+</a>
+<nav aria-label="Navigation principale">
+<p class="nav-caption">Parcours de professionnalisation</p>
+<ul class="nav-list">
+<li>
+<a href="index.html" aria-current="page">
+<span class="nav-number" aria-hidden="true">01</span>Accueil</a>
+</li>
+<li>
+<a href="qui-suis-je.html">
+<span class="nav-number" aria-hidden="true">02</span>Profil & CV</a>
+</li>
+<li>
+<a href="parcours.html">
+<span class="nav-number" aria-hidden="true">03</span>Parcours</a>
+</li>
+<li>
+<a href="projet.html">
+<span class="nav-number" aria-hidden="true">04</span>Projet professionnel</a>
+</li>
+<li>
+<a href="certifications.html">
+<span class="nav-number" aria-hidden="true">05</span>Certifications</a>
+</li>
+<li>
+<a href="realisations.html">
+<span class="nav-number" aria-hidden="true">06</span>Réalisations</a>
+</li>
+<li>
+<a href="competences.html">
+<span class="nav-number" aria-hidden="true">07</span>Compétences</a>
+</li>
+<li>
+<a href="veille.html">
+<span class="nav-number" aria-hidden="true">08</span>Veille technologique</a>
+</li>
+<li>
+<a href="veille-juridique.html">
+<span class="nav-number" aria-hidden="true">09</span>Veille juridique</a>
+</li>
+<li>
+<a href="documents.html">
+<span class="nav-number" aria-hidden="true">10</span>Documents</a>
+</li>
+<li>
+<a href="contact.html">
+<span class="nav-number" aria-hidden="true">11</span>Contact</a>
+</li>
+</ul>
+</nav>
+<div class="sidebar-bottom">
+<span class="online-dot" aria-hidden="true">
+</span>Étudiant · deuxième année<p>Développement web & applications<br>Évry-Courcouronnes · Île-de-France</p>
+<p>
+<a href="https://github.com/lucasbarnaba57-del/Mon_Portfolio">Consulter le dépôt GitHub</a>
+</p>
+</div>
+</aside>
+<div class="workspace">
+<div class="topbar">
+<strong>Solutions logicielles & applications métiers</strong>
+<span>Mis à jour le <time datetime="2026-11-25">25 novembre 2026</time>
+</span>
+</div>
+<main id="contenu" class="page" tabindex="-1">
+<header class="hero hero-with-portrait">
+<div>
+<span class="eyebrow">Développement · conception · progression</span>
+<h1>Lucas Barnaba.<br>Développer, comprendre,<br>puis démontrer.</h1>
+<p class="lead">Étudiant en deuxième année de BTS SIO, option SLAM. Ce portfolio présente mon parcours, mes réalisations de formation et ma progression vers le développement d’applications.</p>
+<p class="hero-tag">Du besoin utilisateur au comportement de l’application.</p>
+<div class="actions">
+<a class="button" href="realisations.html">Explorer les réalisations <span aria-hidden="true">↗</span>
+</a>
+<a class="button secondary" href="competences.html">Lire les compétences</a>
+</div>
+</div>
+<figure class="portrait">
+<img src="assets/portrait-lucas.png" width="363" height="439" alt="Portrait de Lucas Barnaba, extrait de son CV">
+<figcaption>Lucas Barnaba · BTS SIO SLAM</figcaption>
+</figure>
+</header>
+<div class="stats" aria-label="Contenu du portfolio">
+<div class="stat">
+<strong>04</strong>
+<span>réalisations de formation décrites</span>
+</div>
+<div class="stat">
+<strong>06</strong>
+<span>domaines du bloc support cartographiés</span>
+</div>
+<div class="stat">
+<strong>07</strong>
+<span>sources primaires pour la veille</span>
+</div>
+</div>
+<aside class="note ">
+<strong>Une lecture transparente des réalisations.</strong>
+<p>Les fiches distinguent les travaux décrits, les éléments consultables et les preuves encore attendues. L’état documentaire est centralisé dans <a href="documents.html">Documents & preuves</a>. Les compétences associées ne sont pas présentées comme validées.</p>
+</aside>
+<section class="section anchor-section" id="selection">
+<div class="section-head">
+<h2>Des réalisations à examiner</h2>
+<a class="text-link" href="realisations.html">Toutes les fiches</a>
+</div>
+<div class="grid two">
+<article class="card project-card" data-category="Stage">
+<div class="project-visual auto-ecole" aria-hidden="true">
+<span class="project-no">01</span>
+<span class="project-type">Stage</span>
+</div>
+<div class="project-card-body">
+<span class="card-label">18 mai – 27 juin 2026</span>
+<h3>Auto École Excellence</h3>
+<p>Conception de la page de présentation des formations et des tarifs d’une auto-école à Ris-Orangis, dans le cadre du stage de première année.</p>
+<span class="status available">Sources et essais consultables</span>
+<div class="pills">
+<span class="pill">HTML</span>
+<span class="pill">CSS</span>
+<span class="pill">JavaScript</span>
+</div>
+<a class="card-link" href="projets/auto-ecole.html">Lire la fiche Auto École Excellence <span aria-hidden="true">↗</span>
+</a>
+</div>
+</article>
+<article class="card project-card" data-category="Atelier">
+<div class="project-visual elegance-pluvieuse" aria-hidden="true">
+<span class="project-no">02</span>
+<span class="project-type">Atelier</span>
+</div>
+<div class="project-card-body">
+<span class="card-label">Année scolaire 2025–2026 · dates exactes à fournir</span>
+<h3>Élégance Pluvieuse</h3>
+<p>Boutique fictive de parapluies artisanaux haut de gamme : catalogue, comptes clients et panier relié à une base de données.</p>
+<span class="status available">Sources et essais consultables</span>
+<div class="pills">
+<span class="pill">PHP</span>
+<span class="pill">PDO</span>
+<span class="pill">MySQL</span>
+<span class="pill">HTML</span>
+<span class="pill">CSS</span>
+</div>
+<a class="card-link" href="projets/elegance-pluvieuse.html">Lire la fiche Élégance Pluvieuse <span aria-hidden="true">↗</span>
+</a>
+</div>
+</article>
+</div>
+</section>
+<section class="section anchor-section" id="approche">
+<div class="section-head">
+<h2>Un parcours, trois questions</h2>
+</div>
+<div class="grid three">
+<article class="card">
+<span class="step-no">01 · BESOIN</span>
+<h3>À quoi sert le projet ?</h3>
+<p>Identifier l’organisation, les utilisateurs et les règles métier avant de présenter une technologie.</p>
+</article>
+<article class="card">
+<span class="step-no">02 · CONTRIBUTION</span>
+<h3>Qu’ai-je réalisé ?</h3>
+<p>Délimiter le travail personnel, expliquer les choix et retrouver les fichiers concernés.</p>
+</article>
+<article class="card">
+<span class="step-no">03 · VÉRIFICATION</span>
+<h3>Comment le démontrer ?</h3>
+<p>Relier une réalisation à des sources, à des résultats de tests et à un bilan argumenté.</p>
+</article>
+</div>
+</section>
+<section class="section anchor-section" id="orientation">
+<div class="section-head">
+<h2>Construire la suite</h2>
+</div>
+<div class="grid two">
+<div class="home-feature">
+<span class="eyebrow">Projet professionnel</span>
+<h3>Consolider le développement, explorer l’IA.</h3>
+<p>Mon objectif est de poursuivre mes études, si possible en alternance, pour développer des applications fiables avant d’envisager une spécialisation liée à l’intelligence artificielle.</p>
+<a class="card-link" href="projet.html">Découvrir mon projet</a>
+</div>
+<article class="card">
+<span class="card-label">Veille technologique & données personnelles</span>
+<h3>Que change l’IA pour un développeur ?</h3>
+<p>Qualité du code, limites des études de productivité et protection des données : une base sourcée à relire, discuter et prolonger personnellement.</p>
+<a class="card-link" href="veille.html">Parcourir la veille</a>
+</article>
+</div>
+</section>
+</main>
+<footer class="footer">
+<span>© 2026 Lucas Barnaba · Portfolio de formation</span>
+<div class="footer-links">
+<a href="contact.html">Contact</a>
+<a href="mentions-legales.html">Informations de publication</a>
+<a href="documents.html">Documents & preuves</a>
+</div>
+</footer>
+</div>
+</div>
 </body>
 </html>

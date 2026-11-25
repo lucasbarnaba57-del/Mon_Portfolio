@@ -1,58 +1,211 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Qui suis-je ? | Portfolio Lucas Barnaba</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Présentation de Lucas Barnaba, CV de développement, compétences déclarées et contacts professionnels.">
+<meta name="color-scheme" content="light">
+<title>Profil et CV | Lucas Barnaba · BTS SIO SLAM</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="assets/app.js" defer>
+</script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="qui-suis-je.html" class="actif">Qui suis-je ?</a></li>
-            <li><a href="parcours.html">Mon parcours</a></li>
-            <li><a href="projet.html">Projet de formation</a></li>
-            <li><a href="realisations.html">Mes réalisations</a></li>
-            <li><a href="veille.html">Veille</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <div class="contenu">
-            <h1>Qui suis-je ?</h1>
-            <p>Présentation, CV et activités extra-scolaires.</p>
-        </div>
-    </header>
-
-    <main>
-        <section>
-            <h2>Présentation</h2>
-            <p>Je m'appelle <strong>Lucas Barnaba</strong>, je suis né à Metz (57). Je suis actuellement étudiant en 2<sup>e</sup> année de BTS SIO, option SLAM, en région parisienne.</p>
-            <p>Polyvalent, rigoureux et motivé, j'ai découvert le développement pendant ma formation et je m'y investis pleinement : sites web (HTML, CSS, JavaScript, PHP), bases de données SQL et développement d'applications en Java. Mon objectif est de m'orienter vers les métiers de l'intelligence artificielle.</p>
-        </section>
-
-        <section>
-            <h2>Mon CV</h2>
-            <div class="carte">
-                <p>Mon CV est consultable en ligne sur la page <a href="parcours.html">Mon parcours</a> et téléchargeable au format PDF :</p>
-                <!-- Dépose ton CV (version SANS adresse ni téléphone) dans le dossier cv/ -->
-                <a href="file:///P:/Mon%20portfoilio/portfolio-lucas/portfolio/cv/Cv%20lucas%20Barnaba%20.pdf" class="bouton" download>Télécharger mon CV (PDF)</a>
-            </div>
-        </section>
-
-        <section>
-            <h2>Mes activités extra-scolaires</h2>
-            <ul class="liste">
-                <li><strong>Expérience professionnelle</strong> : je travaille en parallèle de mes études (logistique, vente, service), ce qui m'a appris la rigueur, le travail en équipe et le sens du service client.</li>
-                <li><strong>Musculation</strong> : entraînement régulier, discipline et constance.</li>
-                <li><strong>Course à pied</strong> : je cours des distances de 10 km et plus, un bon moyen de me fixer des objectifs et de les dépasser.</li>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 Lucas Barnaba — Portfolio BTS SIO SLAM</p>
-    </footer>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="shell">
+<aside class="sidebar">
+<a class="brand" href="index.html" aria-label="Lucas Barnaba, accueil">
+<span class="brand-mark" aria-hidden="true">LB.</span>
+<span class="brand-name">Lucas Barnaba<small>PORTFOLIO · BTS SIO SLAM</small>
+</span>
+</a>
+<nav aria-label="Navigation principale">
+<p class="nav-caption">Parcours de professionnalisation</p>
+<ul class="nav-list">
+<li>
+<a href="index.html">
+<span class="nav-number" aria-hidden="true">01</span>Accueil</a>
+</li>
+<li>
+<a href="qui-suis-je.html" aria-current="page">
+<span class="nav-number" aria-hidden="true">02</span>Profil & CV</a>
+</li>
+<li>
+<a href="parcours.html">
+<span class="nav-number" aria-hidden="true">03</span>Parcours</a>
+</li>
+<li>
+<a href="projet.html">
+<span class="nav-number" aria-hidden="true">04</span>Projet professionnel</a>
+</li>
+<li>
+<a href="certifications.html">
+<span class="nav-number" aria-hidden="true">05</span>Certifications</a>
+</li>
+<li>
+<a href="realisations.html">
+<span class="nav-number" aria-hidden="true">06</span>Réalisations</a>
+</li>
+<li>
+<a href="competences.html">
+<span class="nav-number" aria-hidden="true">07</span>Compétences</a>
+</li>
+<li>
+<a href="veille.html">
+<span class="nav-number" aria-hidden="true">08</span>Veille technologique</a>
+</li>
+<li>
+<a href="veille-juridique.html">
+<span class="nav-number" aria-hidden="true">09</span>Veille juridique</a>
+</li>
+<li>
+<a href="documents.html">
+<span class="nav-number" aria-hidden="true">10</span>Documents</a>
+</li>
+<li>
+<a href="contact.html">
+<span class="nav-number" aria-hidden="true">11</span>Contact</a>
+</li>
+</ul>
+</nav>
+<div class="sidebar-bottom">
+<span class="online-dot" aria-hidden="true">
+</span>Étudiant · deuxième année<p>Développement web & applications<br>Évry-Courcouronnes · Île-de-France</p>
+<p>
+<a href="https://github.com/lucasbarnaba57-del/Mon_Portfolio">Consulter le dépôt GitHub</a>
+</p>
+</div>
+</aside>
+<div class="workspace">
+<div class="topbar">
+<strong>Solutions logicielles & applications métiers</strong>
+<span>Mis à jour le <time datetime="2026-11-25">25 novembre 2026</time>
+</span>
+</div>
+<main id="contenu" class="page" tabindex="-1">
+<header class="hero hero-with-portrait">
+<div>
+<span class="eyebrow">Profil & identité professionnelle</span>
+<h1>Un profil en construction,<br>un travail à rendre explicable.</h1>
+<p class="lead">Je m’appelle Lucas Barnaba. Je suis né à Metz et je suis étudiant en deuxième année de BTS SIO SLAM en région parisienne. Je m’intéresse au développement web, aux bases de données et aux applications métier.</p>
+</div>
+<figure class="portrait">
+<img src="assets/portrait-lucas.png" width="363" height="439" alt="Portrait de Lucas Barnaba, extrait de son CV">
+<figcaption>Lucas Barnaba · BTS SIO SLAM</figcaption>
+</figure>
+</header>
+<section class="section anchor-section" id="presentation">
+<div class="section-head">
+<h2>Ce que je souhaite développer</h2>
+</div>
+<div class="grid two">
+<article class="card">
+<h3>Comprendre toute la chaîne</h3>
+<p>Mon parcours de formation aborde l’interface HTML/CSS, les interactions JavaScript, le traitement serveur en PHP, les données SQL et la programmation Java. Les fiches précisent ce qui est décrit et ce qui reste à démontrer.</p>
+<p>Je souhaite progresser dans la conception, les tests et l’explication de mes choix techniques, pour aller au-delà d’un résultat seulement visuel.</p>
+</article>
+<article class="card">
+<h3>Relier technique et service</h3>
+<p>Mes expériences en logistique, en restauration et en vente m’ont confronté à des procédures, au travail en équipe et à la relation avec les clients.</p>
+<p>Ces expériences complètent mon parcours ; elles ne sont pas présentées comme des réalisations informatiques ni comme des preuves des compétences techniques du BTS.</p>
+</article>
+</div>
+</section>
+<section class="section anchor-section" id="cv">
+<div class="section-head">
+<h2>Un CV orienté développement</h2>
+</div>
+<div class="card">
+<span class="card-label">PDF · version publique · une page</span>
+<h3>Lucas Barnaba — étudiant développeur</h3>
+<p>Une version recentrée sur le BTS, le stage et les projets, rédigée à partir des informations du portfolio et du CV existant. Les dates et les informations personnelles doivent être relues avant une candidature.</p>
+<div class="actions top-space">
+<a class="button" href="cv/CV_Lucas_Barnaba_Developpement.pdf" download>Télécharger le CV PDF</a>
+<a class="button secondary" href="cv/CV_Lucas_Barnaba_Developpement.pdf">Consulter le CV</a>
+<a class="text-link" href="cv.html">Lire le CV en version web</a>
+</div>
+</div>
+</section>
+<section class="section anchor-section" id="techniques">
+<div class="section-head">
+<h2>Des technologies reliées à des réalisations</h2>
+</div>
+<div class="table-wrap">
+<table class="">
+<caption>Inventaire des pratiques déclarées, sans pourcentage de maîtrise</caption>
+<thead>
+<tr>
+<th scope="col">Domaine</th>
+<th scope="col">Usage décrit</th>
+<th scope="col">Où examiner les éléments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">HTML & CSS</th>
+<td>Structuration de pages, charte graphique et adaptation aux écrans.</td>
+<td>
+<a href="projets/auto-ecole.html">Page Formules</a> · <a href="projets/portfolio.html">Portfolio</a>
+</td>
+</tr>
+<tr>
+<th scope="row">JavaScript</th>
+<td>Interaction par onglets annoncée dans le stage ; filtres disponibles dans le portfolio.</td>
+<td>
+<a href="projets/auto-ecole.html">Projet de stage</a> · <a href="assets/app.js">Script du portfolio</a>
+</td>
+</tr>
+<tr>
+<th scope="row">PHP & MySQL</th>
+<td>Comptes, sessions, catalogue et panier observés dans les sources ; contribution individuelle à confirmer.</td>
+<td>
+<a href="projets/elegance-pluvieuse.html">Élégance Pluvieuse</a>
+</td>
+</tr>
+<tr>
+<th scope="row">Java</th>
+<td>Technologie étudiée ; aucune réalisation Java documentée dans le dépôt initial.</td>
+<td>
+<a href="documents.html#SLAM-01">Projet réel à documenter</a>
+</td>
+</tr>
+<tr>
+<th scope="row">GitHub, VS Code, WampServer, phpMyAdmin</th>
+<td>Outils mentionnés dans le parcours ; environnement et versions à préciser par projet.</td>
+<td>
+<a href="competences.html">Matrice de compétences</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section anchor-section" id="activites">
+<div class="section-head">
+<h2>En dehors des projets</h2>
+</div>
+<div class="grid two">
+<article class="card">
+<h3>Musculation</h3>
+<p>Une pratique régulière qui demande discipline et constance.</p>
+</article>
+<article class="card">
+<h3>Course à pied</h3>
+<p>Des sorties de 10 km et plus, avec des objectifs de progression personnels.</p>
+</article>
+</div>
+</section>
+</main>
+<footer class="footer">
+<span>© 2026 Lucas Barnaba · Portfolio de formation</span>
+<div class="footer-links">
+<a href="contact.html">Contact</a>
+<a href="mentions-legales.html">Informations de publication</a>
+<a href="documents.html">Documents & preuves</a>
+</div>
+</footer>
+</div>
+</div>
 </body>
 </html>
-

@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Application pédagogique d’épicerie solidaire : espaces par rôle, stocks, produits périmés, commandes téléphoniques et livraisons.">
+<meta name="color-scheme" content="light">
+<title>Épi Solidaire | Lucas Barnaba · BTS SIO SLAM</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+<script src="../assets/app.js" defer>
+</script>
+</head>
+<body>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="shell">
+<aside class="sidebar">
+<a class="brand" href="../index.html" aria-label="Lucas Barnaba, accueil">
+<span class="brand-mark" aria-hidden="true">LB.</span>
+<span class="brand-name">Lucas Barnaba<small>PORTFOLIO · BTS SIO SLAM</small>
+</span>
+</a>
+<nav aria-label="Navigation principale">
+<p class="nav-caption">Parcours de professionnalisation</p>
+<ul class="nav-list">
+<li>
+<a href="../index.html">
+<span class="nav-number" aria-hidden="true">01</span>Accueil</a>
+</li>
+<li>
+<a href="../qui-suis-je.html">
+<span class="nav-number" aria-hidden="true">02</span>Profil & CV</a>
+</li>
+<li>
+<a href="../parcours.html">
+<span class="nav-number" aria-hidden="true">03</span>Parcours</a>
+</li>
+<li>
+<a href="../projet.html">
+<span class="nav-number" aria-hidden="true">04</span>Projet professionnel</a>
+</li>
+<li>
+<a href="../certifications.html">
+<span class="nav-number" aria-hidden="true">05</span>Certifications</a>
+</li>
+<li>
+<a href="../realisations.html" aria-current="page">
+<span class="nav-number" aria-hidden="true">06</span>Réalisations</a>
+</li>
+<li>
+<a href="../competences.html">
+<span class="nav-number" aria-hidden="true">07</span>Compétences</a>
+</li>
+<li>
+<a href="../veille.html">
+<span class="nav-number" aria-hidden="true">08</span>Veille technologique</a>
+</li>
+<li>
+<a href="../veille-juridique.html">
+<span class="nav-number" aria-hidden="true">09</span>Veille juridique</a>
+</li>
+<li>
+<a href="../documents.html">
+<span class="nav-number" aria-hidden="true">10</span>Documents</a>
+</li>
+<li>
+<a href="../contact.html">
+<span class="nav-number" aria-hidden="true">11</span>Contact</a>
+</li>
+</ul>
+</nav>
+<div class="sidebar-bottom">
+<span class="online-dot" aria-hidden="true">
+</span>Étudiant · deuxième année<p>Développement web & applications<br>Évry-Courcouronnes · Île-de-France</p>
+<p>
+<a href="https://github.com/lucasbarnaba57-del/Mon_Portfolio">Consulter le dépôt GitHub</a>
+</p>
+</div>
+</aside>
+<div class="workspace">
+<div class="topbar">
+<strong>Solutions logicielles & applications métiers</strong>
+<span>Mis à jour le <time datetime="2026-11-25">25 novembre 2026</time>
+</span>
+</div>
+<main id="contenu" class="page" tabindex="-1">
+<p class="breadcrumb">
+<a href="../realisations.html">Réalisations</a> / Épi Solidaire</p>
+<header class="hero">
+<div>
+<span class="eyebrow">Projet pédagogique · réalisation 03</span>
+<h1>Épi Solidaire</h1>
+<p class="lead">Suivre les articles, les commandes et les livraisons</p>
+<div class="pills">
+<span class="status">Sources MVC et SQL examinés · anomalies reproduites</span>
+<span class="pill">PHP</span>
+<span class="pill">PDO</span>
+<span class="pill">MySQL</span>
+<span class="pill">MVC</span>
+</div>
+</div>
+</header>
+<div class="project-intro">
+<div class="project-content">
+<h2>Le besoin à résoudre</h2>
+<p class="top-space">Le dossier remis par le candidat contient une application PHP organisée en point d’entrée, contrôleurs, modèle et vues, ainsi qu’un export SQL nommé getcet (1).sql. Les fonctions consultables concernent des commerçants, des épiciers, des acheteurs, des produits et des articles. Le contexte précis, le cahier des charges et le travail individuel restent à fournir.</p>
+<h3>Problématique</h3>
+<p>Conserver une information cohérente sur les exemplaires de produits, leur état, la personne qui commande et le passage à la livraison, avec des droits adaptés aux différents rôles.</p>
+</div>
+<aside class="card">
+<dl class="facts">
+<div>
+<dt>Période</dt>
+<dd>Fichiers d’octobre–novembre 2026 · période de travail à confirmer</dd>
+</div>
+<div>
+<dt>Équipe</dt>
+<dd>Équipe et répartition à confirmer</dd>
+</div>
+<div>
+<dt>Périmètre personnel</dt>
+<dd>Périmètre personnel à identifier dans les modules fournis</dd>
+</div>
+<div>
+<dt>Environnement</dt>
+<dd>Local · WampServer annoncé</dd>
+</div>
+</dl>
+</aside>
+</div>
+<ul class="project-toc" aria-label="Sommaire de la fiche">
+<li>
+<a href="#contribution">Contribution</a>
+</li>
+<li>
+<a href="#technique">Analyse technique</a>
+</li>
+<li>
+<a href="#tests">Tests</a>
+</li>
+<li>
+<a href="#competences">Compétences</a>
+</li>
+<li>
+<a href="#preuves">Preuves</a>
+</li>
+</ul>
+<section class="section anchor-section" id="contribution">
+<div class="section-head">
+<h2>Fonctions observées et contribution à préciser</h2>
+</div>
+<div class="card">
+<ul class="compact-list">
+<li>index.php route les demandes vers les contrôleurs après une vérification de connexion.</li>
+<li>Le modèle Modele centralise l’accès PDO ; les vues affichent les données préparées par les contrôleurs.</li>
+<li>Les écrans fournis couvrent dons et ventes des commerçants, consultation et modification des stocks, péremption, achats, commandes et livraisons.</li>
+<li>Les méthodes getLesCommandes, ajouterCommande et livrerCommande sont présentes et analysées.</li>
+<li>Ces éléments décrivent le périmètre observé du dossier. Ils ne sont pas attribués intégralement au candidat en l’absence de répartition des tâches.</li>
+</ul>
+</div>
+<p class="hint">La présence d’une fonctionnalité dans les fichiers prouve le contenu du dossier. La contribution personnelle doit être identifiée par l’historique, la répartition ou des documents.</p>
+</section>
+<section class="section anchor-section" id="technique">
+<div class="section-head">
+<h2>Comprendre les choix techniques</h2>
+</div>
+<div class="table-wrap">
+<table class="wide-table">
+<caption>Analyse des sources fournies, examinées le 25 novembre 2026</caption>
+<thead>
+<tr>
+<th scope="col">Sujet</th>
+<th scope="col">Lecture technique</th>
+<th scope="col">État de vérification</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Architecture MVC</th>
+<td>index.php choisit l’unité de contrôle, c_epicier.php traite l’action, Modele exécute les requêtes et les fichiers vues affichent le résultat.</td>
+<td>L’organisation est observable. Les accès ne sont pas tous limités au rôle attendu côté serveur.</td>
+</tr>
+<tr>
+<th scope="row">Produit et article</th>
+<td>produit définit une référence, un prix et un stock agrégé ; article identifie un exemplaire par la clé composée (id, refProduit).</td>
+<td>Les clés composées se retrouvent dans ligne_commande. La cohérence entre exemplaires et qteStock reste à vérifier.</td>
+</tr>
+<tr>
+<th scope="row">Commande téléphonique</th>
+<td>La vue envoie idArticle, refProduit, idAcheteur et prixTotal ; le contrôleur ne transmet au modèle que l’acheteur et le prix reçu.</td>
+<td>Le prix n’est pas sélectionné par getLesArticlesStock : la vue affiche 0.00 €. La liaison à ligne_commande n’est pas créée dans ce parcours.</td>
+</tr>
+<tr>
+<th scope="row">Insertion de commande</th>
+<td>ajouterCommande omet la colonne id et appelle lastInsertId.</td>
+<td>Dans l’export reçu, commande.id n’est pas AUTO_INCREMENT. L’insertion échoue sur la base de test en mode strict.</td>
+</tr>
+<tr>
+<th scope="row">Livraison et atomicité</th>
+<td>livrerCommande écrit la livraison puis modifie l’état des articles liés.</td>
+<td>Deux opérations séparées sans transaction ; les défauts du parcours de commande empêchent une validation globale de la chaîne.</td>
+</tr>
+<tr>
+<th scope="row">Habilitations et sessions</th>
+<td>Le menu varie selon le rôle, tandis que le routage principal vérifie seulement la connexion.</td>
+<td>Un compte commerçant fictif peut appeler la route de stock épicier. L’action de déconnexion n’invalide pas la session dans le contrôleur fourni.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section anchor-section" id="securite">
+<div class="section-head">
+<h2>Qualité, sécurité et données</h2>
+</div>
+<div class="card">
+<p>Des méthodes récentes utilisent des requêtes préparées, mais les fonctions d’authentification et certaines fonctions de gestion concatènent encore des paramètres dans le SQL. Le contrôle des rôles doit être assuré sur chaque action serveur ; masquer un lien de menu n’est pas un contrôle d’accès. Les actions sensibles, la validation des prix, la protection CSRF et le hachage des mots de passe nécessitent une reprise avant publication. L’export original et ses données ne sont pas republiés.</p>
+</div>
+</section>
+<section class="section anchor-section" id="essais-observes">
+<div class="section-head">
+<h2>Essais locaux du 25 novembre 2026</h2>
+</div>
+<aside class="note ">
+<strong>Conditions de vérification.</strong>
+<p>Essais effectués avec assistance IA sous PHP 8.2.12 et MariaDB 10.4.32, dans une base isolée contenant uniquement des données fictives. Seules les connexions à la base ont été adaptées. La logique métier des fichiers reçus n’a pas été corrigée. Une vérification partielle ne constitue pas une recette d’acceptation.</p>
+</aside>
+<div class="top-space">
+<div class="table-wrap">
+<table class="wide-table">
+<caption>Résultats observés sur la version transmise, sans masquer les échecs</caption>
+<thead>
+<tr>
+<th scope="col">ID</th>
+<th scope="col">Contrôle</th>
+<th scope="col">Observation</th>
+<th scope="col">Résultat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">E-01</th>
+<td>Connexion du compte épicier fictif</td>
+<td>Menu épicier affiché</td>
+<td>
+<span class="status available">Comportement attendu observé</span>
+</td>
+</tr>
+<tr>
+<th scope="row">E-02</th>
+<td>Prix catalogue de la commande téléphonique</td>
+<td>Prix affiché à 0.00 € alors que le catalogue contient 12.50 €</td>
+<td>
+<span class="status">Anomalie à corriger</span>
+</td>
+</tr>
+<tr>
+<th scope="row">E-03</th>
+<td>Enregistrer une commande téléphonique</td>
+<td>Échec SQL : commande.id sans valeur par défaut ni AUTO_INCREMENT</td>
+<td>
+<span class="status">Anomalie à corriger</span>
+</td>
+</tr>
+<tr>
+<th scope="row">E-04</th>
+<td>Invalider la session lors de la déconnexion</td>
+<td>Les données de stock restent accessibles après action de déconnexion</td>
+<td>
+<span class="status">Anomalie à corriger</span>
+</td>
+</tr>
+<tr>
+<th scope="row">E-05</th>
+<td>Réserver les routes épicier au rôle épicier</td>
+<td>Le rôle commerçant accède à la route de stock épicier</td>
+<td>
+<span class="status">Anomalie à corriger</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p class="hint">
+<a href="../docs/ANALYSE_SOURCES_PROJETS.md">Conditions, limites et priorités détaillées</a>.</p>
+</section>
+<section class="section anchor-section" id="tests">
+<div class="section-head">
+<h2>Plan de vérification à reproduire et compléter</h2>
+</div>
+<aside class="note ">
+<strong>Un plan complète les essais observés.</strong>
+<p>Les résultats de référence sont consignés ci-dessus avec leurs limites. Les scénarios suivants doivent être reproduits ou complétés, puis rejoués après correction. Noter pour chacun l’environnement, la date et le résultat réel.</p>
+</aside>
+<div class="top-space">
+<div class="table-wrap">
+<table class="wide-table">
+<caption>Scénarios de contrôle — données fictives et environnement local autorisé</caption>
+<thead>
+<tr>
+<th scope="col">ID</th>
+<th scope="col">Action</th>
+<th scope="col">Résultat attendu</th>
+<th scope="col">État</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">ES-T01</th>
+<td>Se connecter avec un compte fictif de chaque rôle.</td>
+<td>Chaque compte accède uniquement aux fonctions autorisées.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">ES-T02</th>
+<td>Afficher les articles disponibles pour une commande téléphonique.</td>
+<td>Les prix correspondent au catalogue, sans valeur à zéro par défaut.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">ES-T03</th>
+<td>Enregistrer une commande et retrouver son article.</td>
+<td>Commande et ligne_commande sont créées ensemble, avec un prix calculé côté serveur.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">ES-T04</th>
+<td>Livrer la commande puis relancer l’action.</td>
+<td>La livraison ne produit ni doublon ni incohérence d’état.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">ES-T05</th>
+<td>Supprimer une commande possédant des lignes.</td>
+<td>Les relations sont traitées conformément à la règle métier et à l’intégrité référentielle.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">ES-T06</th>
+<td>Se déconnecter puis revenir à une route privée.</td>
+<td>La session ne donne plus accès au service.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+<tr>
+<th scope="row">ES-T07</th>
+<td>Simuler une erreur entre les opérations d’une livraison.</td>
+<td>Les opérations liées sont annulées ensemble si une transaction est nécessaire.</td>
+<td>À reproduire / compléter après les essais de référence</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="section anchor-section" id="resultat">
+<div class="section-head">
+<h2>Résultat et recul</h2>
+</div>
+<div class="grid two">
+<article class="card">
+<h3>État du livrable</h3>
+<p>Les sources PHP du dossier passent le contrôle de syntaxe. Sur une base isolée contenant uniquement des données fictives, la connexion épicier fonctionne. Les essais reproduisent un prix à zéro, l’échec d’insertion de commande, l’accès d’un commerçant au stock épicier et une session conservée après demande de déconnexion. Ces défauts restent ouverts dans l’application d’origine.</p>
+</article>
+<article class="card">
+<h3>Bilan et progression</h3>
+<p>Ce projet fournit une base plus riche pour expliquer MVC, jointures, clés composées, contrôles d’accès et transactions. Pour en faire une réalisation défendable, identifier le travail personnel, corriger les anomalies réellement prises en charge et conserver les changements ainsi que les tests de non-régression. Aucun correctif ni incident historique du candidat n’est inventé.</p>
+</article>
+</div>
+</section>
+<section class="section anchor-section" id="competences">
+<div class="section-head">
+<h2>Liens avec les compétences du BTS</h2>
+</div>
+<div class="table-wrap">
+<table class="">
+<caption>Rattachements argumentés, sans validation automatique</caption>
+<thead>
+<tr>
+<th scope="col">Repère de lecture</th>
+<th scope="col">Pourquoi ce lien ?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">
+<a href="../competences.html#B1-4">B1.4 · Travailler en mode projet</a>
+</th>
+<td>Le contexte de projet et les modules sont identifiables ; répartition, planning et suivi restent à joindre.</td>
+</tr>
+<tr>
+<th scope="row">
+<a href="../competences.html#B1-5">B1.5 · Mettre à disposition des utilisateurs un service informatique</a>
+</th>
+<td>Une installation de vérification et des essais locaux sont documentés ; la chaîne métier et la mise à disposition restent incomplètes.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="card top-space">
+<h3>Éclairage SLAM</h3>
+<ul class="compact-list top-space">
+<li>Concevoir et développer une solution applicative : MVC, vues de stock et parcours de commande observables.</li>
+<li>Assurer la maintenance corrective ou évolutive : les défauts identifiés sont des pistes de maintenance, à distinguer des corrections que le candidat aura effectivement réalisées.</li>
+<li>Gérer les données : schéma relationnel, clés composées, jointures et intégrité transactionnelle.</li>
+<li>Cybersécurité applicative : requêtes paramétrées partielles, gestion des rôles à corriger et limites de l’authentification.</li>
+</ul>
+<p class="top-space subtle">Ces rapprochements avec le développement et la cybersécurité complètent la lecture du bloc support. Ils ne remplacent pas les fiches ni les preuves attendues pour les épreuves professionnelles.</p>
+</div>
+</section>
+<section class="section anchor-section" id="preuves">
+<div class="section-head">
+<h2>Productions et éléments à joindre</h2>
+</div>
+<aside class="note ">
+<strong>Sources examinées, attribution personnelle à confirmer.</strong>
+<p>Sources MVC et schéma de 19 tables examinés. Essais de rôles, session et commande téléphonique sur une base isolée. Les défauts restent ouverts dans l’application d’origine. Les essais de cette refonte ne sont pas présentés comme des tests réalisés pendant le stage ou par le candidat.</p>
+</aside>
+<div class="actions top-space">
+<a class="button secondary" href="https://drive.google.com/drive/folders/1p4-ipDxY70iXbMrlA0WVLWaF6enPjuZV">Dossier de sources fourni</a>
+<a class="button secondary" href="../docs/preuves/epi-solidaire-schema.sql">Structure SQL sans données</a>
+</div>
+<p class="hint">Vérifier les droits d’accès du jury avant l’évaluation. Les extraits et captures ci-dessous sont consultables dans le portfolio sans accès au dossier.</p>
+<div class="evidence-gallery">
+<figure>
+<a href="../assets/projets/epi-stock-local.png">
+<img src="../assets/projets/epi-stock-local.png" alt="Écran de stock Épi Solidaire avec un article et un compte de test fictifs" loading="lazy">
+</a>
+<figcaption>Capture locale du code fourni, le 25 novembre 2026. Seule la connexion de base a été adaptée ; la logique métier n’a pas été corrigée.</figcaption>
+</figure>
+</div>
+<h3 class="top-space">Modèle de données observé</h3>
+<div class="top-space">
+<div class="table-wrap">
+<table class="">
+<caption>Structure observée dans le SQL fourni ; les noms et clés ne sont pas inventés</caption>
+<thead>
+<tr>
+<th scope="col">Table</th>
+<th scope="col">Clé primaire</th>
+<th scope="col">Rôle / observation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">produit</th>
+<td>reference</td>
+<td>Catalogue et prix ; qteStock agrégé.</td>
+</tr>
+<tr>
+<th scope="row">article</th>
+<td>(id, refProduit)</td>
+<td>Exemplaire daté, lié à produit et à etatarticle.</td>
+</tr>
+<tr>
+<th scope="row">acheteur</th>
+<td>id</td>
+<td>Rattaché à habitant par la clé composée (idHabitant, idFoyer).</td>
+</tr>
+<tr>
+<th scope="row">commande</th>
+<td>id</td>
+<td>Acheteur, date et prixTotal ; id sans AUTO_INCREMENT dans l’export reçu.</td>
+</tr>
+<tr>
+<th scope="row">ligne_commande</th>
+<td>(idCommande, idArticle, refProduit)</td>
+<td>Association de la commande à un article ; prixAchat.</td>
+</tr>
+<tr>
+<th scope="row">livraison_epicerie</th>
+<td>idCommande</td>
+<td>Une ligne de livraison par commande, avec dateLivraison.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<h3 class="top-space">Extraits à savoir expliquer</h3>
+<details class="top-space">
+<summary>include/modele.php · lignes 294 à 305</summary>
+<div class="details-body">
+<p>Extrait du fichier transmis, examiné le 25 novembre 2026. Il ne démontre pas à lui seul la contribution du candidat.</p>
+<pre>
+<code>public function getLesCommandes() {
+    $req = &quot;SELECT c.id, c.dateCommande, c.prixTotal, h.Nom, h.prenom, l.dateLivraison
+            FROM commande c
+            JOIN acheteur a ON c.idAcheteur = a.id
+            JOIN habitant h ON a.idHabitant = h.idHabitant AND a.idFoyer = h.idFoyer
+            LEFT JOIN livraison_epicerie l ON c.id = l.idCommande
+            ORDER BY c.dateCommande DESC&quot;;
+    $res = Modele::$monPdo-&gt;query($req);
+    return $res-&gt;fetchAll(PDO::FETCH_ASSOC);
+}
+
+/**</code>
+</pre>
+<a href="https://drive.google.com/file/d/1S3QrEy8aGHEpFsXY-kPt2lrRvphC4FD4/view?usp=drivesdk">Retrouver le fichier fourni</a>
+</div>
+</details>
+<details class="top-space">
+<summary>controleurs/c_epicier.php · lignes 133 à 141</summary>
+<div class="details-body">
+<p>Extrait du fichier transmis, examiné le 25 novembre 2026. Il ne démontre pas à lui seul la contribution du candidat.</p>
+<pre>
+<code>    case &#39;validerCommandeTel&#39;:
+        $idAcheteur = $_REQUEST[&#39;idAcheteur&#39;];
+        $prixTotal = isset($_REQUEST[&#39;prixTotal&#39;]) ? $_REQUEST[&#39;prixTotal&#39;] : 0.00;
+        $pdo-&gt;ajouterCommande($idAcheteur, $prixTotal);
+        $message = &quot;La commande par téléphone a bien été enregistrée.&quot;;
+        $lesCommandes = $pdo-&gt;getLesCommandes();
+        include(&quot;vues/v_sommaire.php&quot;);
+        include(&quot;vues/v_gererCommandes.php&quot;);
+        break;</code>
+</pre>
+<a href="https://drive.google.com/file/d/1tbcOw95r0QXt7XNa7okm-uWDjYNKYf0q/view?usp=drivesdk">Retrouver le fichier fourni</a>
+</div>
+</details>
+<details class="top-space">
+<summary>include/modele.php · lignes 308 à 314</summary>
+<div class="details-body">
+<p>Extrait du fichier transmis, examiné le 25 novembre 2026. Il ne démontre pas à lui seul la contribution du candidat.</p>
+<pre>
+<code>public function ajouterCommande($idAcheteur, $prixTotal) {
+    $req = &quot;INSERT INTO commande (idAcheteur, dateCommande, prixTotal) VALUES (:idAcheteur, NOW(), :prixTotal)&quot;;
+    $stmt = Modele::$monPdo-&gt;prepare($req);
+    $stmt-&gt;execute([&#39;:idAcheteur&#39; =&gt; $idAcheteur, &#39;:prixTotal&#39; =&gt; $prixTotal]);
+    return Modele::$monPdo-&gt;lastInsertId();
+}
+</code>
+</pre>
+<a href="https://drive.google.com/file/d/1S3QrEy8aGHEpFsXY-kPt2lrRvphC4FD4/view?usp=drivesdk">Retrouver le fichier fourni</a>
+</div>
+</details>
+<div class="card top-space">
+<h3>Demandes précises pour compléter cette fiche</h3>
+<ul class="compact-list top-space">
+<li>
+<a href="../documents.html#ES-01">
+<span class="evidence-id">ES-01</span>Épi Solidaire : contexte et contribution</a>
+</li>
+<li>
+<a href="../documents.html#ES-02">
+<span class="evidence-id">ES-02</span>Épi Solidaire : commandes, droits et sessions</a>
+</li>
+<li>
+<a href="../documents.html#ES-03">
+<span class="evidence-id">ES-03</span>Épi Solidaire : recette et mise à disposition</a>
+</li>
+</ul>
+</div>
+</section>
+<div class="actions section">
+<a class="button secondary" href="../realisations.html">Revenir aux réalisations</a>
+<button class="print-action" type="button" data-print hidden>Imprimer cette fiche</button>
+</div>
+</main>
+<footer class="footer">
+<span>© 2026 Lucas Barnaba · Portfolio de formation</span>
+<div class="footer-links">
+<a href="../contact.html">Contact</a>
+<a href="../mentions-legales.html">Informations de publication</a>
+<a href="../documents.html">Documents & preuves</a>
+</div>
+</footer>
+</div>
+</div>
+</body>
+</html>

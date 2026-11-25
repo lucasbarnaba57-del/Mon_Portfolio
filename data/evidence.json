@@ -1,0 +1,262 @@
+{
+  "auto-ecole": {
+    "folderUrl": "https://drive.google.com/drive/folders/1A2ze9s3PFaET74LlHoKjgNm_f7AV8abL",
+    "review": "Interface et site collectif examinés ; cinq onglets et parcours de réservation essayés en local. La contribution personnelle annoncée reste Formules.",
+    "schema": [
+      [
+        "rendez_vous",
+        "id",
+        "Date, heure, coordonnées et message ; aucune contrainte unique sur le créneau dans l’export reçu."
+      ]
+    ],
+    "snippets": [
+      {
+        "file": "index.php",
+        "startLine": 526,
+        "endLine": 537,
+        "code": "function showTab(id, btn) {\n    document.querySelectorAll('.categorie-bloc').forEach(function(b) {\n        b.classList.remove('visible');\n    });\n    document.querySelectorAll('.tab-btn').forEach(function(b) {\n        b.classList.remove('actif');\n    });\n    document.getElementById(id).classList.add('visible');\n    btn.classList.add('actif');\n}\n</script>\n",
+        "url": "https://drive.google.com/file/d/19E0ipY4TMUK_EIC2hRTTe_SrN_VgHGXo/view?usp=drivesdk"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "assets/projets/auto-formules-desktop.png",
+        "alt": "Section Formules du vrai prototype de l’auto-école à 1280 pixels",
+        "caption": "Capture locale du 25 novembre 2026 depuis index.php fourni · 1280 px."
+      },
+      {
+        "path": "assets/projets/auto-formules-mobile.png",
+        "alt": "Formules du prototype sur une largeur de 390 pixels",
+        "caption": "Même source à 390 px. Une capture ne prouve pas la validation du tuteur."
+      }
+    ],
+    "tests": [
+      {
+        "id": "A-01",
+        "test": "Cinq onglets Formules",
+        "passed": true,
+        "observed": "Chacun des cinq boutons affiche un seul panneau"
+      },
+      {
+        "id": "A-02",
+        "test": "Formules à 390 px",
+        "passed": true,
+        "observed": "Pas de débordement horizontal sur la page à 390 px"
+      },
+      {
+        "id": "A-03",
+        "test": "État des onglets exposé aux aides techniques",
+        "passed": false,
+        "observed": "Le code change des classes CSS ; aucun aria-selected ni rôle d’onglet"
+      },
+      {
+        "id": "A-04",
+        "test": "Réservation d’un créneau libre",
+        "passed": true,
+        "observed": "Rendez-vous enregistré et confirmation affichée"
+      },
+      {
+        "id": "A-05",
+        "test": "Refuser une suppression de RDV sans session administrateur",
+        "passed": false,
+        "observed": "Suppression effectuée sans connexion administrateur"
+      }
+    ],
+    "schemaPath": "docs/preuves/auto-ecole-schema.sql"
+  },
+  "elegance-pluvieuse": {
+    "folderUrl": "https://drive.google.com/drive/folders/1NK-4nAsi1_1sL2JVdipvE094m9Zag0nu",
+    "review": "Quatorze fichiers PHP, CSS et SQL examinés ; inscription, connexion, panier et refus d’accès administrateur testés sur données fictives.",
+    "schema": [
+      [
+        "personne",
+        "idPersonne",
+        "Courriel UNIQUE ; motDePasse ; indicateur estAdmin."
+      ],
+      [
+        "Produit",
+        "idProd",
+        "Désignation, description, prixUnit, qteStock et imageProduit."
+      ],
+      [
+        "panier",
+        "(idPersonne, idProd)",
+        "Clé composée ; clés étrangères vers personne et Produit ; quantité."
+      ]
+    ],
+    "snippets": [
+      {
+        "file": "inscription.php",
+        "startLine": 10,
+        "endLine": 21,
+        "code": "$mdp = password_hash($_POST['mdp'], PASSWORD_DEFAULT);\n\n// On vérifie que l'email n'est pas déjà utilisé (requête préparée)\n$verif = $bdd->prepare(\"SELECT idPersonne FROM personne WHERE mailPersonne = ?\");\n$verif->execute([$email]);\n\nif ($verif->fetch()) {\n    die(\"Erreur : Cet email est déjà utilisé. <a href='contactEpluv.php'>Retour</a>\");\n}\n\n// On insère le nouveau client dans la table personne\n$requete = $bdd->prepare(\"INSERT INTO personne (nomPersonne, prenomPersonne, mailPersonne, motDePasse)",
+        "url": "https://drive.google.com/file/d/1KCQqHsyJNEkBmSa3zZ0_pUBsXv7WsRnq/view?usp=drivesdk"
+      },
+      {
+        "file": "panierEPluv.php",
+        "startLine": 13,
+        "endLine": 19,
+        "code": "$requete = $bdd->prepare(\"SELECT Produit.idProd, nomProd, prixUnit, quantite\n                          FROM panier\n                          JOIN Produit ON panier.idProd = Produit.idProd\n                          WHERE idPersonne = ?\");\n$requete->execute([$idUser]);\n$lignes = $requete->fetchAll();\n",
+        "url": "https://drive.google.com/file/d/1TyKotejInOnWA-lmNkoJWxc8NE0k5hxQ/view?usp=drivesdk"
+      },
+      {
+        "file": "ajouter.php",
+        "startLine": 15,
+        "endLine": 24,
+        "code": "    if ($ligne) {\n        // Déjà présent : on augmente juste la quantité\n        $requete = $bdd->prepare(\"UPDATE panier SET quantite = quantite + 1 WHERE idPersonne = ? AND idProd = ?\");\n        $requete->execute([$idUser, $idProd]);\n    } else {\n        // Sinon on crée la ligne\n        $requete = $bdd->prepare(\"INSERT INTO panier (idPersonne, idProd, quantite) VALUES (?, ?, 1)\");\n        $requete->execute([$idUser, $idProd]);\n    }\n",
+        "url": "https://drive.google.com/file/d/1wrTEG4yTHoZKn0xrFz6yqw_4_KXiqHFH/view?usp=drivesdk"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "assets/projets/marchand-panier-local.png",
+        "alt": "Écran du panier Élégance Pluvieuse exécuté en local avec un compte et un produit fictifs",
+        "caption": "Capture de l’application fournie, le 25 novembre 2026. Données exclusivement fictives ; configuration de connexion adaptée à une base de test isolée."
+      }
+    ],
+    "tests": [
+      {
+        "id": "M-01",
+        "test": "Inscription avec données fictives",
+        "passed": true,
+        "observed": "HTTP 200"
+      },
+      {
+        "id": "M-02",
+        "test": "Connexion du compte créé",
+        "passed": true,
+        "observed": "Session puis page compte"
+      },
+      {
+        "id": "M-03",
+        "test": "Accès administrateur avec compte client",
+        "passed": true,
+        "observed": "Accès refusé"
+      },
+      {
+        "id": "M-04",
+        "test": "Ajout répété au panier",
+        "passed": true,
+        "observed": "Quantité 3 et total 75 € pour un prix catalogue de 25 €"
+      },
+      {
+        "id": "M-05",
+        "test": "Ne pas dépasser le stock de 2",
+        "passed": false,
+        "observed": "Le panier accepte 3 unités pour un stock de 2"
+      },
+      {
+        "id": "M-06",
+        "test": "Action destructive protégée contre un GET sans jeton",
+        "passed": false,
+        "observed": "Retrait effectué via GET sans jeton"
+      },
+      {
+        "id": "M-07",
+        "test": "Accès panier après déconnexion",
+        "passed": true,
+        "observed": "Accès refusé après fermeture de session"
+      }
+    ],
+    "schemaPath": "docs/preuves/elegance-pluvieuse-schema.sql"
+  },
+  "epi-solidaire": {
+    "folderUrl": "https://drive.google.com/drive/folders/1p4-ipDxY70iXbMrlA0WVLWaF6enPjuZV",
+    "review": "Sources MVC et schéma de 19 tables examinés. Essais de rôles, session et commande téléphonique sur une base isolée. Les défauts restent ouverts dans l’application d’origine.",
+    "schema": [
+      [
+        "produit",
+        "reference",
+        "Catalogue et prix ; qteStock agrégé."
+      ],
+      [
+        "article",
+        "(id, refProduit)",
+        "Exemplaire daté, lié à produit et à etatarticle."
+      ],
+      [
+        "acheteur",
+        "id",
+        "Rattaché à habitant par la clé composée (idHabitant, idFoyer)."
+      ],
+      [
+        "commande",
+        "id",
+        "Acheteur, date et prixTotal ; id sans AUTO_INCREMENT dans l’export reçu."
+      ],
+      [
+        "ligne_commande",
+        "(idCommande, idArticle, refProduit)",
+        "Association de la commande à un article ; prixAchat."
+      ],
+      [
+        "livraison_epicerie",
+        "idCommande",
+        "Une ligne de livraison par commande, avec dateLivraison."
+      ]
+    ],
+    "snippets": [
+      {
+        "file": "include/modele.php",
+        "startLine": 294,
+        "endLine": 305,
+        "code": "public function getLesCommandes() {\n    $req = \"SELECT c.id, c.dateCommande, c.prixTotal, h.Nom, h.prenom, l.dateLivraison \n            FROM commande c\n            JOIN acheteur a ON c.idAcheteur = a.id\n            JOIN habitant h ON a.idHabitant = h.idHabitant AND a.idFoyer = h.idFoyer\n            LEFT JOIN livraison_epicerie l ON c.id = l.idCommande\n            ORDER BY c.dateCommande DESC\";\n    $res = Modele::$monPdo->query($req);\n    return $res->fetchAll(PDO::FETCH_ASSOC);\n}\n\n/**",
+        "url": "https://drive.google.com/file/d/1S3QrEy8aGHEpFsXY-kPt2lrRvphC4FD4/view?usp=drivesdk"
+      },
+      {
+        "file": "controleurs/c_epicier.php",
+        "startLine": 133,
+        "endLine": 141,
+        "code": "    case 'validerCommandeTel':\n        $idAcheteur = $_REQUEST['idAcheteur'];\n        $prixTotal = isset($_REQUEST['prixTotal']) ? $_REQUEST['prixTotal'] : 0.00;\n        $pdo->ajouterCommande($idAcheteur, $prixTotal);\n        $message = \"La commande par téléphone a bien été enregistrée.\";\n        $lesCommandes = $pdo->getLesCommandes();\n        include(\"vues/v_sommaire.php\");\n        include(\"vues/v_gererCommandes.php\");\n        break;",
+        "url": "https://drive.google.com/file/d/1tbcOw95r0QXt7XNa7okm-uWDjYNKYf0q/view?usp=drivesdk"
+      },
+      {
+        "file": "include/modele.php",
+        "startLine": 308,
+        "endLine": 314,
+        "code": "public function ajouterCommande($idAcheteur, $prixTotal) {\n    $req = \"INSERT INTO commande (idAcheteur, dateCommande, prixTotal) VALUES (:idAcheteur, NOW(), :prixTotal)\";\n    $stmt = Modele::$monPdo->prepare($req);\n    $stmt->execute([':idAcheteur' => $idAcheteur, ':prixTotal' => $prixTotal]);\n    return Modele::$monPdo->lastInsertId();\n}\n",
+        "url": "https://drive.google.com/file/d/1S3QrEy8aGHEpFsXY-kPt2lrRvphC4FD4/view?usp=drivesdk"
+      }
+    ],
+    "screenshots": [
+      {
+        "path": "assets/projets/epi-stock-local.png",
+        "alt": "Écran de stock Épi Solidaire avec un article et un compte de test fictifs",
+        "caption": "Capture locale du code fourni, le 25 novembre 2026. Seule la connexion de base a été adaptée ; la logique métier n’a pas été corrigée."
+      }
+    ],
+    "tests": [
+      {
+        "id": "E-01",
+        "test": "Connexion du compte épicier fictif",
+        "passed": true,
+        "observed": "Menu épicier affiché"
+      },
+      {
+        "id": "E-02",
+        "test": "Prix catalogue de la commande téléphonique",
+        "passed": false,
+        "observed": "Prix affiché à 0.00 € alors que le catalogue contient 12.50 €"
+      },
+      {
+        "id": "E-03",
+        "test": "Enregistrer une commande téléphonique",
+        "passed": false,
+        "observed": "Échec SQL : commande.id sans valeur par défaut ni AUTO_INCREMENT"
+      },
+      {
+        "id": "E-04",
+        "test": "Invalider la session lors de la déconnexion",
+        "passed": false,
+        "observed": "Les données de stock restent accessibles après action de déconnexion"
+      },
+      {
+        "id": "E-05",
+        "test": "Réserver les routes épicier au rôle épicier",
+        "passed": false,
+        "observed": "Le rôle commerçant accède à la route de stock épicier"
+      }
+    ],
+    "schemaPath": "docs/preuves/epi-solidaire-schema.sql"
+  }
+}

@@ -1,0 +1,12 @@
+*.html text eol=lf
+*.css text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.sql text eol=lf
+*.csv text eol=crlf
+*.pdf binary
+*.xlsx binary
+*.png binary

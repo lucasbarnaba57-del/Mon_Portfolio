@@ -1,0 +1,857 @@
+{
+  "updated": "2026-11-25",
+  "email": "lucas.barnaba57@gmail.com",
+  "repository": "https://github.com/lucasbarnaba57-del/Mon_Portfolio",
+  "baseRevision": "c43e7c45988d6282e829dd027c20b2b3d728b1d8",
+  "competences": [
+    {
+      "id": "B1.1",
+      "title": "Gérer le patrimoine informatique",
+      "state": "À documenter",
+      "detail": "Recenser les ressources, gérer les habilitations, vérifier la continuité et les sauvegardes.",
+      "projects": [],
+      "need": "Un inventaire réel de ton environnement, une matrice d’habilitation et un compte rendu de restauration effectué. Un dépôt Git seul ne démontre pas une stratégie de sauvegarde.",
+      "subs": [
+        "Recenser et identifier les ressources numériques",
+        "Exploiter des référentiels, normes et standards adoptés par le prestataire informatique",
+        "Mettre en place et vérifier les niveaux d’habilitation associés à un service",
+        "Vérifier les conditions de la continuité d’un service informatique",
+        "Gérer des sauvegardes",
+        "Vérifier le respect des règles d’utilisation des ressources numériques"
+      ]
+    },
+    {
+      "id": "B1.2",
+      "title": "Répondre aux incidents et aux demandes d’assistance et d’évolution",
+      "state": "À documenter",
+      "detail": "Qualifier une demande, diagnostiquer, intervenir et conserver la trace de la résolution.",
+      "projects": [],
+      "need": "Un incident réellement rencontré ou une demande d’évolution réelle : contexte, reproduction, cause, correction, test de non-régression et retour utilisateur. Aucun ticket n’est inventé.",
+      "subs": [
+        "Collecter, suivre et orienter des demandes",
+        "Traiter des demandes concernant les services réseau et système, applicatifs",
+        "Traiter des demandes concernant les applications"
+      ]
+    },
+    {
+      "id": "B1.3",
+      "title": "Développer la présence en ligne de l’organisation",
+      "state": "Lien déclaré",
+      "detail": "Relier les choix de publication et d’interface au besoin d’une organisation.",
+      "projects": [
+        "auto-ecole",
+        "elegance-pluvieuse",
+        "portfolio"
+      ],
+      "need": "Les sources de tes interfaces, des captures authentiques, les contraintes du commanditaire et les vérifications de référencement, d’accessibilité et de publication. Le portfolio constitue un support observable, réalisé avec assistance IA.",
+      "subs": [
+        "Participer à la valorisation de l’image de l’organisation sur les médias numériques en tenant compte du cadre juridique et des enjeux économiques",
+        "Référencer les services en ligne de l’organisation et mesurer leur visibilité",
+        "Participer à l’évolution d’un site Web exploitant les données de l’organisation"
+      ]
+    },
+    {
+      "id": "B1.4",
+      "title": "Travailler en mode projet",
+      "state": "Lien déclaré",
+      "detail": "Expliciter les objectifs, la répartition du travail et les écarts entre prévision et réalisation.",
+      "projects": [
+        "auto-ecole",
+        "elegance-pluvieuse",
+        "portfolio",
+        "epi-solidaire"
+      ],
+      "need": "Le cahier des charges, un planning daté, la répartition des tâches et les contributions individuelles (commits ou documents). Avoir travaillé à deux ne suffit pas à prouver la conduite de projet.",
+      "subs": [
+        "Analyser les objectifs et les modalités d’organisation d’un projet",
+        "Planifier les activités",
+        "Évaluer les indicateurs de suivi d’un projet et analyser les écarts"
+      ]
+    },
+    {
+      "id": "B1.5",
+      "title": "Mettre à disposition des utilisateurs un service informatique",
+      "state": "À démontrer",
+      "detail": "Tester, déployer et accompagner les utilisateurs avec une documentation utilisable.",
+      "projects": [
+        "auto-ecole",
+        "elegance-pluvieuse",
+        "portfolio",
+        "epi-solidaire"
+      ],
+      "need": "Un rapport de recette réellement exécutée, une procédure d’installation, les conditions d’accès, une validation utilisateur et un guide de prise en main. Un prototype local n’est pas présenté comme une production.",
+      "subs": [
+        "Réaliser les tests d’intégration et d’acceptation d’un service",
+        "Déployer un service",
+        "Accompagner les utilisateurs dans la mise en place d’un service"
+      ]
+    },
+    {
+      "id": "B1.6",
+      "title": "Organiser son développement professionnel",
+      "state": "Support disponible",
+      "detail": "Construire son projet, entretenir ses compétences et exploiter une veille critique.",
+      "projects": [
+        "site-veille",
+        "portfolio"
+      ],
+      "need": "Les cinq attestations CNIL et le portrait sont consultables. Compléter les preuves de réussite SecNumAcadémie et Cisco, tenir une veille personnelle et expliquer les choix du portfolio assisté.",
+      "subs": [
+        "Mettre en place son environnement d’apprentissage personnel",
+        "Mettre en œuvre des outils et stratégies de veille informationnelle",
+        "Gérer son identité professionnelle",
+        "Développer son projet professionnel"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "auto-ecole",
+      "number": "01",
+      "title": "Auto École Excellence",
+      "subtitle": "Une page de formules pour un besoin client réel",
+      "type": "Stage",
+      "period": "18 mai – 27 juin 2026",
+      "team": "Binôme",
+      "status": "Sources examinées · essais locaux effectués",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ],
+      "scope": "Section #formules dans index.php · attribution déclarée",
+      "summary": "Conception de la page de présentation des formations et des tarifs d’une auto-école à Ris-Orangis, dans le cadre du stage de première année.",
+      "context": "Le dossier fourni contient un site vitrine avec prise de rendez-vous en PHP/MySQL. La partie « Formules » se trouve dans la section #formules du fichier index.php. Le périmètre personnel annoncé dans le portfolio initial reste cette interface HTML/CSS/JavaScript ; les fonctions de réservation et d’administration sont décrites comme contexte collectif.",
+      "problem": "Permettre à un futur élève de comparer les offres, de distinguer les formules avec ou sans code et de retrouver les tarifs sans ambiguïté.",
+      "tasks": [
+        "Conception et intégration de la page « Formules ».",
+        "Présentation des formations et des tarifs avec et sans code.",
+        "Mise en place d’un système d’onglets en JavaScript, selon la description initiale.",
+        "Adaptation responsive et respect de la charte noir, orange et blanc, selon la description initiale."
+      ],
+      "analysis": [
+        [
+          "Structure de l’interface",
+          "index.php contient cinq catégories : permis B manuel, automatique, conduite accompagnée, moto et BSR–AM.",
+          "La section #formules et ses cinq boutons sont observables dans les sources fournies."
+        ],
+        [
+          "Interaction JavaScript",
+          "showTab retire les classes visible et actif, puis les ajoute au panneau et au bouton choisis.",
+          "Les cinq changements de panneau ont été exécutés en local. Les rôles d’onglet et aria-selected sont absents."
+        ],
+        [
+          "Adaptation aux écrans",
+          "style (1).css place les colonnes de formules sur une seule colonne sous 768 px ; un second palier existe à 480 px.",
+          "Une capture à 390 px et une capture à 1280 px proviennent du vrai index fourni. Aucun débordement horizontal n’a été observé à 390 px."
+        ],
+        [
+          "Contexte applicatif collectif",
+          "Les autres fichiers gèrent créneaux, réservation, confirmation, administration et génération PDF.",
+          "Ces fonctionnalités ne sont pas attribuées au candidat sans preuve de contribution. Le schéma fourni comporte rendez_vous."
+        ],
+        [
+          "Qualité de la réservation",
+          "Des requêtes préparées sont présentes, mais une vérification SQL de disponibilité seule ne garantit pas l’unicité lors d’envois simultanés.",
+          "L’export ne contient pas de contrainte UNIQUE sur date_rdv et heure_rdv. La suppression directe sans session administrateur a aussi été reproduite localement."
+        ]
+      ],
+      "security": "La contribution personnelle reste limitée à l’interface déclarée. La revue du site collectif relève des identifiants administrateur codés en dur, une suppression de rendez-vous sans vérification de session dans supprimer_rdv.php, des données de confirmation/PDF accessibles par identifiant et l’absence de jeton CSRF. Ces points empêchent de présenter le prototype comme prêt pour une publication avec de vraies données. Les valeurs d’identification et les données des anciens exports ne sont pas republiées.",
+      "outcome": "Les sources et un schéma fourni ont été examinés. Les cinq onglets et une réservation sur données fictives fonctionnent lors des essais locaux du 25 novembre 2026 ; le contrôle d’accès à la suppression échoue. Les captures de Formules ont été prises pendant ces essais. L’attribution personnelle, la validation du tuteur et le déploiement restent à étayer.",
+      "retrospective": "La fiche permet d’expliquer le lien entre des boutons, les classes CSS et les panneaux visibles, puis de distinguer comportement visuel et accessibilité. Le bilan personnel doit encore préciser une difficulté réellement vécue en stage, le choix effectué et le retour du tuteur. Les défauts du site collectif sont documentés comme constats de revue, pas comme des corrections déjà effectuées.",
+      "mapping": [
+        [
+          "B1.3",
+          "La page participe à la présentation de l’offre de l’auto-école."
+        ],
+        [
+          "B1.4",
+          "Le travail est annoncé en binôme, avec une charte commune."
+        ],
+        [
+          "B1.5",
+          "Des tests locaux et une présentation du prototype sont déclarés ; recette et accompagnement à démontrer."
+        ]
+      ],
+      "slam": [
+        "Concevoir et développer une solution applicative : interface utilisateur à examiner à partir des sources."
+      ],
+      "missing": [
+        "AE-01",
+        "AE-02",
+        "AE-03"
+      ],
+      "tests": [
+        [
+          "AE-T01",
+          "Ouvrir chaque onglet de formule.",
+          "Le panneau correspondant apparaît et la sélection est compréhensible."
+        ],
+        [
+          "AE-T02",
+          "Parcourir les formules au clavier.",
+          "Chaque commande est accessible ; le focus reste visible et suit un ordre logique."
+        ],
+        [
+          "AE-T03",
+          "Afficher la page à 375 px et à 1280 px.",
+          "Les tarifs, intitulés et commandes restent lisibles, sans perte de contenu."
+        ],
+        [
+          "AE-T04",
+          "Comparer chaque tarif au document fourni par l’auto-école.",
+          "Aucun écart entre l’offre approuvée et la page."
+        ],
+        [
+          "AE-T05",
+          "Ouvrir le prototype sur un autre poste selon le guide d’installation.",
+          "Les ressources et interactions fonctionnent sans chemin local."
+        ]
+      ]
+    },
+    {
+      "id": "elegance-pluvieuse",
+      "number": "02",
+      "title": "Élégance Pluvieuse",
+      "subtitle": "Comprendre un parcours d’achat et ses données",
+      "type": "Atelier",
+      "period": "Année scolaire 2025–2026 · dates exactes à fournir",
+      "team": "Composition de l’équipe à préciser",
+      "status": "Sources et SQL examinés · parcours local testé",
+      "technologies": [
+        "PHP",
+        "PDO",
+        "MySQL",
+        "HTML",
+        "CSS"
+      ],
+      "scope": "Fonctions observées · contribution individuelle à confirmer",
+      "summary": "Boutique fictive de parapluies artisanaux haut de gamme : catalogue, comptes clients et panier relié à une base de données.",
+      "context": "Le dossier fourni contient quatorze fichiers PHP, une feuille de style et un script SQL pour la boutique pédagogique Élégance Pluvieuse. Le code comprend catalogue, fiche produit, inscription, connexion, panier et back-office d’ajout/suppression de produits. La période déclarée reste 2025–2026 ; les fichiers remis ont une date de modification en août 2026, qui ne suffit pas à dater la réalisation.",
+      "problem": "Relier la consultation d’un catalogue, l’identification d’un client et la manipulation d’un panier, tout en préservant l’intégrité des données et l’isolement entre utilisateurs.",
+      "tasks": [
+        "Le catalogue et la fiche produit lisent les données de Produit avec PDO.",
+        "inscription.php utilise password_hash ; connexion.php vérifie avec password_verify et enregistre l’identité et le rôle en session.",
+        "ajouter.php crée une ligne de panier ou augmente sa quantité ; panierEPluv.php calcule le total à partir des prix lus en base.",
+        "retirer.php et vider_panier.php ciblent le panier de l’utilisateur connecté.",
+        "admin.php réserve l’écran d’administration à une session marquée administrateur et ajoute ou supprime des produits.",
+        "La liste ci-dessus décrit le code fourni. La répartition entre travail personnel, binôme et support de cours doit encore être confirmée."
+      ],
+      "analysis": [
+        [
+          "Organisation",
+          "Les traitements et vues sont répartis dans des fichiers PHP ; config.php centralise la connexion PDO.",
+          "Le projet n’est pas présenté comme MVC : cette architecture n’est pas celle observée dans les fichiers."
+        ],
+        [
+          "Données",
+          "personne possède une clé idPersonne et un courriel UNIQUE. Produit porte prix et stock. panier a une clé composée (idPersonne, idProd) et deux clés étrangères.",
+          "Le schéma a été extrait sans les données d’origine et utilisé dans une base de test isolée."
+        ],
+        [
+          "Authentification",
+          "Hachage avec password_hash et vérification avec password_verify ; id, prénom et estAdmin sont copiés en session.",
+          "Inscription et connexion sur données fictives ont été exécutées. La régénération d’identifiant de session et la limitation des tentatives restent à mettre en place."
+        ],
+        [
+          "Panier et total",
+          "Les requêtes utilisent l’identité de session ; le prix du panier est lu dans Produit au moyen d’une jointure.",
+          "Le parcours testé calcule 75 € pour trois unités à 25 €. Le stock de 2 n’empêche pas l’ajout d’une troisième unité."
+        ],
+        [
+          "Administration et intégrité",
+          "Le rôle est vérifié dans admin.php et les valeurs SQL sont paramétrées.",
+          "La suppression utilise GET et deux DELETE sans transaction. Les validations métier, les erreurs et la protection CSRF restent insuffisantes."
+        ],
+        [
+          "Affichage",
+          "Plusieurs textes sont échappés avec htmlspecialchars.",
+          "imageProduit est injectée sans échappement dans l’attribut src. Les champs d’administration doivent être validés et les sorties protégées selon leur contexte."
+        ]
+      ],
+      "security": "Les protections observées sont le hachage des mots de passe, des requêtes préparées et des contrôles de session pour le panier et l’administration. Elles ne rendent pas l’application entièrement sécurisée. Les essais et la revue constatent des actions de modification par GET sans jeton CSRF, l’absence de contrôle du stock à l’ajout, l’absence de régénération de session lors de la connexion et des sorties d’attribut d’image non échappées. Le détail est consigné dans l’analyse des sources.",
+      "outcome": "Les quatorze fichiers PHP passent la vérification de syntaxe PHP 8.2.12. Un compte fictif a pu être créé puis connecté, un panier calculé et l’accès à l’administration refusé à ce client. Le dépassement du stock et un retrait via GET sans jeton sont aussi reproduits : le prototype n’est pas considéré prêt pour une exploitation commerciale.",
+      "retrospective": "L’intérêt pédagogique de ce projet est de suivre le trajet navigateur → PHP → PDO → base → rendu HTML. La revue permet de distinguer les protections réellement présentes de celles qui restent à ajouter. Le bilan personnel, la contribution exacte et les décisions historiques ne peuvent pas être déduits des fichiers seuls.",
+      "mapping": [
+        [
+          "B1.3",
+          "Le catalogue et les fiches produits portent la présence en ligne de l’organisation fictive."
+        ],
+        [
+          "B1.4",
+          "Un cahier des charges et une démarche de développement sont déclarés ; planning et répartition à fournir."
+        ],
+        [
+          "B1.5",
+          "La mise à disposition reste à démontrer avec installation, recette et documentation."
+        ]
+      ],
+      "slam": [
+        "Concevoir et développer une solution applicative : catalogue, authentification, panier et administration observables dans les sources.",
+        "Gérer les données : modèle relationnel, clé composée du panier, contraintes et jointures examinables.",
+        "Assurer la cybersécurité d’une solution applicative et de son développement : mécanismes présents et défauts documentés ; aucune sécurisation complète revendiquée."
+      ],
+      "missing": [
+        "EP-01",
+        "EP-02",
+        "EP-03",
+        "EP-04"
+      ],
+      "tests": [
+        [
+          "EP-T01",
+          "Créer un compte avec des données valides, puis tenter de réutiliser le même identifiant.",
+          "Le compte valide est créé ; le doublon est traité sans erreur technique affichée."
+        ],
+        [
+          "EP-T02",
+          "Se connecter avec un mot de passe incorrect, puis correct.",
+          "L’accès est refusé puis autorisé ; aucun secret n’est exposé."
+        ],
+        [
+          "EP-T03",
+          "Examiner le stockage du mot de passe et le code de vérification.",
+          "Aucun mot de passe en clair ni chiffrement réversible revendiqué ; le hachage est vérifié correctement."
+        ],
+        [
+          "EP-T04",
+          "Ajouter deux produits, modifier une quantité et vider le panier.",
+          "Le contenu et le total respectent les règles métier annoncées."
+        ],
+        [
+          "EP-T05",
+          "Modifier le prix ou la quantité envoyés dans une requête.",
+          "Le serveur refuse les valeurs invalides et utilise son prix de référence."
+        ],
+        [
+          "EP-T06",
+          "Tenter d’accéder au panier d’un autre utilisateur avec un compte de test autorisé.",
+          "Aucune lecture ni modification du panier d’un autre compte."
+        ],
+        [
+          "EP-T07",
+          "Soumettre des caractères SQL et du HTML dans les champs de test.",
+          "La requête reste paramétrée et les sorties sont affichées comme du texte."
+        ],
+        [
+          "EP-T08",
+          "Soumettre une modification de panier sans jeton CSRF valide.",
+          "L’action est refusée si la protection requise est mise en œuvre."
+        ],
+        [
+          "EP-T09",
+          "Se déconnecter, puis réutiliser une URL privée.",
+          "La session n’accorde plus d’accès aux ressources privées."
+        ]
+      ]
+    },
+    {
+      "id": "epi-solidaire",
+      "number": "03",
+      "title": "Épi Solidaire",
+      "subtitle": "Suivre les articles, les commandes et les livraisons",
+      "type": "Projet pédagogique",
+      "period": "Fichiers d’octobre–novembre 2026 · période de travail à confirmer",
+      "team": "Équipe et répartition à confirmer",
+      "status": "Sources MVC et SQL examinés · anomalies reproduites",
+      "technologies": [
+        "PHP",
+        "PDO",
+        "MySQL",
+        "MVC"
+      ],
+      "scope": "Périmètre personnel à identifier dans les modules fournis",
+      "summary": "Application pédagogique d’épicerie solidaire : espaces par rôle, stocks, produits périmés, commandes téléphoniques et livraisons.",
+      "context": "Le dossier remis par le candidat contient une application PHP organisée en point d’entrée, contrôleurs, modèle et vues, ainsi qu’un export SQL nommé getcet (1).sql. Les fonctions consultables concernent des commerçants, des épiciers, des acheteurs, des produits et des articles. Le contexte précis, le cahier des charges et le travail individuel restent à fournir.",
+      "problem": "Conserver une information cohérente sur les exemplaires de produits, leur état, la personne qui commande et le passage à la livraison, avec des droits adaptés aux différents rôles.",
+      "tasks": [
+        "index.php route les demandes vers les contrôleurs après une vérification de connexion.",
+        "Le modèle Modele centralise l’accès PDO ; les vues affichent les données préparées par les contrôleurs.",
+        "Les écrans fournis couvrent dons et ventes des commerçants, consultation et modification des stocks, péremption, achats, commandes et livraisons.",
+        "Les méthodes getLesCommandes, ajouterCommande et livrerCommande sont présentes et analysées.",
+        "Ces éléments décrivent le périmètre observé du dossier. Ils ne sont pas attribués intégralement au candidat en l’absence de répartition des tâches."
+      ],
+      "analysis": [
+        [
+          "Architecture MVC",
+          "index.php choisit l’unité de contrôle, c_epicier.php traite l’action, Modele exécute les requêtes et les fichiers vues affichent le résultat.",
+          "L’organisation est observable. Les accès ne sont pas tous limités au rôle attendu côté serveur."
+        ],
+        [
+          "Produit et article",
+          "produit définit une référence, un prix et un stock agrégé ; article identifie un exemplaire par la clé composée (id, refProduit).",
+          "Les clés composées se retrouvent dans ligne_commande. La cohérence entre exemplaires et qteStock reste à vérifier."
+        ],
+        [
+          "Commande téléphonique",
+          "La vue envoie idArticle, refProduit, idAcheteur et prixTotal ; le contrôleur ne transmet au modèle que l’acheteur et le prix reçu.",
+          "Le prix n’est pas sélectionné par getLesArticlesStock : la vue affiche 0.00 €. La liaison à ligne_commande n’est pas créée dans ce parcours."
+        ],
+        [
+          "Insertion de commande",
+          "ajouterCommande omet la colonne id et appelle lastInsertId.",
+          "Dans l’export reçu, commande.id n’est pas AUTO_INCREMENT. L’insertion échoue sur la base de test en mode strict."
+        ],
+        [
+          "Livraison et atomicité",
+          "livrerCommande écrit la livraison puis modifie l’état des articles liés.",
+          "Deux opérations séparées sans transaction ; les défauts du parcours de commande empêchent une validation globale de la chaîne."
+        ],
+        [
+          "Habilitations et sessions",
+          "Le menu varie selon le rôle, tandis que le routage principal vérifie seulement la connexion.",
+          "Un compte commerçant fictif peut appeler la route de stock épicier. L’action de déconnexion n’invalide pas la session dans le contrôleur fourni."
+        ]
+      ],
+      "security": "Des méthodes récentes utilisent des requêtes préparées, mais les fonctions d’authentification et certaines fonctions de gestion concatènent encore des paramètres dans le SQL. Le contrôle des rôles doit être assuré sur chaque action serveur ; masquer un lien de menu n’est pas un contrôle d’accès. Les actions sensibles, la validation des prix, la protection CSRF et le hachage des mots de passe nécessitent une reprise avant publication. L’export original et ses données ne sont pas republiés.",
+      "outcome": "Les sources PHP du dossier passent le contrôle de syntaxe. Sur une base isolée contenant uniquement des données fictives, la connexion épicier fonctionne. Les essais reproduisent un prix à zéro, l’échec d’insertion de commande, l’accès d’un commerçant au stock épicier et une session conservée après demande de déconnexion. Ces défauts restent ouverts dans l’application d’origine.",
+      "retrospective": "Ce projet fournit une base plus riche pour expliquer MVC, jointures, clés composées, contrôles d’accès et transactions. Pour en faire une réalisation défendable, identifier le travail personnel, corriger les anomalies réellement prises en charge et conserver les changements ainsi que les tests de non-régression. Aucun correctif ni incident historique du candidat n’est inventé.",
+      "mapping": [
+        [
+          "B1.4",
+          "Le contexte de projet et les modules sont identifiables ; répartition, planning et suivi restent à joindre."
+        ],
+        [
+          "B1.5",
+          "Une installation de vérification et des essais locaux sont documentés ; la chaîne métier et la mise à disposition restent incomplètes."
+        ]
+      ],
+      "slam": [
+        "Concevoir et développer une solution applicative : MVC, vues de stock et parcours de commande observables.",
+        "Assurer la maintenance corrective ou évolutive : les défauts identifiés sont des pistes de maintenance, à distinguer des corrections que le candidat aura effectivement réalisées.",
+        "Gérer les données : schéma relationnel, clés composées, jointures et intégrité transactionnelle.",
+        "Cybersécurité applicative : requêtes paramétrées partielles, gestion des rôles à corriger et limites de l’authentification."
+      ],
+      "missing": [
+        "ES-01",
+        "ES-02",
+        "ES-03"
+      ],
+      "tests": [
+        [
+          "ES-T01",
+          "Se connecter avec un compte fictif de chaque rôle.",
+          "Chaque compte accède uniquement aux fonctions autorisées."
+        ],
+        [
+          "ES-T02",
+          "Afficher les articles disponibles pour une commande téléphonique.",
+          "Les prix correspondent au catalogue, sans valeur à zéro par défaut."
+        ],
+        [
+          "ES-T03",
+          "Enregistrer une commande et retrouver son article.",
+          "Commande et ligne_commande sont créées ensemble, avec un prix calculé côté serveur."
+        ],
+        [
+          "ES-T04",
+          "Livrer la commande puis relancer l’action.",
+          "La livraison ne produit ni doublon ni incohérence d’état."
+        ],
+        [
+          "ES-T05",
+          "Supprimer une commande possédant des lignes.",
+          "Les relations sont traitées conformément à la règle métier et à l’intégrité référentielle."
+        ],
+        [
+          "ES-T06",
+          "Se déconnecter puis revenir à une route privée.",
+          "La session ne donne plus accès au service."
+        ],
+        [
+          "ES-T07",
+          "Simuler une erreur entre les opérations d’une livraison.",
+          "Les opérations liées sont annulées ensemble si une transaction est nécessaire."
+        ]
+      ]
+    },
+    {
+      "id": "site-veille",
+      "number": "04",
+      "title": "Site de veille technologique",
+      "subtitle": "Passer de la collecte à une analyse utile",
+      "type": "TP",
+      "period": "Première année de BTS · dates exactes à fournir",
+      "team": "Individuel, selon le portfolio initial",
+      "status": "TP déclaré · version originale à fournir",
+      "technologies": [
+        "HTML",
+        "CSS"
+      ],
+      "scope": "Page de contenu et structuration des sources",
+      "summary": "Un travail pratique de première année pour présenter des articles sourcés dans une page structurée.",
+      "context": "Le TP décrit dans le portfolio consistait à organiser une introduction, des articles et des sources dans un site HTML/CSS. La version originale et les articles alors sélectionnés ne sont pas présents dans le dépôt.",
+      "problem": "Permettre au lecteur d’identifier l’origine et la date d’une information, de comprendre son intérêt et de distinguer une synthèse personnelle d’une citation.",
+      "tasks": [
+        "Création d’une page structurée en sections : introduction, articles et sources.",
+        "Mise en page du contenu en CSS.",
+        "Présentation prévue des titres, dates, sources, liens et résumés personnels."
+      ],
+      "analysis": [
+        [
+          "Traçabilité",
+          "Associer chaque synthèse à un auteur ou organisme, une date et un lien vers la publication d’origine.",
+          "La sélection historique du TP reste à fournir."
+        ],
+        [
+          "Analyse",
+          "Séparer les faits rapportés, les limites de la source et les conséquences possibles pour un développeur.",
+          "Une collection de liens seule ne démontre pas une veille exploitée."
+        ],
+        [
+          "Continuité",
+          "Conserver un journal des lectures et des décisions d’application dans un projet.",
+          "La nouvelle page de veille démarre au 25 novembre 2026 ; elle ne reconstitue pas un suivi antérieur."
+        ]
+      ],
+      "security": "Utiliser de courts résumés originaux, citer les publications et vérifier les liens. Éviter la copie intégrale d’articles et la réutilisation de captures contenant des données personnelles.",
+      "outcome": "Le TP est décrit mais ne peut pas être consulté dans sa version d’origine. La nouvelle veille de ce portfolio est un autre livrable, explicitement préparé avec assistance IA, qui doit être relu et enrichi personnellement.",
+      "retrospective": "Le bilan initial porte sur la structuration de contenu et la citation des sources. Pour montrer une progression, comparer une fiche réellement produite en première année avec une fiche récente analysée et reliée à une décision technique.",
+      "mapping": [
+        [
+          "B1.6",
+          "Le TP se rattache à la collecte et à l’organisation de sources ; la régularité et l’exploitation personnelle restent à démontrer."
+        ]
+      ],
+      "slam": [
+        "La structuration HTML/CSS peut illustrer une pratique d’interface ; elle ne suffit pas à démontrer le développement d’une application métier complète."
+      ],
+      "missing": [
+        "VT-01",
+        "VT-02"
+      ],
+      "tests": [
+        [
+          "VT-T01",
+          "Ouvrir chaque lien d’article.",
+          "La publication d’origine est accessible et correspond au résumé."
+        ],
+        [
+          "VT-T02",
+          "Comparer titre, auteur et date avec la source.",
+          "Les métadonnées sont exactes ; publication et consultation sont distinguées."
+        ],
+        [
+          "VT-T03",
+          "Retrouver une conséquence concrète pour un projet.",
+          "L’analyse explique ce qu’il faudrait vérifier ou modifier, avec une limite identifiée."
+        ]
+      ]
+    },
+    {
+      "id": "portfolio",
+      "number": "05",
+      "title": "Ce portfolio",
+      "subtitle": "Un support de professionnalisation vérifiable",
+      "type": "Personnel",
+      "period": "Refonte du 25 novembre 2026",
+      "team": "Lucas Barnaba · refonte avec assistance IA",
+      "status": "Sources disponibles · appropriation à expliquer",
+      "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Node.js"
+      ],
+      "scope": "Site statique, contenus, documentation et contrôles",
+      "summary": "Réorganisation du portfolio, preuves de formations, analyse des sources, compétences, veille et contrôles techniques.",
+      "context": "Le dépôt initial comportait six pages, une feuille de style et un CV. Les images de projets manquaient et le CV pointait vers un disque local. La refonte ajoute une structure documentaire, les preuves CNIL retrouvées, le portrait issu du CV et une analyse des trois dossiers applicatifs transmis.",
+      "problem": "Proposer à un lecteur un accès direct au parcours, au périmètre des réalisations, aux compétences mobilisées et à l’état des preuves, sur ordinateur comme sur mobile.",
+      "tasks": [
+        "Réécriture des six rubriques initiales et création de fiches détaillées par réalisation.",
+        "Ajout d’une matrice de compétences, d’un registre documentaire, d’un contact et d’informations de publication.",
+        "Veille critique avec sources primaires, dates et pistes d’application.",
+        "Navigation cohérente, lien d’évitement, styles de focus, filtres progressifs et impression.",
+        "Génération statique avec Node.js et contrôle automatique des chemins et ancres.",
+        "Ajout du portrait extrait du CV, de cinq attestations CNIL authentiques et de la fiche Épi Solidaire après examen des sources fournies."
+      ],
+      "analysis": [
+        [
+          "Architecture",
+          "Les données des projets sont centralisées ; un gabarit produit les pages HTML consultables sans serveur applicatif.",
+          "Les fichiers HTML générés restent dans le dépôt et sont lisibles sans JavaScript."
+        ],
+        [
+          "Dépendances",
+          "Le site utilise des polices système et des ressources locales.",
+          "Aucune bibliothèque, police distante, mesure d’audience ou service IA n’est appelé par les pages."
+        ],
+        [
+          "Accessibilité",
+          "Navigation nommée, page courante, titres hiérarchisés, tableaux légendés et filtres utilisables au clavier.",
+          "Les contrôles techniques et visuels ne constituent pas un audit complet de conformité RGAA."
+        ],
+        [
+          "Maintenance",
+          "Un script vérifie les ressources, les ancres, la structure minimale et les régressions connues.",
+          "La recette documente les contrôles effectivement exécutés et leurs limites."
+        ]
+      ],
+      "security": "Le site ne possède ni authentification, ni base de données, ni formulaire collectant des données. Les filtres fonctionnent localement avec des attributs de données ; aucun HTML provenant d’une saisie utilisateur n’est injecté. Le contact se fait par un lien de messagerie et l’hébergeur peut traiter des journaux de connexion.",
+      "outcome": "Le code et les documents de cette refonte sont présents dans ce dépôt. Les résultats des contrôles sont consignés séparément dans le rapport de recette. Aucun déploiement public nouveau n’est présumé.",
+      "retrospective": "Cette refonte a été produite avec une assistance IA. Elle devient un support pédagogique uniquement après relecture, vérification des faits et capacité à expliquer les choix, les scripts et les limites. Elle ne remplace ni les réalisations applicatives ni les expériences de stage.",
+      "mapping": [
+        [
+          "B1.3",
+          "Le site rend accessible une identité et des réalisations professionnelles ; la publication et sa visibilité restent à vérifier après déploiement."
+        ],
+        [
+          "B1.4",
+          "Le périmètre, les corrections et la recette sont documentés ; l’appropriation personnelle doit être démontrée."
+        ],
+        [
+          "B1.5",
+          "Les contrôles du site et le guide sont disponibles ; la mise en ligne et la validation utilisateur restent à effectuer."
+        ],
+        [
+          "B1.6",
+          "Le CV, le projet professionnel et une base de veille sont consultables ; leur exploitation personnelle reste à expliquer."
+        ]
+      ],
+      "slam": [
+        "La maintenance de ce site illustre une amélioration d’interface et de documentation. Ce site statique ne démontre pas à lui seul le bloc de développement d’applications SLAM."
+      ],
+      "missing": [
+        "PF-01",
+        "PF-02"
+      ],
+      "tests": [
+        [
+          "PF-T01",
+          "Exécuter npm run check.",
+          "Les ressources et ancres locales existent ; aucun lien file: ni image manquante."
+        ],
+        [
+          "PF-T02",
+          "Naviguer sur ordinateur et mobile.",
+          "Le contenu reste lisible et la navigation permet d’accéder à toutes les rubriques."
+        ],
+        [
+          "PF-T03",
+          "Utiliser les filtres et les liens au clavier.",
+          "Les commandes sont atteignables ; le focus et les résultats sont perceptibles."
+        ],
+        [
+          "PF-T04",
+          "Désactiver JavaScript.",
+          "Toutes les réalisations et tous les articles restent consultables."
+        ],
+        [
+          "PF-T05",
+          "Télécharger le CV et le tableau de travail.",
+          "Les fichiers existent, s’ouvrent et annoncent clairement leur périmètre."
+        ],
+        [
+          "PF-T06",
+          "Imprimer une fiche projet.",
+          "Le contenu reste exploitable sans le menu et sans élément tronqué."
+        ]
+      ]
+    }
+  ],
+  "missing": [
+    {
+      "id": "GEN-01",
+      "priority": "P0",
+      "label": "Consignes de réévaluation et dates précises",
+      "need": "L’établissement, la classe SIO2 et la session 2027 sont confirmés par la confirmation d’inscription du 9 novembre 2026. Préciser la date de réévaluation et fournir la grille ou les attentes détaillées de la professeure si elles existent. Les dates de projets et contributions doivent être vérifiées séparément.",
+      "destination": "data/portfolio.json et parcours.html après génération",
+      "reason": "La session et l’établissement sont désormais établis ; le barème précis et la date de réévaluation ne figurent pas dans les documents consultés."
+    },
+    {
+      "id": "GEN-02",
+      "priority": "P0",
+      "label": "Tableau officiel et attestations",
+      "need": "Renseigner le modèle officiel de tableau de synthèse de ta session avec les périodes exactes, productions et compétences réellement justifiées. Fournir les attestations de stage à l’établissement selon ses modalités, sans publier signatures et coordonnées privées.",
+      "destination": "Tableau public anonymisé dans docs/ ; attestations remises à l’établissement",
+      "reason": "Le tableau de travail livré n’est pas le modèle réglementaire et ne prouve pas la conformité du dossier."
+    },
+    {
+      "id": "AE-01",
+      "priority": "P0",
+      "label": "Auto-école : attribution et version de référence",
+      "need": "Les sources et les captures de Formules sont désormais examinées. Confirmer que cette section et ses fichiers correspondent à ta version de stage ; identifier précisément ce que tu as écrit et ce qui vient du binôme.",
+      "destination": "Liens à ajouter dans data/portfolio.json ; pièces anonymisées dans docs/preuves/auto-ecole/",
+      "reason": "L’accès au code démontre le contenu du dossier, pas l’auteur de chaque partie."
+    },
+    {
+      "id": "AE-02",
+      "priority": "P0",
+      "label": "Auto-école : contribution et validation",
+      "need": "Fournir une répartition des tâches en binôme, un planning daté, tes commits ou fichiers identifiés, le besoin ou cahier des charges, et un retour réel du tuteur sur le prototype.",
+      "destination": "docs/preuves/auto-ecole/ ; fiche projet",
+      "reason": "Le travail personnel et la réponse au besoin client restent seulement déclarés."
+    },
+    {
+      "id": "AE-03",
+      "priority": "P1",
+      "label": "Auto-école : recette et bilan",
+      "need": "Reproduire les essais de la fiche, puis documenter les corrections réellement effectuées, l’accessibilité des onglets et une difficulté vécue pendant le stage. Ajouter la recette ou le retour du tuteur si tu l’as.",
+      "destination": "docs/preuves/auto-ecole/recette.md",
+      "reason": "Les essais de la refonte sont datés et assistés ; ils ne remplacent pas ton bilan ni la validation du stage."
+    },
+    {
+      "id": "EP-01",
+      "priority": "P0",
+      "label": "Site marchand : version et accès aux sources",
+      "need": "Le dossier PHP et le schéma SQL fournis ont été examinés et installés pour les essais. Confirmer la version de référence, les dates et les droits d’accès de la professeure. Fournir un dépôt versionné ou une archive nettoyée avec configuration d’exemple sans secret.",
+      "destination": "Dépôt de l’application lié depuis la fiche ; ne pas ajouter de mots de passe au portfolio",
+      "reason": "Le lecteur doit pouvoir accéder à la même version et reproduire les essais."
+    },
+    {
+      "id": "EP-02",
+      "priority": "P0",
+      "label": "Site marchand : auteur et conception",
+      "need": "Préciser dates, équipe et pages/fonctions écrites personnellement ; joindre cahier des charges, MCD/MLD personnel si réalisé, historique ou répartition. Le schéma SQL et les extraits sont déjà analysés dans cette version.",
+      "destination": "docs/preuves/elegance-pluvieuse/ ; data/portfolio.json",
+      "reason": "Le fonctionnement du code ne permet pas d’identifier automatiquement la contribution de chaque personne."
+    },
+    {
+      "id": "EP-03",
+      "priority": "P0",
+      "label": "Site marchand : sécurité et recette",
+      "need": "Reprendre les défauts observés (stock, actions GET/CSRF, sessions, sorties d’image, suppression sans transaction), corriger ceux que tu prends réellement en charge et exécuter les scénarios de non-régression. Les résultats de la revue initiale sont conservés.",
+      "destination": "docs/preuves/elegance-pluvieuse/recette.md",
+      "reason": "Les protections partielles présentes dans le code ne rendent pas la boutique prête pour une exploitation commerciale."
+    },
+    {
+      "id": "EP-04",
+      "priority": "P1",
+      "label": "Site marchand : incident ou évolution réelle",
+      "need": "Décrire une anomalie ou une demande d’évolution réellement traitée : avant, reproduction, diagnostic, correction, commit et non-régression ; ajouter un court guide utilisateur.",
+      "destination": "docs/preuves/elegance-pluvieuse/incident.md et guide-utilisateur.md",
+      "reason": "Permettrait d’étayer B1.2 et B1.5 si l’intervention a effectivement eu lieu."
+    },
+    {
+      "id": "VT-01",
+      "priority": "P1",
+      "label": "TP de veille : version originale",
+      "need": "Fournir les fichiers du TP, ses dates et au moins une fiche originale avec sa source, pour distinguer le travail antérieur de la veille préparée lors de la refonte.",
+      "destination": "Lien du TP et docs/preuves/site-veille/",
+      "reason": "La réalisation historique est seulement décrite."
+    },
+    {
+      "id": "VT-02",
+      "priority": "P0",
+      "label": "Veille : appropriation et continuité",
+      "need": "Relire les fiches actuelles, écrire ton analyse personnelle et tenir un journal réel sur plusieurs semaines : source, date de lecture, information retenue, limite, conséquence et essai éventuel. Ne pas antidater les lectures.",
+      "destination": "docs/journal-veille.csv et veille.html via scripts/build.mjs",
+      "reason": "Une collecte initiale assistée ne démontre pas une veille personnelle suivie."
+    },
+    {
+      "id": "B1-01",
+      "priority": "P0",
+      "label": "Patrimoine informatique",
+      "need": "Fournir une situation réellement pratiquée : inventaire des outils et versions, droits d’accès, procédure de sauvegarde et résultat d’une restauration. Un exercice réalisé maintenant doit porter sa vraie date.",
+      "destination": "docs/preuves/patrimoine/ puis lien dans la matrice",
+      "reason": "B1.1 n’est pas couverte par une preuve exploitable."
+    },
+    {
+      "id": "B1-02",
+      "priority": "P0",
+      "label": "Support et demandes",
+      "need": "Fournir au moins un incident ou une évolution réelle documentée (application, assistance ou service), avec suivi et validation. Aucune situation fictive ne doit être présentée comme une expérience vécue.",
+      "destination": "docs/preuves/support/ puis lien dans la matrice",
+      "reason": "B1.2 n’est pas couverte par une preuve exploitable."
+    },
+    {
+      "id": "PF-01",
+      "priority": "P1",
+      "label": "Publication et identité professionnelle",
+      "need": "Vérifier l’adresse de contact reprise du CV, confirmer les dates et relire le nouveau CV. Le portrait et les attestations CNIL sont retrouvés. Choisir l’URL d’hébergement, confirmer les mentions du fournisseur et tester la version publiée.",
+      "destination": "data/portfolio.json, contact et informations de publication",
+      "reason": "Le lien GitHub du code ne prouve pas l’accessibilité du site publié."
+    },
+    {
+      "id": "PF-02",
+      "priority": "P0",
+      "label": "Appropriation pour l’oral",
+      "need": "Savoir expliquer le HTML/CSS, le filtre JavaScript, la génération et les vérifications ; corriger les faits après relecture. Préparer une démonstration des applications avec données fictives et une copie hors ligne.",
+      "destination": "Préparation personnelle à partir des fiches et de docs/A_FOURNIR.md",
+      "reason": "Un contenu assisté doit être maîtrisé et étayé par ton travail."
+    },
+    {
+      "id": "SLAM-01",
+      "priority": "P0",
+      "label": "Deuxième année : périmètre d’Épi Solidaire et épreuves",
+      "need": "La fiche Épi Solidaire est ajoutée à partir des fichiers transmis. Confirmer période, équipe, missions personnelles et support de cours. Pour les réalisations retenues à l’épreuve de développement, joindre les fiches de la session et vérifier le périmètre avec l’enseignante.",
+      "destination": "Nouvelles entrées dans data/portfolio.json et pièces de projets",
+      "reason": "Une analyse de sources ne remplace pas la preuve du travail individuel ni les pièces attendues par l’établissement."
+    },
+    {
+      "id": "ES-01",
+      "priority": "P0",
+      "label": "Épi Solidaire : contexte et contribution",
+      "need": "Fournir le cahier des charges, les dates réelles, l’équipe et la liste de tes fonctions/fichiers. Distinguer le support fourni, le travail du binôme et tes modifications, avec des commits ou documents.",
+      "destination": "Fiche Épi Solidaire et docs/preuves/epi-solidaire/",
+      "reason": "Le code reçu contient des modules de dates et d’origines différentes ; leur présence ne prouve pas leur auteur."
+    },
+    {
+      "id": "ES-02",
+      "priority": "P0",
+      "label": "Épi Solidaire : commandes, droits et sessions",
+      "need": "Corriger sur ta version de référence les défauts constatés : prix catalogue absent, identifiant de commande, lignes de commande, contrôles de rôle, déconnexion et requêtes SQL concaténées. Documenter les corrections réellement réalisées et les tests sur données fictives.",
+      "destination": "Dépôt applicatif puis compte rendu lié depuis la fiche",
+      "reason": "Ces défauts ont été observés ou reproduits dans la revue et empêchent de présenter une chaîne métier fiable."
+    },
+    {
+      "id": "ES-03",
+      "priority": "P1",
+      "label": "Épi Solidaire : recette et mise à disposition",
+      "need": "Après correction, exécuter la chaîne stock → commande → livraison, les erreurs et les cas de concurrence ; vérifier les transactions et fournir un guide utilisateur. Donner l’environnement et la procédure d’installation à la professeure.",
+      "destination": "docs/preuves/epi-solidaire/recette.md et guide-utilisateur.md",
+      "reason": "La vérification de syntaxe et les essais partiels ne valent pas une recette d’acceptation."
+    },
+    {
+      "id": "CERT-01",
+      "priority": "P1",
+      "label": "Attestations complémentaires à retrouver",
+      "need": "Les modules CNIL 1, 3, 4, 5 et 6 sont retrouvés. Fournir le module 2 s’il a été validé, l’attestation de réussite SecNumAcadémie et le certificat ou badge Cisco « Introduction à la cybersécurité ». Les mails retrouvés prouvent seulement l’inscription aux deux dernières formations. Donner le nom de l’autre certification si tu t’en souviens.",
+      "destination": "docs/certifications/ et page certifications.html",
+      "reason": "Une inscription, un compte Pix ou une newsletter ne prouve pas une certification obtenue."
+    }
+  ],
+  "certifications": [
+    {
+      "module": 1,
+      "title": "Le RGPD et ses notions clés",
+      "date": "2025-09-05",
+      "score": 80,
+      "path": "docs/certifications/CNIL_RGPD_Module_1.pdf"
+    },
+    {
+      "module": 3,
+      "title": "Les responsabilités des acteurs",
+      "date": "2025-09-12",
+      "score": 80,
+      "path": "docs/certifications/CNIL_RGPD_Module_3.pdf"
+    },
+    {
+      "module": 4,
+      "title": "Le DPO et les outils de la conformité",
+      "date": "2025-10-10",
+      "score": 87,
+      "path": "docs/certifications/CNIL_RGPD_Module_4.pdf"
+    },
+    {
+      "module": 5,
+      "title": "Les collectivités territoriales",
+      "date": "2025-10-10",
+      "score": 87,
+      "path": "docs/certifications/CNIL_RGPD_Module_5.pdf"
+    },
+    {
+      "module": 6,
+      "title": "Travail et données personnelles",
+      "date": "2025-11-21",
+      "score": 80,
+      "path": "docs/certifications/CNIL_RGPD_Module_6.pdf"
+    }
+  ],
+  "formation": {
+    "etablissement": "Lycée du Parc des Loges, Évry-Courcouronnes",
+    "classe": "SIO2",
+    "session": "2027",
+    "source": "Confirmation d’inscription BTS, version du 9 novembre 2026, consultée à la demande du candidat ; document personnel non publié."
+  }
+}

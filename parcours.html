@@ -1,84 +1,206 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon parcours | Portfolio Lucas Barnaba</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Formation, stage et expériences de Lucas Barnaba, étudiant en BTS SIO option SLAM.">
+<meta name="color-scheme" content="light">
+<title>Parcours | Lucas Barnaba · BTS SIO SLAM</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="assets/app.js" defer>
+</script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="qui-suis-je.html">Qui suis-je ?</a></li>
-            <li><a href="parcours.html" class="actif">Mon parcours</a></li>
-            <li><a href="projet.html">Projet de formation</a></li>
-            <li><a href="realisations.html">Mes réalisations</a></li>
-            <li><a href="veille.html">Veille</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <div class="contenu">
-            <h1>Mon parcours</h1>
-            <p>Ma formation, mes compétences techniques et mes expériences.</p>
-        </div>
-    </header>
-
-    <main>
-        <section>
-            <h2>Ma formation</h2>
-            <div class="carte">
-                <h3>BTS SIO — option SLAM (2025 – 2027)</h3>
-                <p>Le BTS Services Informatiques aux Organisations forme des développeurs et des techniciens capables de répondre aux besoins informatiques des entreprises. L'option <strong>SLAM</strong> (Solutions Logicielles et Applications Métiers) est centrée sur le développement : conception d'applications, programmation, bases de données et cybersécurité appliquée au développement.</p>
-            </div>
-            <div class="carte">
-                <h3>Baccalauréat STMG — spécialité SIG (2025)</h3>
-                <p>Lycée Parc des Loges, Évry-Courcouronnes. Sciences et Technologies du Management et de la Gestion, avec en terminale la spécialité <strong>Systèmes d'Information de Gestion</strong> : première approche des bases de données, des réseaux et de la programmation.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Mes compétences techniques</h2>
-            <h3>Développement web</h3>
-            <div class="badges">
-                <span class="badge">HTML5</span>
-                <span class="badge">CSS3</span>
-                <span class="badge">JavaScript</span>
-                <span class="badge bleu">PHP</span>
-            </div>
-            <h3>Bases de données</h3>
-            <div class="badges">
-                <span class="badge bleu">SQL / MySQL</span>
-                <span class="badge">phpMyAdmin</span>
-            </div>
-            <h3>Développement logiciel</h3>
-            <div class="badges">
-                <span class="badge bleu">Java</span>
-            </div>
-            <h3>Outils</h3>
-            <div class="badges">
-                <span class="badge">WampServer</span>
-                <span class="badge">GitHub</span>
-                <span class="badge">VS Code</span>
-            </div>
-        </section>
-
-        <section>
-            <h2>Mes expériences</h2>
-            <div class="carte">
-                <h3>Stage de 1<sup>re</sup> année — Auto École Excellence, Ris-Orangis (mai – juin 2026)</h3>
-                <p>Conception et développement du site vitrine de l'auto-école, en binôme. J'ai réalisé la page « Formules » (présentation des formations et des tarifs) en HTML, CSS et JavaScript, en respectant la charte graphique du projet. <a href="realisations.html">Voir le détail du projet</a>.</p>
-            </div>
-            <div class="carte">
-                <h3>Expériences professionnelles</h3>
-                <p>En parallèle de mes études : préparation de commandes et logistique (Chronodrive), service en restauration, vente en boulangerie. Ces expériences m'ont apporté rigueur, autonomie et sens du travail en équipe.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>© 2026 Lucas Barnaba — Portfolio BTS SIO SLAM</p>
-    </footer>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="shell">
+<aside class="sidebar">
+<a class="brand" href="index.html" aria-label="Lucas Barnaba, accueil">
+<span class="brand-mark" aria-hidden="true">LB.</span>
+<span class="brand-name">Lucas Barnaba<small>PORTFOLIO · BTS SIO SLAM</small>
+</span>
+</a>
+<nav aria-label="Navigation principale">
+<p class="nav-caption">Parcours de professionnalisation</p>
+<ul class="nav-list">
+<li>
+<a href="index.html">
+<span class="nav-number" aria-hidden="true">01</span>Accueil</a>
+</li>
+<li>
+<a href="qui-suis-je.html">
+<span class="nav-number" aria-hidden="true">02</span>Profil & CV</a>
+</li>
+<li>
+<a href="parcours.html" aria-current="page">
+<span class="nav-number" aria-hidden="true">03</span>Parcours</a>
+</li>
+<li>
+<a href="projet.html">
+<span class="nav-number" aria-hidden="true">04</span>Projet professionnel</a>
+</li>
+<li>
+<a href="certifications.html">
+<span class="nav-number" aria-hidden="true">05</span>Certifications</a>
+</li>
+<li>
+<a href="realisations.html">
+<span class="nav-number" aria-hidden="true">06</span>Réalisations</a>
+</li>
+<li>
+<a href="competences.html">
+<span class="nav-number" aria-hidden="true">07</span>Compétences</a>
+</li>
+<li>
+<a href="veille.html">
+<span class="nav-number" aria-hidden="true">08</span>Veille technologique</a>
+</li>
+<li>
+<a href="veille-juridique.html">
+<span class="nav-number" aria-hidden="true">09</span>Veille juridique</a>
+</li>
+<li>
+<a href="documents.html">
+<span class="nav-number" aria-hidden="true">10</span>Documents</a>
+</li>
+<li>
+<a href="contact.html">
+<span class="nav-number" aria-hidden="true">11</span>Contact</a>
+</li>
+</ul>
+</nav>
+<div class="sidebar-bottom">
+<span class="online-dot" aria-hidden="true">
+</span>Étudiant · deuxième année<p>Développement web & applications<br>Évry-Courcouronnes · Île-de-France</p>
+<p>
+<a href="https://github.com/lucasbarnaba57-del/Mon_Portfolio">Consulter le dépôt GitHub</a>
+</p>
+</div>
+</aside>
+<div class="workspace">
+<div class="topbar">
+<strong>Solutions logicielles & applications métiers</strong>
+<span>Mis à jour le <time datetime="2026-11-25">25 novembre 2026</time>
+</span>
+</div>
+<main id="contenu" class="page" tabindex="-1">
+<header class="hero">
+<div>
+<span class="eyebrow">Formation & expériences</span>
+<h1>Un parcours orienté<br>vers le développement.</h1>
+<p class="lead">La formation, le stage et les expériences professionnelles sont présentés séparément pour rendre leur rôle et leur périmètre lisibles.</p>
+</div>
+</header>
+<section class="section anchor-section" id="formation">
+<div class="section-head">
+<h2>Ma formation</h2>
+</div>
+<div class="timeline">
+<article class="timeline-item">
+<span class="timeline-date">2025 → 2027<br>Dates déclarées</span>
+<div>
+<h3>BTS SIO · option SLAM</h3>
+<p>Deuxième année. Le parcours associe support et mise à disposition de services, conception et développement d’applications, et cybersécurité des services informatiques. La confirmation d’inscription du 9 novembre 2026 indique le lycée du Parc des Loges, la classe SIO2 et la session 2027. Ce document personnel n’est pas publié.</p>
+<a href="competences.html" class="card-link">Consulter les liens avec le référentiel</a>
+</div>
+</article>
+<article class="timeline-item">
+<span class="timeline-date">2025<br>Selon le CV fourni</span>
+<div>
+<h3>Baccalauréat STMG · spécialité SIG</h3>
+<p>Lycée Parc des Loges, Évry-Courcouronnes. Une première approche des organisations et des systèmes d’information, prolongée par les réalisations de développement du BTS.</p>
+</div>
+</article>
+</div>
+<p class="hint">L’établissement, SIO2 et la session 2027 sont confirmés par l’inscription. Le bac et les autres dates reprennent le parcours et le CV. <a href="documents.html#GEN-01">Consignes de réévaluation à préciser</a>.</p>
+</section>
+<section class="section anchor-section" id="stage">
+<div class="section-head">
+<h2>Une expérience de stage identifiée</h2>
+</div>
+<article class="card">
+<span class="card-label">18 mai au 27 juin 2026 · Ris-Orangis</span>
+<h3>Auto École Excellence</h3>
+<p>Stage de première année : site vitrine réalisé en binôme. Ma contribution déclarée est la page « Formules », en HTML, CSS et JavaScript, pour présenter les formations et les tarifs en respectant la charte du site.</p>
+<p>Le résultat est annoncé comme un prototype présenté à l’auto-école. Les sources et les essais de cette version sont désormais consultables ; la contribution individuelle et le retour du tuteur restent à joindre.</p>
+<a class="card-link" href="projets/auto-ecole.html">Examiner le périmètre, les tests et les pièces attendues</a>
+</article>
+</section>
+<section class="section anchor-section" id="experience">
+<div class="section-head">
+<h2>Mes autres expériences professionnelles</h2>
+</div>
+<div class="table-wrap">
+<table class="">
+<caption>Informations reprises du CV présent dans le dépôt initial</caption>
+<thead>
+<tr>
+<th scope="col">Période</th>
+<th scope="col">Expérience</th>
+<th scope="col">Apports transférables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row">Sept. 2025 – fév. 2026</th>
+<td>Équipier polyvalent · Chronodrive, Évry-Courcouronnes</td>
+<td>Préparation de commandes, gestion des stocks surgelés, respect de la chaîne du froid et accueil des clients.</td>
+</tr>
+<tr>
+<th scope="row">Juil. – août 2025</th>
+<td>Serveur · Andiamo</td>
+<td>Prise de commandes, encaissement, service et entretien de la salle.</td>
+</tr>
+<tr>
+<th scope="row">Sept. 2024 – mars 2025</th>
+<td>Vendeur · Boulangerie</td>
+<td>Conseil, encaissement, réassort et respect des règles d’hygiène.</td>
+</tr>
+<tr>
+<th scope="row">Janv. – nov. 2023</th>
+<td>Baby-sitter · Particuliers</td>
+<td>Respect des consignes, organisation des activités et accompagnement des devoirs.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section class="section anchor-section" id="progression">
+<div class="section-head">
+<h2>Rendre la progression visible</h2>
+</div>
+<div class="grid three">
+<article class="card">
+<span class="step-no">INTERFACE</span>
+<h3>Structurer l’information</h3>
+<p>Relier le besoin client à la page Formules et à ses interactions.</p>
+</article>
+<article class="card">
+<span class="step-no">APPLICATION</span>
+<h3>Relier logique et données</h3>
+<p>Expliquer le parcours d’achat et le rôle du serveur dans le site marchand.</p>
+</article>
+<article class="card">
+<span class="step-no">JUSTIFICATION</span>
+<h3>Documenter les résultats</h3>
+<p>Joindre des preuves de contribution, de fonctionnement et de progression pour chaque projet.</p>
+</article>
+</div>
+</section>
+<aside class="note warning">
+<strong>Deuxième année : réalisations attendues.</strong>
+<p>Épi Solidaire est désormais documenté à partir des fichiers fournis et d’essais locaux. Ses dates, son contexte et le périmètre personnel restent à confirmer : <a href="documents.html#SLAM-01">voir la pièce SLAM-01</a>.</p>
+</aside>
+</main>
+<footer class="footer">
+<span>© 2026 Lucas Barnaba · Portfolio de formation</span>
+<div class="footer-links">
+<a href="contact.html">Contact</a>
+<a href="mentions-legales.html">Informations de publication</a>
+<a href="documents.html">Documents & preuves</a>
+</div>
+</footer>
+</div>
+</div>
 </body>
 </html>

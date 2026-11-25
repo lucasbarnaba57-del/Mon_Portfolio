@@ -1,96 +1,239 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes réalisations | Portfolio Lucas Barnaba</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Fiches des projets de stage, d’atelier et de TP : besoin, contribution, technique, tests et preuves.">
+<meta name="color-scheme" content="light">
+<title>Réalisations | Lucas Barnaba · BTS SIO SLAM</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+<script src="assets/app.js" defer>
+</script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="qui-suis-je.html">Qui suis-je ?</a></li>
-            <li><a href="parcours.html">Mon parcours</a></li>
-            <li><a href="projet.html">Projet de formation</a></li>
-            <li><a href="realisations.html" class="actif">Mes réalisations</a></li>
-            <li><a href="veille.html">Veille</a></li>
-        </ul>
-    </nav>
-
-    <header>
-        <div class="contenu">
-            <h1>Mes réalisations</h1>
-            <p>Projets réalisés en stage, en cours et en atelier de professionnalisation.</p>
-        </div>
-    </header>
-
-    <main>
-        <!-- ================= PROJET 1 : STAGE ================= -->
-        <div class="projet">
-            <span class="etiquette">Stage — 1<sup>re</sup> année</span>
-            <h2>Site vitrine — Auto École Excellence</h2>
-            <table>
-                <tr><td>Contexte</td><td>Stage de 1<sup>re</sup> année à l'Auto École Excellence (Ris-Orangis). L'auto-école souhaitait un site vitrine pour présenter son activité et moderniser son image.</td></tr>
-                <tr><td>Besoins</td><td>Présenter l'auto-école, ses formations et ses tarifs, et permettre aux visiteurs de trouver facilement les informations pratiques.</td></tr>
-                <tr><td>Période</td><td>18 mai – 27 juin 2026</td></tr>
-                <tr><td>Équipe</td><td>En binôme</td></tr>
-                <tr><td>Langages / outils</td><td>HTML, CSS, JavaScript (site global : PHP, MySQL, PDO) — testé en local sous WampServer</td></tr>
-                <tr><td>Méthodes</td><td>Répartition des tâches en binôme, respect d'une charte graphique commune (noir / orange / blanc), tests en local</td></tr>
-            </table>
-            <h3>Mon travail</h3>
-            <p>J'ai conçu et développé la page <strong>« Formules »</strong> : présentation des formations et des tarifs (avec ou sans code), avec un système d'onglets en JavaScript et un affichage responsive, en respectant la charte graphique du projet.</p>
-            <!-- Remplace par tes captures d'écran (dossier assets/) -->
-            <img src="assets/formules-capture.png" alt="Capture de la page Formules du site Auto École Excellence">
-            <h3>Bilan</h3>
-            <p>Ce stage m'a permis de travailler sur un vrai besoin client, de collaborer en binôme sur un projet complet et de progresser en JavaScript et en responsive design. Le site a été présenté comme prototype à l'auto-école.</p>
-        </div>
-
-        <!-- ================= PROJET 2 : SITE MARCHAND ================= -->
-        <div class="projet">
-            <span class="etiquette">AP — 1<sup>re</sup> année</span>
-            <h2>Site marchand — Élégance Pluvieuse</h2>
-            <table>
-                <tr><td>Contexte</td><td>En atelier de professionnalisation, réalisation d'un site web marchand à partir d'un cahier des charges : une boutique fictive de parapluies artisanaux haut de gamme.</td></tr>
-                <tr><td>Besoins</td><td>Présenter les produits, gérer des comptes clients (inscription / connexion) et proposer un panier d'achat relié à une base de données.</td></tr>
-                <tr><td>Période</td><td>Année scolaire 2025 – 2026</td></tr>
-                <tr><td>Équipe</td><td><!-- seul ou en groupe ? à préciser --></td></tr>
-                <tr><td>Langages / outils</td><td>PHP, MySQL, HTML, CSS — WampServer, phpMyAdmin</td></tr>
-                <tr><td>Méthodes</td><td>Analyse du cahier des charges, conception de la base de données, développement page par page, tests en local</td></tr>
-            </table>
-            <h3>Mon travail</h3>
-            <ul class="liste">
-                <li>Pages de présentation : accueil, catalogue des modèles, tarifs et services</li>
-                <li>Système d'inscription et de connexion avec sessions PHP et mots de passe chiffrés</li>
-                <li>Panier d'achat stocké en base de données (ajout de produits, calcul du total, vidage du panier)</li>
-                <li>Fiche produit dynamique générée depuis la base de données</li>
-            </ul>
-            <!-- Remplace par tes captures d'écran (dossier assets/) -->
-            <img src="assets/epluv-capture.png" alt="Capture du site marchand Élégance Pluvieuse">
-            <h3>Bilan</h3>
-            <p>Premier projet dynamique complet : j'ai appris à relier un site à une base de données avec PHP et SQL, à gérer des sessions utilisateur et à construire un panier. Ce projet me sert de base pour le site marchand plus abouti (PDO, back-office) de 2<sup>e</sup> année.</p>
-        </div>
-
-        <!-- ================= PROJET 3 : SITE DE VEILLE ================= -->
-        <div class="projet">
-            <span class="etiquette">TP — 1<sup>re</sup> année</span>
-            <h2>Site de veille technologique</h2>
-            <table>
-                <tr><td>Contexte</td><td>Travail pratique : créer un site présentant une veille technologique avec des articles sourcés.</td></tr>
-                <tr><td>Besoins</td><td>Structurer et présenter des articles de veille (titre, date, source, lien, résumé personnel).</td></tr>
-                <tr><td>Période</td><td>1<sup>re</sup> année de BTS</td></tr>
-                <tr><td>Équipe</td><td>Seul</td></tr>
-                <tr><td>Langages / outils</td><td>HTML, CSS</td></tr>
-            </table>
-            <h3>Mon travail</h3>
-            <p>Réalisation d'une page structurée en sections (introduction, articles, sources) avec une mise en page claire en CSS. Ce travail est le point de départ de ma <a href="veille.html">veille technologique</a> de 2<sup>e</sup> année.</p>
-            <h3>Bilan</h3>
-            <p>Ce TP m'a appris à structurer une page de contenu et à citer correctement mes sources.</p>
-        </div>
-    </main>
-
-    <footer>
-        <p>© 2026 Lucas Barnaba — Portfolio BTS SIO SLAM</p>
-    </footer>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="shell">
+<aside class="sidebar">
+<a class="brand" href="index.html" aria-label="Lucas Barnaba, accueil">
+<span class="brand-mark" aria-hidden="true">LB.</span>
+<span class="brand-name">Lucas Barnaba<small>PORTFOLIO · BTS SIO SLAM</small>
+</span>
+</a>
+<nav aria-label="Navigation principale">
+<p class="nav-caption">Parcours de professionnalisation</p>
+<ul class="nav-list">
+<li>
+<a href="index.html">
+<span class="nav-number" aria-hidden="true">01</span>Accueil</a>
+</li>
+<li>
+<a href="qui-suis-je.html">
+<span class="nav-number" aria-hidden="true">02</span>Profil & CV</a>
+</li>
+<li>
+<a href="parcours.html">
+<span class="nav-number" aria-hidden="true">03</span>Parcours</a>
+</li>
+<li>
+<a href="projet.html">
+<span class="nav-number" aria-hidden="true">04</span>Projet professionnel</a>
+</li>
+<li>
+<a href="certifications.html">
+<span class="nav-number" aria-hidden="true">05</span>Certifications</a>
+</li>
+<li>
+<a href="realisations.html" aria-current="page">
+<span class="nav-number" aria-hidden="true">06</span>Réalisations</a>
+</li>
+<li>
+<a href="competences.html">
+<span class="nav-number" aria-hidden="true">07</span>Compétences</a>
+</li>
+<li>
+<a href="veille.html">
+<span class="nav-number" aria-hidden="true">08</span>Veille technologique</a>
+</li>
+<li>
+<a href="veille-juridique.html">
+<span class="nav-number" aria-hidden="true">09</span>Veille juridique</a>
+</li>
+<li>
+<a href="documents.html">
+<span class="nav-number" aria-hidden="true">10</span>Documents</a>
+</li>
+<li>
+<a href="contact.html">
+<span class="nav-number" aria-hidden="true">11</span>Contact</a>
+</li>
+</ul>
+</nav>
+<div class="sidebar-bottom">
+<span class="online-dot" aria-hidden="true">
+</span>Étudiant · deuxième année<p>Développement web & applications<br>Évry-Courcouronnes · Île-de-France</p>
+<p>
+<a href="https://github.com/lucasbarnaba57-del/Mon_Portfolio">Consulter le dépôt GitHub</a>
+</p>
+</div>
+</aside>
+<div class="workspace">
+<div class="topbar">
+<strong>Solutions logicielles & applications métiers</strong>
+<span>Mis à jour le <time datetime="2026-11-25">25 novembre 2026</time>
+</span>
+</div>
+<main id="contenu" class="page" tabindex="-1">
+<header class="hero">
+<div>
+<span class="eyebrow">Réalisations & analyse technique</span>
+<h1>Le besoin, le code,<br>et ce qui peut être montré.</h1>
+<p class="lead">Quatre réalisations de formation sont décrites, dont Épi Solidaire ajouté après examen de ses fichiers. Une cinquième fiche explique le travail sur ce portfolio et l’assistance utilisée. Chaque fiche présente son périmètre, ses liens avec les compétences et ses limites.</p>
+</div>
+</header>
+<div class="filter-bar" data-filter-group data-target="liste-projets" data-noun="réalisation" hidden>
+<button type="button" data-filter="all" aria-pressed="true" aria-controls="liste-projets">Tous</button>
+<button type="button" data-filter="Stage" aria-pressed="false" aria-controls="liste-projets">Stage</button>
+<button type="button" data-filter="Atelier" aria-pressed="false" aria-controls="liste-projets">Atelier</button>
+<button type="button" data-filter="Projet pédagogique" aria-pressed="false" aria-controls="liste-projets">Projet pédagogique</button>
+<button type="button" data-filter="TP" aria-pressed="false" aria-controls="liste-projets">TP</button>
+<button type="button" data-filter="Personnel" aria-pressed="false" aria-controls="liste-projets">Personnel</button>
+<span class="result-count" role="status" aria-live="polite" aria-atomic="true">
+</span>
+</div>
+<div id="liste-projets" class="grid two">
+<article class="card project-card" data-category="Stage">
+<div class="project-visual auto-ecole" aria-hidden="true">
+<span class="project-no">01</span>
+<span class="project-type">Stage</span>
+</div>
+<div class="project-card-body">
+<span class="card-label">18 mai – 27 juin 2026</span>
+<h3>Auto École Excellence</h3>
+<p>Conception de la page de présentation des formations et des tarifs d’une auto-école à Ris-Orangis, dans le cadre du stage de première année.</p>
+<span class="status available">Sources et essais consultables</span>
+<div class="pills">
+<span class="pill">HTML</span>
+<span class="pill">CSS</span>
+<span class="pill">JavaScript</span>
+</div>
+<a class="card-link" href="projets/auto-ecole.html">Lire la fiche Auto École Excellence <span aria-hidden="true">↗</span>
+</a>
+</div>
+</article>
+<article class="card project-card" data-category="Atelier">
+<div class="project-visual elegance-pluvieuse" aria-hidden="true">
+<span class="project-no">02</span>
+<span class="project-type">Atelier</span>
+</div>
+<div class="project-card-body">
+<span class="card-label">Année scolaire 2025–2026 · dates exactes à fournir</span>
+<h3>Élégance Pluvieuse</h3>
+<p>Boutique fictive de parapluies artisanaux haut de gamme : catalogue, comptes clients et panier relié à une base de données.</p>
+<span class="status available">Sources et essais consultables</span>
+<div class="pills">
+<span class="pill">PHP</span>
+<span class="pill">PDO</span>
+<span class="pill">MySQL</span>
+<span class="pill">HTML</span>
+<span class="pill">CSS</span>
+</div>
+<a class="card-link" href="projets/elegance-pluvieuse.html">Lire la fiche Élégance Pluvieuse <span aria-hidden="true">↗</span>
+</a>
+</div>
+</article>
+<article class="card project-card" data-category="Projet pédagogique">
+<div class="project-visual epi-solidaire" aria-hidden="true">
+<span class="project-no">03</span>
+<span class="project-type">Projet pédagogique</span>
+</div>
+<div class="project-card-body">
+<span class="card-label">Fichiers d’octobre–novembre 2026 · période de travail à confirmer</span>
+<h3>Épi Solidaire</h3>
+<p>Application pédagogique d’épicerie solidaire : espaces par rôle, stocks, produits périmés, commandes téléphoniques et livraisons.</p>
+<span class="status available">Sources et essais consultables</span>
+<div class="pills">
+<span class="pill">PHP</span>
+<span class="pill">PDO</span>
+<span class="pill">MySQL</span>
+<span class="pill">MVC</span>
+</div>
+<a class="card-link" href="projets/epi-solidaire.html">Lire la fiche Épi Solidaire <span aria-hidden="true">↗</span>
+</a>
+</div>
+</article>
+<article class="card project-card" data-category="TP">
+<div class="project-visual site-veille" aria-hidden="true">
+<span class="project-no">04</span>
+<span class="project-type">TP</span>
+</div>
+<div class="project-card-body">
+<span class="card-label">Première année de BTS · dates exactes à fournir</span>
+<h3>Site de veille technologique</h3>
+<p>Un travail pratique de première année pour présenter des articles sourcés dans une page structurée.</p>
+<span class="status">Description disponible · preuves attendues</span>
+<div class="pills">
+<span class="pill">HTML</span>
+<span class="pill">CSS</span>
+</div>
+<a class="card-link" href="projets/site-veille.html">Lire la fiche Site de veille technologique <span aria-hidden="true">↗</span>
+</a>
+</div>
+</article>
+<article class="card project-card" data-category="Personnel">
+<div class="project-visual portfolio" aria-hidden="true">
+<span class="project-no">05</span>
+<span class="project-type">Personnel</span>
+</div>
+<div class="project-card-body">
+<span class="card-label">Refonte du 25 novembre 2026</span>
+<h3>Ce portfolio</h3>
+<p>Réorganisation du portfolio, preuves de formations, analyse des sources, compétences, veille et contrôles techniques.</p>
+<span class="status available">Code disponible · assistance IA</span>
+<div class="pills">
+<span class="pill">HTML</span>
+<span class="pill">CSS</span>
+<span class="pill">JavaScript</span>
+<span class="pill">Node.js</span>
+</div>
+<a class="card-link" href="projets/portfolio.html">Lire la fiche Ce portfolio <span aria-hidden="true">↗</span>
+</a>
+</div>
+</article>
+</div>
+<section class="section anchor-section" id="methode-lecture">
+<div class="section-head">
+<h2>Comment lire les fiches ?</h2>
+</div>
+<div class="grid three">
+<article class="card">
+<h3>Décrit</h3>
+<p>Information présente dans le portfolio initial, conservée sans l’étendre à une expérience ou un résultat non attesté.</p>
+</article>
+<article class="card">
+<h3>Consultable</h3>
+<p>Fichier ou production présent dans ce dépôt et accessible par un lien réel.</p>
+</article>
+<article class="card">
+<h3>À fournir ou à tester</h3>
+<p>Élément nécessaire pour vérifier une affirmation ou un comportement, avec une demande précise dans le registre des preuves.</p>
+</article>
+</div>
+</section>
+<aside class="note ">
+<strong>Périmètre technique.</strong>
+<p>Les sources transmises pour le stage, le site marchand et Épi Solidaire ont été examinées. Les essais locaux utilisent des données fictives ; réussites et anomalies sont consignées dans les fiches. Le TP de veille original reste à joindre. <a href="documents.html">Voir les sources et pièces à joindre</a>.</p>
+</aside>
+</main>
+<footer class="footer">
+<span>© 2026 Lucas Barnaba · Portfolio de formation</span>
+<div class="footer-links">
+<a href="contact.html">Contact</a>
+<a href="mentions-legales.html">Informations de publication</a>
+<a href="documents.html">Documents & preuves</a>
+</div>
+</footer>
+</div>
+</div>
 </body>
 </html>
