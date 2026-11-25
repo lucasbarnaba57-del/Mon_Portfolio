@@ -1,19 +1,19 @@
 /* Portfolio Lucas Barnaba. Polices système, ressources locales, mobile et impression. */
 :root {
-  --ink:#172c3a;
-  --muted:#51626e;
-  --paper:#f6f7f8;
+  --ink:#282720;
+  --muted:#59594f;
+  --paper:#faf8f2;
   --white:#fff;
-  --line:#d6dfe4;
-  --blue:#1d4ed8;
-  --navy:#102a3c;
-  --pale:#eaf0fb;
+  --line:#d7d3c6;
+  --blue:#7d352b;
+  --navy:#37392e;
+  --pale:#f0ece0;
   --teal:#08685b;
   --soft:#e7f2ee;
   --amber:#7b4613;
   --amber-bg:#fff4df;
-  --radius:14px;
-  --shadow:0 12px 38px #102a3c08}
+  --radius:2px;
+  --shadow:none}
 
 * {
   box-sizing:border-box}
@@ -29,7 +29,7 @@ body {
   font:1rem/1.7 "Segoe UI",Arial,sans-serif}
 
 a {
-  color:#1649be;
+  color:var(--blue);
   text-underline-offset:4px;
   text-decoration-thickness:1px}
 
@@ -321,8 +321,8 @@ hr {
   font-size:.88rem}
 
 .button:hover {
-  background:#153ba7;
-  border-color:#153ba7;
+  background:#612920;
+  border-color:#612920;
   text-decoration:none}
 
 .button.secondary {
@@ -841,11 +841,6 @@ details ul {
   color:var(--muted);
   font-size:.76rem}
 
-.footer-links {
-  display:flex;
-  gap:16px;
-  flex-wrap:wrap}
-
 .footer a {
   color:var(--muted)}
 
@@ -1325,4 +1320,37 @@ summary {
   max-width:500px;
   margin:15px 0}
 
+}
+
+/* Présentation du carnet de formation. */
+@media screen {
+  .shell { max-width: 1400px; }
+  .sidebar { background: #f1eee4; color: var(--ink); border-right: 1px solid var(--line); }
+  .brand, .sidebar-bottom a { color: var(--ink); }
+  .brand-name, h1, h2, .project-card h3 { font-family: Georgia, "Times New Roman", serif; font-weight: 500; }
+  .brand-name { font-size: 1.65rem; }
+  .brand small, .sidebar-bottom { color: var(--muted); }
+  .brand small { font: .7rem/1.5 "Segoe UI", sans-serif; letter-spacing: .08em; }
+  .sidebar-bottom { border-color: var(--line); }
+  .nav-list a { color: var(--ink); border-radius: 0; border-left: 2px solid transparent; }
+  .nav-list a:hover, .nav-list a[aria-current=page] { background: #e8e3d7; color: #74352b; border-left-color: currentColor; }
+  .topbar { background: transparent; }
+  .eyebrow { color: var(--blue); letter-spacing: .08em; }
+  .hero-with-portrait h1 { font-size: clamp(2.6rem, 6vw, 5.2rem); }
+  .portrait img { border: 5px solid white; border-radius: 0; outline: 1px solid var(--line); }
+  .card, .timeline-item, .source-card { border: 0; border-top: 1px solid var(--line); border-radius: 0; background: transparent; padding: 20px 0; }
+  .grid { column-gap: 30px; }
+  .project-card { padding: 0; }
+  .project-card .project-visual { min-height: 0; background: transparent; border: 0; padding: 0; display: block; color: var(--muted); }
+  .project-visual img { display: block; width: 100%; aspect-ratio: 2.35; object-fit: cover; object-position: top; border: 1px solid var(--line); border-top: 0; }
+  .project-visual .project-type { display: block; padding: 13px 0 0; border: 0; color: var(--blue); }
+  .project-card-body { padding: 8px 0 20px; }
+  .note { border: 0; border-left: 3px solid #a2997e; border-radius: 0; }
+  .button, .filter-bar button, .table-wrap { border-radius: 2px; }
+  .pill { background: transparent; border: 0; border-radius: 0; padding: 0; }
+  .pill + .pill::before { content: "·"; margin-right: 7px; }
+  .footer { justify-content: center; }
+}
+@media screen and (max-width: 800px) {
+  .sidebar { border-right: 0; border-bottom: 1px solid var(--line); }
 }
